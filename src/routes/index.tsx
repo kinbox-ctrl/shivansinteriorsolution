@@ -159,7 +159,7 @@ function Home() {
               alt="Shivansh Interior Solutions logo"
               width={160}
               height={107}
-              className="h-11 w-auto"
+              className="h-11 w-auto mix-blend-multiply"
             />
           </a>
 
@@ -520,7 +520,7 @@ function Home() {
               width={200}
               height={134}
               loading="lazy"
-              className="h-14 w-auto"
+              className="h-14 w-auto mix-blend-multiply"
             />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
               Interior design and execution for homes, shops and offices across
