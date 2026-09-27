@@ -227,7 +227,7 @@ export const PROJECTS: Project[] = [
       cta: "Estimate your home",
     },
     next: "teal-copper-kitchen",
-    mapPin: { x: 86, y: 60 },
+    mapPin: { x: 88, y: 60 },
   },
   {
     slug: "teal-copper-kitchen",
@@ -306,7 +306,7 @@ export const PROJECTS: Project[] = [
       cta: "Estimate your kitchen",
     },
     next: "master-bedroom-suite",
-    mapPin: { x: 38, y: 40 },
+    mapPin: { x: 46, y: 36 },
   },
   {
     slug: "master-bedroom-suite",
@@ -372,7 +372,7 @@ export const PROJECTS: Project[] = [
       cta: "Estimate your wardrobe",
     },
     next: "office-timber-slats",
-    mapPin: { x: 88, y: 64 },
+    mapPin: { x: 91, y: 64 },
   },
   {
     slug: "office-timber-slats",
@@ -438,7 +438,7 @@ export const PROJECTS: Project[] = [
       cta: "Get a quote for your office",
     },
     next: "cove-ceiling-lighting",
-    mapPin: { x: 56, y: 66 },
+    mapPin: { x: 6, y: 70 },
   },
   {
     slug: "cove-ceiling-lighting",
@@ -505,7 +505,7 @@ export const PROJECTS: Project[] = [
       cta: "Estimate your ceiling",
     },
     next: "fluted-tv-wall",
-    mapPin: { x: 84, y: 58 },
+    mapPin: { x: 86, y: 64 },
   },
   {
     slug: "fluted-tv-wall",
@@ -570,7 +570,7 @@ export const PROJECTS: Project[] = [
       cta: "Get a quote for your wall",
     },
     next: "ivory-acrylic-kitchen",
-    mapPin: { x: 40, y: 44 },
+    mapPin: { x: 50, y: 41 },
   },
   {
     slug: "ivory-acrylic-kitchen",
@@ -636,7 +636,7 @@ export const PROJECTS: Project[] = [
       cta: "Estimate your kitchen",
     },
     next: "kids-room-study",
-    mapPin: { x: 90, y: 62 },
+    mapPin: { x: 90, y: 57 },
   },
   {
     slug: "kids-room-study",
@@ -702,7 +702,7 @@ export const PROJECTS: Project[] = [
       cta: "Estimate your wardrobe",
     },
     next: "boutique-shop-interior",
-    mapPin: { x: 58, y: 70 },
+    mapPin: { x: 9, y: 75 },
   },
   {
     slug: "boutique-shop-interior",
@@ -769,7 +769,7 @@ export const PROJECTS: Project[] = [
       cta: "Get a quote for your shop",
     },
     next: "pooja-unit-jali",
-    mapPin: { x: 36, y: 42 },
+    mapPin: { x: 44, y: 42 },
   },
   {
     slug: "pooja-unit-jali",
@@ -831,7 +831,7 @@ export const PROJECTS: Project[] = [
       cta: "Estimate your home",
     },
     next: "walnut-teal-living-room",
-    mapPin: { x: 82, y: 66 },
+    mapPin: { x: 93, y: 61 },
   },
 ];
 
