@@ -55,8 +55,6 @@ export type Project = {
   quote: { text: string; name: string; town: string; image: ImageKey };
   budget: { label: string; range: string; note: string; cta: string };
   next: string;
-  /** Pin position on the region map (percent of width / height). */
-  mapPin: { x: number; y: number };
 };
 
 export const PROJECT_CATEGORIES: ProjectCategory[] = [
@@ -227,7 +225,6 @@ export const PROJECTS: Project[] = [
       cta: "Estimate your home",
     },
     next: "teal-copper-kitchen",
-    mapPin: { x: 86, y: 60 },
   },
   {
     slug: "teal-copper-kitchen",
@@ -306,7 +303,6 @@ export const PROJECTS: Project[] = [
       cta: "Estimate your kitchen",
     },
     next: "master-bedroom-suite",
-    mapPin: { x: 38, y: 40 },
   },
   {
     slug: "master-bedroom-suite",
@@ -372,7 +368,6 @@ export const PROJECTS: Project[] = [
       cta: "Estimate your wardrobe",
     },
     next: "office-timber-slats",
-    mapPin: { x: 88, y: 64 },
   },
   {
     slug: "office-timber-slats",
@@ -438,7 +433,6 @@ export const PROJECTS: Project[] = [
       cta: "Get a quote for your office",
     },
     next: "cove-ceiling-lighting",
-    mapPin: { x: 56, y: 66 },
   },
   {
     slug: "cove-ceiling-lighting",
@@ -505,7 +499,6 @@ export const PROJECTS: Project[] = [
       cta: "Estimate your ceiling",
     },
     next: "fluted-tv-wall",
-    mapPin: { x: 84, y: 58 },
   },
   {
     slug: "fluted-tv-wall",
@@ -570,7 +563,6 @@ export const PROJECTS: Project[] = [
       cta: "Get a quote for your wall",
     },
     next: "ivory-acrylic-kitchen",
-    mapPin: { x: 40, y: 44 },
   },
   {
     slug: "ivory-acrylic-kitchen",
@@ -636,7 +628,6 @@ export const PROJECTS: Project[] = [
       cta: "Estimate your kitchen",
     },
     next: "kids-room-study",
-    mapPin: { x: 90, y: 62 },
   },
   {
     slug: "kids-room-study",
@@ -702,7 +693,6 @@ export const PROJECTS: Project[] = [
       cta: "Estimate your wardrobe",
     },
     next: "boutique-shop-interior",
-    mapPin: { x: 58, y: 70 },
   },
   {
     slug: "boutique-shop-interior",
@@ -769,7 +759,6 @@ export const PROJECTS: Project[] = [
       cta: "Get a quote for your shop",
     },
     next: "pooja-unit-jali",
-    mapPin: { x: 36, y: 42 },
   },
   {
     slug: "pooja-unit-jali",
@@ -831,7 +820,6 @@ export const PROJECTS: Project[] = [
       cta: "Estimate your home",
     },
     next: "walnut-teal-living-room",
-    mapPin: { x: 82, y: 66 },
   },
 ];
 
@@ -862,6 +850,8 @@ export const PROJECTS_PAGE = {
   loadMore: "Load more projects",
   featuredCta: "View case study",
   mapSearch: "Search projects...",
+  /** Google Maps query shown when no project is selected. */
+  mapRegion: "Sambhar Lake",
   mapCta: "View project",
   cta: {
     title: "Want your home on this page next?",

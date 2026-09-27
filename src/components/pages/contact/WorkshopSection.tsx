@@ -2,9 +2,9 @@ import { Clock, MapPin, Phone } from "lucide-react";
 import { Button, Container, Eyebrow, Heading, Reveal, Section } from "@/components/site";
 import { WORKSHOP_SECTION } from "@/content/contact";
 import { img } from "@/content/images";
-import { ADDRESS_LINES, HOURS, MAP_LINK, PHONE_TEL, SITE_NAME } from "@/content/site";
+import { ADDRESS_LINES, HOURS, MAP_EMBED, MAP_LINK, PHONE_TEL, SITE_NAME } from "@/content/site";
 
-/** "Visit our workshop": heading, the Sambhar map panel with the overlaid info card, workshop photo. */
+/** "Visit our workshop": heading, Google map of Sambhar with the overlaid info card, workshop photo. */
 export function WorkshopSection() {
   return (
     <Section tone="cloud" className="border-t border-line/70 py-12 lg:py-14">
@@ -21,16 +21,17 @@ export function WorkshopSection() {
           </Reveal>
 
           <Reveal delay={70} className="relative">
-            <div className="relative overflow-hidden rounded-4xl bg-linen shadow-soft lg:h-[256px]">
-              <img
-                src={img(WORKSHOP_SECTION.map)}
-                alt={`Map of Sambhar showing the ${SITE_NAME} workshop near Sambhar Lake, with the road to Jaipur and Nawa`}
+            <div className="relative overflow-hidden rounded-4xl bg-linen shadow-soft lg:h-[330px]">
+              <iframe
+                src={MAP_EMBED}
+                title={`Google map of the ${SITE_NAME} workshop in Sambhar`}
                 loading="lazy"
-                decoding="async"
-                className="aspect-[16/7] h-full w-full object-cover object-left lg:aspect-auto"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen={false}
+                className="block aspect-[16/7] h-full w-full border-0 lg:aspect-auto"
               />
             </div>
-            <div className="relative mx-4 -mt-8 flex flex-col rounded-2xl border border-line bg-white p-5 shadow-lift lg:absolute lg:inset-y-2.5 lg:right-2.5 lg:mx-0 lg:mt-0 lg:w-[222px] lg:justify-between lg:p-3.5">
+            <div className="relative mx-4 -mt-8 flex flex-col rounded-2xl border border-line bg-white p-5 shadow-lift lg:absolute lg:inset-y-3 lg:right-3 lg:mx-0 lg:mt-0 lg:w-[232px] lg:justify-between lg:overflow-hidden lg:p-4">
               <div>
                 <p className="text-[14px] font-semibold leading-tight whitespace-nowrap text-teal">
                   {SITE_NAME}
@@ -87,7 +88,7 @@ export function WorkshopSection() {
           </Reveal>
 
           <Reveal delay={140}>
-            <div className="overflow-hidden rounded-3xl shadow-soft lg:h-[256px]">
+            <div className="overflow-hidden rounded-3xl shadow-soft lg:h-[330px]">
               <img
                 src={img(WORKSHOP_SECTION.photo)}
                 alt={`The ${SITE_NAME} workshop in Sambhar, with the signboard and the open carpentry bay`}

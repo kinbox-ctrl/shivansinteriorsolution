@@ -16,7 +16,6 @@ export type ImageKey =
   | "grid-kids-room"
   | "grid-boutique"
   | "grid-pooja"
-  | "map-region"
   | "kitchen-teal-hero"
   | "kitchen-before"
   | "kitchen-after"
@@ -77,7 +76,6 @@ export type ImageKey =
   | "est-standard"
   | "est-premium"
   | "est-luxury"
-  | "map-sambhar"
   | "workshop-exterior"
   | "living-slat-panel"
   | "bedroom-modern"
@@ -95,6 +93,28 @@ export type ImageKey =
   | "sketch-plant-404"
   | "sketch-ladder-404"
   | "sketch-room-404"
+  | "cat-base-unit"
+  | "cat-wall-unit"
+  | "cat-tall-unit"
+  | "cat-laminate-sheets"
+  | "cat-acrylic"
+  | "cat-membrane"
+  | "cat-veneer"
+  | "cat-pu"
+  | "cat-tandem-drawer"
+  | "cat-lift-up"
+  | "cat-sliding-channel"
+  | "cat-handles"
+  | "cat-walk-in"
+  | "cat-loft"
+  | "cat-wallpaper"
+  | "cat-vinyl-floor"
+  | "cat-laminate-floor"
+  | "cat-engineered-floor"
+  | "cat-pop-ceiling"
+  | "cat-designer-ceiling"
+  | "cat-profile-light"
+  | "cat-quartz"
   | "orig-hero-living"
   | "orig-work-kitchen"
   | "orig-work-bedroom"
@@ -120,7 +140,6 @@ export const IMAGE_KEYS: ImageKey[] = [
   "grid-kids-room",
   "grid-boutique",
   "grid-pooja",
-  "map-region",
   "kitchen-teal-hero",
   "kitchen-before",
   "kitchen-after",
@@ -181,7 +200,6 @@ export const IMAGE_KEYS: ImageKey[] = [
   "est-standard",
   "est-premium",
   "est-luxury",
-  "map-sambhar",
   "workshop-exterior",
   "living-slat-panel",
   "bedroom-modern",
@@ -199,6 +217,28 @@ export const IMAGE_KEYS: ImageKey[] = [
   "sketch-plant-404",
   "sketch-ladder-404",
   "sketch-room-404",
+  "cat-base-unit",
+  "cat-wall-unit",
+  "cat-tall-unit",
+  "cat-laminate-sheets",
+  "cat-acrylic",
+  "cat-membrane",
+  "cat-veneer",
+  "cat-pu",
+  "cat-tandem-drawer",
+  "cat-lift-up",
+  "cat-sliding-channel",
+  "cat-handles",
+  "cat-walk-in",
+  "cat-loft",
+  "cat-wallpaper",
+  "cat-vinyl-floor",
+  "cat-laminate-floor",
+  "cat-engineered-floor",
+  "cat-pop-ceiling",
+  "cat-designer-ceiling",
+  "cat-profile-light",
+  "cat-quartz",
   "orig-hero-living",
   "orig-work-kitchen",
   "orig-work-bedroom",

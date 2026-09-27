@@ -63,12 +63,12 @@ export function SiteHeader({ className }: SiteHeaderProps) {
         <Container className="flex h-[72px] items-center gap-6 lg:h-[76px]">
           <Logo size={40} />
 
-          <nav aria-label="Primary" className="ml-2 hidden min-w-0 flex-1 lg:block 2xl:ml-10">
+          <nav aria-label="Primary" className="ml-2 hidden min-w-0 flex-1 lg:block 2xl:ml-8">
             <ul className="flex items-center gap-1">
               {NAV.map((item) => {
                 const linkProps = { to: item.to } as unknown as LinkProps;
                 return (
-                  <li key={item.to} className={cn(item.compact && "hidden 2xl:block")}>
+                  <li key={item.to} className={cn(item.compact && "hidden min-[1600px]:block")}>
                     <Link
                       {...linkProps}
                       activeProps={{
@@ -77,8 +77,8 @@ export function SiteHeader({ className }: SiteHeaderProps) {
                       }}
                       inactiveProps={{ className: "text-ink/85" }}
                       className={cn(
-                        "relative inline-flex h-10 items-center rounded-md px-2 text-[14px] 2xl:px-3 2xl:text-[15px] font-medium whitespace-nowrap transition-colors duration-300 hover:text-teal",
-                        "after:absolute after:inset-x-2 2xl:after:inset-x-3 after:-bottom-0.5 after:h-[2px] after:origin-left after:scale-x-0 after:rounded-full after:bg-copper after:transition-transform after:duration-300 after:ease-soft hover:after:scale-x-100",
+                        "relative inline-flex h-10 items-center rounded-md px-2 text-[14px] font-medium whitespace-nowrap transition-colors duration-300 hover:text-teal",
+                        "after:absolute after:inset-x-2 after:-bottom-0.5 after:h-[2px] after:origin-left after:scale-x-0 after:rounded-full after:bg-copper after:transition-transform after:duration-300 after:ease-soft hover:after:scale-x-100",
                       )}
                     >
                       {item.label}
@@ -89,7 +89,7 @@ export function SiteHeader({ className }: SiteHeaderProps) {
             </ul>
           </nav>
 
-          <div className="ml-auto flex items-center gap-2.5 sm:gap-3">
+          <div className="ml-auto flex shrink-0 items-center gap-2.5 sm:gap-3">
             <LangToggle className="hidden md:inline-flex lg:hidden xl:inline-flex" />
             <a
               href={PHONE_TEL}

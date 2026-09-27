@@ -14,8 +14,9 @@ each item. File paths point at where the value lives.
       (`team-1`…`team-5`), the founder portrait, journal covers and the workshop exterior.
 - [ ] The "before" kitchen photo (`kitchen-before`) is a render. Only the Teal & Copper Kitchen has
       a before/after pair; every other project has `before: null` (`src/content/projects.ts`).
-- [ ] Map images (`map-region`, `map-sambhar`) are illustrations. Pin positions in
-      `projects.ts` (`mapPin`) are eyeballed percentages and must be adjusted to the final map.
+- [ ] Maps are Google Maps embeds (`MAP_EMBED`, `mapEmbedFor` in `site.ts`). The workshop pin uses the
+      address query in `site.ts`; confirm it lands on the actual workshop. Project maps only pan to the
+      town (`place`), not the street.
 - [ ] The original site photos (`orig-hero-living`, `orig-work-*`, `orig-craft`) are reused in a
       few galleries; confirm they may be shown.
 
@@ -28,8 +29,6 @@ each item. File paths point at where the value lives.
 - [ ] Milestones 2014 / 2017 / 2020 / 2023 / Today (`team.ts`: `MILESTONES`).
 - [ ] Opening hours "Mon – Sat, 9:00 AM – 7:00 PM / Sunday by appointment" (`site.ts`: `HOURS`,
       repeated in `contact.ts`: `CONTACT_TILES`).
-- [ ] Distances on the workshop map: "To Jaipur (60 km)", "To Nawa (25 km)", "NH-48"
-      (`contact.ts`: `WORKSHOP_SECTION.mapLabels`).
 - [ ] Areas served list beyond Sambhar / Nawa / Jaipur (`contact.ts`: `AREAS_SERVED`).
 - [ ] Social profile links are `#` (`site.ts`: `SOCIAL`).
 - [ ] The Hindi language toggle (EN | हिंदी) is visual only; no Hindi content exists yet.
