@@ -1,0 +1,62 @@
+import {
+  BedDouble,
+  Building2,
+  CalendarDays,
+  Columns2,
+  Columns3,
+  CookingPot,
+  DoorClosed,
+  DoorOpen,
+  Grid2x2,
+  Home,
+  House,
+  IndianRupee,
+  LayoutGrid,
+  LayoutTemplate,
+  MapPin,
+  PanelLeft,
+  Rows2,
+  Rows3,
+  ShieldCheck,
+  Sofa,
+  Sparkles,
+  Square,
+  Store,
+  Tv,
+  Warehouse,
+  type LucideIcon,
+} from "lucide-react";
+
+/** The lucide export names used by the service content, resolved without the whole barrel. */
+const ICONS: Record<string, LucideIcon> = {
+  BedDouble,
+  Building2,
+  CalendarDays,
+  Columns2,
+  Columns3,
+  CookingPot,
+  DoorClosed,
+  DoorOpen,
+  Grid2x2,
+  Home,
+  House,
+  IndianRupee,
+  LayoutGrid,
+  LayoutTemplate,
+  MapPin,
+  PanelLeft,
+  Rows2,
+  Rows3,
+  ShieldCheck,
+  Sofa,
+  Sparkles,
+  Square,
+  Store,
+  Tv,
+  Warehouse,
+};
+
+export function iconFor(name: string | undefined, fallback: LucideIcon = Square): LucideIcon {
+  if (!name) return fallback;
+  return ICONS[name] ?? fallback;
+}

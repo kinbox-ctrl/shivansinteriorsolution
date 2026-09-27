@@ -5,17 +5,13 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system definition.
+ * Shivansh Light — design tokens.
  *
- * The @theme inline block maps CSS custom properties to Tailwind utility
- * classes (e.g. --color-primary -> bg-primary, text-primary).
- *
- * The :root and .dark blocks define the actual color values using oklch.
- * All colors MUST use oklch format.
- *
- * To add a new semantic color:
- * 1. Add the variable to :root (light value) and .dark (dark value)
- * 2. Register it in @theme inline as --color-<name>: var(--<name>)
+ * Named brand colours (cloud, linen, mist, ink, teal, copper …) are exposed as Tailwind colours
+ * (bg-cloud, text-teal, border-line …). The shadcn semantic tokens are mapped onto them so the
+ * existing ui/* components look right without changes:
+ *   primary = teal · accent = copper · background = cloud · secondary/muted = linen
+ *   card = white · border = line · ring = copper
  */
 
 @theme inline {
@@ -26,8 +22,33 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
-  --font-display: "Fraunces", Georgia, serif;
+
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
   --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --font-hand: "Caveat", "Segoe Script", cursive;
+  --font-devanagari: "Tiro Devanagari Hindi", "Noto Sans Devanagari", serif;
+
+  /* brand palette */
+  --color-cloud: var(--cloud);
+  --color-linen: var(--linen);
+  --color-mist: var(--mist);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-teal: var(--teal);
+  --color-teal-hover: var(--teal-hover);
+  --color-teal-soft: var(--teal-soft);
+  --color-copper: var(--copper);
+  --color-copper-hover: var(--copper-hover);
+  --color-copper-bright: var(--copper-bright);
+  --color-copper-tint: var(--copper-tint);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-whatsapp: var(--whatsapp);
+  --color-walnut: var(--walnut);
+  --color-oak: var(--oak);
+
+  /* shadcn semantic tokens */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -48,11 +69,7 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
-  --color-copper: var(--copper);
   --color-copper-foreground: var(--copper-foreground);
-  --color-sand: var(--sand);
-  --color-ink: var(--ink);
-  --color-whatsapp: var(--whatsapp);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -66,89 +83,168 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-marquee: marquee var(--marquee-duration, 40s) linear infinite;
 }
 
 :root {
-  --radius: 0.25rem;
-  --background: oklch(0.985 0.008 90);
-  --foreground: oklch(0.24 0.035 195);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.24 0.035 195);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.24 0.035 195);
-  --primary: oklch(0.33 0.055 197);
-  --primary-foreground: oklch(0.985 0.008 90);
-  --secondary: oklch(0.945 0.018 85);
-  --secondary-foreground: oklch(0.33 0.055 197);
-  --muted: oklch(0.951 0.013 88);
-  --muted-foreground: oklch(0.5 0.02 200);
-  --accent: oklch(0.62 0.135 48);
-  --accent-foreground: oklch(0.99 0.005 90);
-  --copper: oklch(0.62 0.135 48);
-  --copper-foreground: oklch(0.99 0.005 90);
-  --sand: oklch(0.945 0.018 85);
-  --ink: oklch(0.24 0.035 195);
-  --whatsapp: oklch(0.68 0.17 145);
+  /* radii: inputs 8px (rounded-lg), cards 16px (rounded-2xl), photo panels 20–24px (3xl/4xl) */
+  --radius: 0.5rem;
+
+  --cloud: #fbfaf7;
+  --linen: #f4f1ea;
+  --mist: #e8f0ee;
+  --ink: #0f2e30;
+  --ink-soft: #5c6f70;
+  --teal: #003c48;
+  --teal-hover: #0a5e6b;
+  --teal-soft: #dce9e7;
+  --copper: #a9531f;
+  --copper-hover: #8e4418;
+  --copper-bright: #c66935;
+  --copper-tint: #f7e9de;
+  --line: #e6e3db;
+  --line-strong: #d3cec3;
+  --whatsapp: #25d366;
+  --walnut: #6b4428;
+  --oak: #b67945;
+
+  --background: var(--cloud);
+  --foreground: var(--ink);
+  --card: #ffffff;
+  --card-foreground: var(--ink);
+  --popover: #ffffff;
+  --popover-foreground: var(--ink);
+  --primary: var(--teal);
+  --primary-foreground: #ffffff;
+  --secondary: var(--linen);
+  --secondary-foreground: var(--teal);
+  --muted: var(--linen);
+  --muted-foreground: var(--ink-soft);
+  --accent: var(--copper);
+  --accent-foreground: #ffffff;
+  --copper-foreground: #ffffff;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.9 0.015 90);
-  --input: oklch(0.9 0.015 90);
-  --ring: oklch(0.62 0.135 48);
-  --chart-1: oklch(0.33 0.055 197);
-  --chart-2: oklch(0.62 0.135 48);
-  --chart-3: oklch(0.5 0.02 200);
-  --chart-4: oklch(0.75 0.06 70);
-  --chart-5: oklch(0.45 0.09 190);
-  --sidebar: oklch(0.985 0.008 90);
-  --sidebar-foreground: oklch(0.24 0.035 195);
-  --sidebar-primary: oklch(0.33 0.055 197);
-  --sidebar-primary-foreground: oklch(0.985 0.008 90);
-  --sidebar-accent: oklch(0.945 0.018 85);
-  --sidebar-accent-foreground: oklch(0.33 0.055 197);
-  --sidebar-border: oklch(0.9 0.015 90);
-  --sidebar-ring: oklch(0.62 0.135 48);
+  --border: var(--line);
+  --input: var(--line-strong);
+  --ring: var(--copper);
+  --chart-1: var(--teal);
+  --chart-2: var(--copper);
+  --chart-3: var(--ink-soft);
+  --chart-4: var(--oak);
+  --chart-5: var(--teal-hover);
+  --sidebar: var(--cloud);
+  --sidebar-foreground: var(--ink);
+  --sidebar-primary: var(--teal);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: var(--linen);
+  --sidebar-accent-foreground: var(--teal);
+  --sidebar-border: var(--line);
+  --sidebar-ring: var(--copper);
 
-  --gradient-hero: linear-gradient(
-    180deg,
-    color-mix(in oklab, var(--ink) 78%, transparent) 0%,
-    color-mix(in oklab, var(--ink) 45%, transparent) 45%,
-    color-mix(in oklab, var(--ink) 82%, transparent) 100%
-  );
-  --shadow-soft: 0 18px 50px -24px color-mix(in oklab, var(--ink) 45%, transparent);
-  --shadow-lift: 0 28px 70px -30px color-mix(in oklab, var(--ink) 55%, transparent);
+  --shadow-soft: 0 1px 2px rgba(15, 46, 48, 0.04), 0 12px 32px -16px rgba(15, 46, 48, 0.18);
+  --shadow-lift: 0 2px 4px rgba(15, 46, 48, 0.05), 0 28px 60px -24px rgba(15, 46, 48, 0.28);
+
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
 }
+
+/* ---------- base ---------- */
 
 @layer base {
   * {
     border-color: var(--color-border);
   }
 
+  html {
+    scroll-behavior: auto;
+    -webkit-text-size-adjust: 100%;
+  }
+
   body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+    background-color: var(--color-cloud);
+    color: var(--color-ink);
     font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.65;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1,
   h2,
   h3 {
     font-family: var(--font-display);
-    font-weight: 600;
-    letter-spacing: -0.015em;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-copper);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background: var(--color-copper-tint);
+    color: var(--color-ink);
+  }
+
+  img,
+  svg {
+    display: block;
   }
 }
 
+/* ---------- utilities ---------- */
+
 @utility eyebrow {
-  font-size: 0.72rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  line-height: 1;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   font-weight: 600;
-  color: var(--copper);
+  color: var(--color-copper);
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 1.5px;
+    background: var(--color-copper);
+    flex: none;
+  }
 }
 
-@utility hero-overlay {
-  background-image: var(--gradient-hero);
+@utility glass {
+  background: rgba(255, 255, 255, 0.72);
+  -webkit-backdrop-filter: blur(24px) saturate(1.2);
+  backdrop-filter: blur(24px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+@utility wash {
+  background-image:
+    radial-gradient(60% 70% at 0% 0%, rgba(232, 240, 238, 0.95) 0%, rgba(232, 240, 238, 0) 65%),
+    radial-gradient(55% 65% at 100% 100%, rgba(247, 233, 222, 0.9) 0%, rgba(247, 233, 222, 0) 65%);
+}
+
+@utility grid-paper {
+  background-image:
+    linear-gradient(to right, rgba(0, 60, 72, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 60, 72, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+@utility jali {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none' stroke='%23003C48' stroke-width='1' stroke-opacity='0.045'%3E%3Cpath d='M24 2 L46 24 L24 46 L2 24 Z'/%3E%3Ccircle cx='24' cy='24' r='7'/%3E%3Cpath d='M24 0v48M0 24h48'/%3E%3C/svg%3E");
+  background-size: 48px 48px;
 }
 
 @utility shadow-soft {
@@ -159,120 +255,136 @@
   box-shadow: var(--shadow-lift);
 }
 
-@utility rise {
-  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+@utility hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-@keyframes rise {
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility text-pretty {
+  text-wrap: pretty;
+}
+
+@utility ease-soft {
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@utility font-devanagari {
+  font-family: var(--font-devanagari);
+}
+
+@utility mono-meta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+}
+
+/* ---------- reveal system ----------
+   Elements carrying [data-reveal] start hidden ONLY when html.js is present (set by an inline
+   script before paint), so no-JS clients and crawlers always get the finished layout. */
+
+[data-reveal] {
+  --reveal-delay: 0ms;
+  --reveal-y: 24px;
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay);
+  will-change: opacity, transform;
+}
+
+html.js [data-reveal]:not(.is-in) {
+  opacity: 0;
+  transform: translateY(var(--reveal-y));
+}
+
+[data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- marquee ---------- */
+
+@keyframes marquee {
   from {
-    opacity: 0;
-    transform: translateY(18px);
+    transform: translateX(0);
   }
   to {
-    opacity: 1;
-    transform: none;
+    transform: translateX(-50%);
   }
 }
 
-
-/* ---------- 3D / depth system ---------- */
-
-@utility perspective-scene {
-  perspective: 1200px;
-  perspective-origin: 50% 50%;
+.marquee-track {
+  animation: marquee var(--marquee-duration, 40s) linear infinite;
 }
 
-@utility tilt-3d {
-  transform-style: preserve-3d;
-  transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateZ(0);
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.35s ease;
-  will-change: transform;
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
 }
 
-@utility layer-pop {
-  transform: translateZ(45px);
-}
+/* ---------- slat reveal ---------- */
 
-@utility shadow-3d {
-  box-shadow:
-    0 2px 4px -2px color-mix(in oklab, var(--ink) 25%, transparent),
-    0 18px 35px -18px color-mix(in oklab, var(--ink) 45%, transparent),
-    0 45px 90px -45px color-mix(in oklab, var(--ink) 60%, transparent);
-}
-
-@utility shadow-copper-glow {
-  box-shadow:
-    0 12px 30px -12px color-mix(in oklab, var(--copper) 65%, transparent),
-    0 30px 70px -35px color-mix(in oklab, var(--copper) 45%, transparent);
-}
-
-@utility glass-panel {
-  background: color-mix(in oklab, var(--card) 65%, transparent);
-  backdrop-filter: blur(14px) saturate(1.2);
-  border: 1px solid color-mix(in oklab, var(--background) 60%, transparent);
-}
-
-@utility sheen {
-  position: relative;
-  overflow: hidden;
-}
-
-@utility text-gradient-copper {
-  background-image: linear-gradient(
-    100deg,
-    var(--copper) 0%,
-    oklch(0.78 0.11 62) 45%,
-    var(--copper) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-@utility float-slow {
-  animation: floaty 7s ease-in-out infinite;
-}
-
-@utility float-slower {
-  animation: floaty 10s ease-in-out infinite;
-}
-
-@keyframes floaty {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-14px);
-  }
-}
-
-@utility reveal {
-  animation: reveal-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
-  animation-timeline: view();
-  animation-range: entry 0% cover 28%;
-}
-
-@keyframes reveal-up {
+@keyframes slat-collapse {
   from {
-    opacity: 0;
-    transform: translateY(34px) scale(0.98);
+    transform: scaleY(1);
   }
   to {
-    opacity: 1;
-    transform: none;
+    transform: scaleY(0);
   }
 }
+
+.slat {
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--slat-index, 0) * 60ms);
+}
+
+html.js .slat-reveal:not(.is-in) .slat {
+  transform: scaleY(1);
+}
+
+/* ---------- header hide / show ---------- */
+
+.site-header {
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---------- reduced motion: everything lands in its final state instantly ---------- */
 
 @media (prefers-reduced-motion: reduce) {
-  .float-slow,
-  .float-slower,
-  .reveal,
-  .rise {
-    animation: none !important;
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
   }
-  .tilt-3d {
+
+  html.js [data-reveal]:not(.is-in) {
+    opacity: 1;
+    transform: none;
+  }
+
+  html.js .slat-reveal:not(.is-in) .slat {
+    transform: scaleY(0);
+  }
+
+  .marquee-track {
+    animation: none !important;
     transform: none !important;
   }
 }
