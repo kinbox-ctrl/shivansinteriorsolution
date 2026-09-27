@@ -18,7 +18,6 @@ import i_gridIvoryKitchen from "@/assets/ref/grid-ivory-kitchen.jpg";
 import i_gridKidsRoom from "@/assets/ref/grid-kids-room.jpg";
 import i_gridBoutique from "@/assets/ref/grid-boutique.jpg";
 import i_gridPooja from "@/assets/ref/grid-pooja.jpg";
-import i_mapRegion from "@/assets/ref/map-region.svg";
 import i_kitchenTealHero from "@/assets/ref/kitchen-teal-hero.jpg";
 import i_kitchenBefore from "@/assets/ref/kitchen-before.jpg";
 import i_kitchenAfter from "@/assets/ref/kitchen-after.jpg";
@@ -79,7 +78,6 @@ import i_team5 from "@/assets/ref/team-5.jpg";
 import i_estStandard from "@/assets/ref/est-standard.jpg";
 import i_estPremium from "@/assets/ref/est-premium.jpg";
 import i_estLuxury from "@/assets/ref/est-luxury.jpg";
-import i_mapSambhar from "@/assets/ref/map-sambhar.svg";
 import i_workshopExterior from "@/assets/ref/workshop-exterior.jpg";
 import i_livingSlatPanel from "@/assets/ref/living-slat-panel.jpg";
 import i_bedroomModern from "@/assets/ref/bedroom-modern.jpg";
@@ -97,6 +95,28 @@ import i_plywoodHero from "@/assets/ref/plywood-hero.jpg";
 import i_sketchPlant404 from "@/assets/ref/sketch-plant-404.png";
 import i_sketchLadder404 from "@/assets/ref/sketch-ladder-404.png";
 import i_sketchRoom404 from "@/assets/ref/sketch-room-404.png";
+import i_catBaseUnit from "@/assets/ref/cat-base-unit.jpg";
+import i_catWallUnit from "@/assets/ref/cat-wall-unit.jpg";
+import i_catTallUnit from "@/assets/ref/cat-tall-unit.jpg";
+import i_catLaminateSheets from "@/assets/ref/cat-laminate-sheets.jpg";
+import i_catAcrylic from "@/assets/ref/cat-acrylic.jpg";
+import i_catMembrane from "@/assets/ref/cat-membrane.jpg";
+import i_catVeneer from "@/assets/ref/cat-veneer.jpg";
+import i_catPu from "@/assets/ref/cat-pu.jpg";
+import i_catTandemDrawer from "@/assets/ref/cat-tandem-drawer.jpg";
+import i_catLiftUp from "@/assets/ref/cat-lift-up.jpg";
+import i_catSlidingChannel from "@/assets/ref/cat-sliding-channel.jpg";
+import i_catHandles from "@/assets/ref/cat-handles.jpg";
+import i_catWalkIn from "@/assets/ref/cat-walk-in.jpg";
+import i_catLoft from "@/assets/ref/cat-loft.jpg";
+import i_catWallpaper from "@/assets/ref/cat-wallpaper.jpg";
+import i_catVinylFloor from "@/assets/ref/cat-vinyl-floor.jpg";
+import i_catLaminateFloor from "@/assets/ref/cat-laminate-floor.jpg";
+import i_catEngineeredFloor from "@/assets/ref/cat-engineered-floor.jpg";
+import i_catPopCeiling from "@/assets/ref/cat-pop-ceiling.jpg";
+import i_catDesignerCeiling from "@/assets/ref/cat-designer-ceiling.jpg";
+import i_catProfileLight from "@/assets/ref/cat-profile-light.jpg";
+import i_catQuartz from "@/assets/ref/cat-quartz.jpg";
 import i_origHeroLiving from "@/assets/hero-living.jpg";
 import i_origWorkKitchen from "@/assets/work-kitchen.jpg";
 import i_origWorkBedroom from "@/assets/work-bedroom.jpg";
@@ -122,7 +142,6 @@ export const IMAGES: Record<ImageKey, string> = {
   "grid-kids-room": i_gridKidsRoom,
   "grid-boutique": i_gridBoutique,
   "grid-pooja": i_gridPooja,
-  "map-region": i_mapRegion,
   "kitchen-teal-hero": i_kitchenTealHero,
   "kitchen-before": i_kitchenBefore,
   "kitchen-after": i_kitchenAfter,
@@ -183,7 +202,6 @@ export const IMAGES: Record<ImageKey, string> = {
   "est-standard": i_estStandard,
   "est-premium": i_estPremium,
   "est-luxury": i_estLuxury,
-  "map-sambhar": i_mapSambhar,
   "workshop-exterior": i_workshopExterior,
   "living-slat-panel": i_livingSlatPanel,
   "bedroom-modern": i_bedroomModern,
@@ -201,6 +219,28 @@ export const IMAGES: Record<ImageKey, string> = {
   "sketch-plant-404": i_sketchPlant404,
   "sketch-ladder-404": i_sketchLadder404,
   "sketch-room-404": i_sketchRoom404,
+  "cat-base-unit": i_catBaseUnit,
+  "cat-wall-unit": i_catWallUnit,
+  "cat-tall-unit": i_catTallUnit,
+  "cat-laminate-sheets": i_catLaminateSheets,
+  "cat-acrylic": i_catAcrylic,
+  "cat-membrane": i_catMembrane,
+  "cat-veneer": i_catVeneer,
+  "cat-pu": i_catPu,
+  "cat-tandem-drawer": i_catTandemDrawer,
+  "cat-lift-up": i_catLiftUp,
+  "cat-sliding-channel": i_catSlidingChannel,
+  "cat-handles": i_catHandles,
+  "cat-walk-in": i_catWalkIn,
+  "cat-loft": i_catLoft,
+  "cat-wallpaper": i_catWallpaper,
+  "cat-vinyl-floor": i_catVinylFloor,
+  "cat-laminate-floor": i_catLaminateFloor,
+  "cat-engineered-floor": i_catEngineeredFloor,
+  "cat-pop-ceiling": i_catPopCeiling,
+  "cat-designer-ceiling": i_catDesignerCeiling,
+  "cat-profile-light": i_catProfileLight,
+  "cat-quartz": i_catQuartz,
   "orig-hero-living": i_origHeroLiving,
   "orig-work-kitchen": i_origWorkKitchen,
   "orig-work-bedroom": i_origWorkBedroom,

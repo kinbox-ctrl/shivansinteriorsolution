@@ -29,6 +29,11 @@ const MAP_QUERY = encodeURIComponent("Sambhar Lake, Nawa Road, Sambhar, Jaipur, 
 export const MAP_LINK = `https://www.google.com/maps/search/?api=1&query=${MAP_QUERY}`;
 export const MAP_EMBED = `https://www.google.com/maps?q=${MAP_QUERY}&z=13&output=embed`;
 
+/** Google Maps embed centred on a town in the Jaipur region (no API key needed). */
+export function mapEmbedFor(place: string): string {
+  return `https://www.google.com/maps?q=${encodeURIComponent(`${place}, Rajasthan, India`)}&z=12&output=embed`;
+}
+
 export const FOUNDER = {
   name: "Dinesh Choudhary",
   role: "Founder & Chief Craftsman",

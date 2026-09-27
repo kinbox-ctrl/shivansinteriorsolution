@@ -187,7 +187,7 @@ Rules that keep parallel work safe:
 ## 4. Content model (in `src/content/`)
 
 - `site.ts`: `SITE_NAME`, `TAGLINE`, `PHONE_DISPLAY` "+91 97835 86683", `PHONE_INTL` "919783586683",
-  `EMAIL`, `ADDRESS` (lines + one-line), `MAP_LINK`, `HOURS`, `waLink(message)`, `NAV`, `SOCIAL`,
+  `EMAIL`, `ADDRESS` (lines + one-line), `MAP_LINK`, `MAP_EMBED`, `mapEmbedFor(place)` (Google Maps embeds), `HOURS`, `waLink(message)`, `NAV`, `SOCIAL`,
   `FOUNDER`.
 - `services.ts`: `Service` (slug, title, short, long, includes[], priceChip, gradePrices,
   heroImage, callouts[], options: {kind, label, items[]}, finishes, hotspots[], faqs[], stickyBar,

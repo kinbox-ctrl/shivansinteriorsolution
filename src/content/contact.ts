@@ -91,16 +91,9 @@ export const WORKSHOP_SECTION = {
   eyebrow: "Visit our workshop",
   title: "See where it all comes to life.",
   text: "Our design, carpentry and hardware fitting are done in our own workshop in Sambhar.",
-  mapLabels: {
-    toJaipur: "To Jaipur (60 km)",
-    toNawa: "To Nawa (25 km)",
-    road: "NH-48",
-    lake: "Sambhar Lake",
-  },
   directions: "Get directions",
   call: "Call before visiting",
   photo: "workshop-exterior" as ImageKey,
-  map: "map-sambhar" as ImageKey,
 } as const;
 
 /** Towns in and around Jaipur district shown as chips; the first three are the core service area. */
