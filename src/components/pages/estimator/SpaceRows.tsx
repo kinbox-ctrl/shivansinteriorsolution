@@ -1,13 +1,25 @@
+import { SlidersHorizontal } from "lucide-react";
 import { useEffect, useId, useState } from "react";
-import { SPACES, type SpaceConfig, type SpaceId } from "@/content/pricing";
+import {
+  ESTIMATOR_COPY,
+  SPACES,
+  matchesGrade,
+  type GradeId,
+  type SpaceConfig,
+  type SpaceId,
+} from "@/content/pricing";
+import { SpaceOptions } from "./SpaceOptions";
 import { cn } from "@/lib/utils";
 import { contentIcon } from "./icons";
 import { clampArea } from "./use-estimator";
 
 export type SpaceRowsProps = {
   spaces: Record<SpaceId, SpaceConfig>;
+  grade: GradeId;
   onToggle: (id: SpaceId, on: boolean) => void;
   onArea: (id: SpaceId, area: number) => void;
+  onOption: (id: SpaceId, group: string, value: string) => void;
+  onResetOptions: (id: SpaceId) => void;
 };
 
 const RANGE = cn(
@@ -77,8 +89,17 @@ function AreaInput({ id, spaceId, value, disabled, onCommit }: AreaInputProps) {
  * One row per space: icon + label, teal switch, copper range slider, sq.ft field. On small
  * screens the slider row collapses while a space is off and expands when it is switched on.
  */
-export function SpaceRows({ spaces, onToggle, onArea }: SpaceRowsProps) {
+export function SpaceRows({
+  spaces,
+  grade,
+  onToggle,
+  onArea,
+  onOption,
+  onResetOptions,
+}: SpaceRowsProps) {
   const base = useId();
+  const [open, setOpen] = useState<SpaceId | null>(null);
+  const copy = ESTIMATOR_COPY.customise;
   return (
     <ul className="m-0 flex list-none flex-col gap-2 p-0">
       {SPACES.map((space) => {
@@ -87,101 +108,137 @@ export function SpaceRows({ spaces, onToggle, onArea }: SpaceRowsProps) {
         const on = cfg.on;
         const pct = ((cfg.area - space.min) / (space.max - space.min)) * 100;
         const inputId = `${base}-${space.id}`;
+        const expanded = open === space.id && on;
+        const custom = on && !matchesGrade(space.id, cfg.options, grade);
         return (
           <li
             key={space.id}
             className={cn(
-              "rounded-xl border px-3 py-2.5 transition-colors duration-300 ease-soft lg:flex lg:items-center lg:gap-4 lg:px-4",
+              "rounded-xl border px-3 py-2.5 transition-colors duration-300 ease-soft lg:px-4",
               on ? "border-line bg-white" : "border-line/70 bg-cloud",
             )}
           >
-            <div className="flex items-center gap-3 lg:w-[200px] lg:shrink-0">
-              <span
-                className={cn(
-                  "flex size-9 shrink-0 items-center justify-center rounded-lg transition-colors duration-300",
-                  on ? "bg-mist text-teal" : "bg-linen text-ink-soft",
-                )}
-              >
-                <Icon className="size-5" strokeWidth={1.5} aria-hidden />
-              </span>
-              <label
-                htmlFor={inputId}
-                className={cn(
-                  "flex-1 text-[14px] leading-tight font-semibold",
-                  on ? "text-ink" : "text-ink-soft",
-                )}
-              >
-                {space.label}
-              </label>
-              <button
-                type="button"
-                role="switch"
-                aria-checked={on}
-                aria-label={`Include ${space.label}`}
-                onClick={() => onToggle(space.id, !on)}
-                className={cn(
-                  "relative h-7 w-12 shrink-0 rounded-full transition-colors duration-300 ease-soft",
-                  "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-copper",
-                  on ? "bg-teal" : "bg-line-strong",
-                )}
-              >
+            <div className="lg:flex lg:items-center lg:gap-4">
+              <div className="flex items-center gap-3 lg:w-[200px] lg:shrink-0">
                 <span
-                  aria-hidden
                   className={cn(
-                    "absolute top-1 left-1 size-5 rounded-full bg-white shadow-[0_1px_3px_rgba(15,46,48,0.3)] transition-transform duration-300 ease-soft",
-                    on && "translate-x-5",
+                    "flex size-9 shrink-0 items-center justify-center rounded-lg transition-colors duration-300",
+                    on ? "bg-mist text-teal" : "bg-linen text-ink-soft",
                   )}
-                />
-              </button>
-            </div>
-            <div
-              className={cn(
-                "grid transition-[grid-template-rows] duration-500 ease-soft lg:flex lg:flex-1 lg:items-center lg:gap-4",
-                on ? "[grid-template-rows:1fr]" : "[grid-template-rows:0fr]",
-              )}
-            >
-              <div className="min-h-0 overflow-hidden lg:contents">
-                <div className="flex items-center gap-3 pt-3 pb-1 lg:flex-1 lg:py-0">
-                  <input
-                    type="range"
-                    min={space.min}
-                    max={space.max}
-                    step={space.step}
-                    value={on ? cfg.area : space.min}
-                    disabled={!on}
-                    onChange={(e) => onArea(space.id, Number(e.target.value))}
-                    aria-label={`${space.label} area`}
-                    aria-valuetext={`${cfg.area} sq.ft`}
-                    className={cn(RANGE, !on && "opacity-60")}
-                    style={
-                      on
-                        ? {
-                            background: `linear-gradient(to right, var(--copper) ${pct}%, var(--line) ${pct}%)`,
-                          }
-                        : undefined
-                    }
+                >
+                  <Icon className="size-5" strokeWidth={1.5} aria-hidden />
+                </span>
+                <label
+                  htmlFor={inputId}
+                  className={cn(
+                    "flex-1 text-[14px] leading-tight font-semibold",
+                    on ? "text-ink" : "text-ink-soft",
+                  )}
+                >
+                  {space.label}
+                </label>
+                <button
+                  type="button"
+                  role="switch"
+                  aria-checked={on}
+                  aria-label={`Include ${space.label}`}
+                  onClick={() => onToggle(space.id, !on)}
+                  className={cn(
+                    "relative h-7 w-12 shrink-0 rounded-full transition-colors duration-300 ease-soft",
+                    "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-copper",
+                    on ? "bg-teal" : "bg-line-strong",
+                  )}
+                >
+                  <span
+                    aria-hidden
+                    className={cn(
+                      "absolute top-1 left-1 size-5 rounded-full bg-white shadow-[0_1px_3px_rgba(15,46,48,0.3)] transition-transform duration-300 ease-soft",
+                      on && "translate-x-5",
+                    )}
                   />
-                  <div className="flex shrink-0 items-center lg:hidden">
-                    <AreaInput
-                      id={`${inputId}-m`}
-                      spaceId={space.id}
-                      value={cfg.area}
+                </button>
+              </div>
+              <div
+                className={cn(
+                  "grid transition-[grid-template-rows] duration-500 ease-soft lg:flex lg:flex-1 lg:items-center lg:gap-4",
+                  on ? "[grid-template-rows:1fr]" : "[grid-template-rows:0fr]",
+                )}
+              >
+                <div className="min-h-0 overflow-hidden lg:contents">
+                  <div className="flex items-center gap-3 pt-3 pb-1 lg:flex-1 lg:py-0">
+                    <input
+                      type="range"
+                      min={space.min}
+                      max={space.max}
+                      step={space.step}
+                      value={on ? cfg.area : space.min}
                       disabled={!on}
-                      onCommit={(area) => onArea(space.id, area)}
+                      onChange={(e) => onArea(space.id, Number(e.target.value))}
+                      aria-label={`${space.label} area`}
+                      aria-valuetext={`${cfg.area} sq.ft`}
+                      className={cn(RANGE, !on && "opacity-60")}
+                      style={
+                        on
+                          ? {
+                              background: `linear-gradient(to right, var(--copper) ${pct}%, var(--line) ${pct}%)`,
+                            }
+                          : undefined
+                      }
                     />
+                    <div className="flex shrink-0 items-center lg:hidden">
+                      <AreaInput
+                        id={`${inputId}-m`}
+                        spaceId={space.id}
+                        value={cfg.area}
+                        disabled={!on}
+                        onCommit={(area) => onArea(space.id, area)}
+                      />
+                    </div>
                   </div>
                 </div>
+                <div className="hidden shrink-0 items-center lg:flex">
+                  <AreaInput
+                    id={inputId}
+                    spaceId={space.id}
+                    value={cfg.area}
+                    disabled={!on}
+                    onCommit={(area) => onArea(space.id, area)}
+                  />
+                </div>
               </div>
-              <div className="hidden shrink-0 items-center lg:flex">
-                <AreaInput
-                  id={inputId}
+              {on && (
+                <button
+                  type="button"
+                  onClick={() => setOpen(expanded ? null : space.id)}
+                  aria-expanded={expanded}
+                  aria-controls={`${inputId}-options`}
+                  className={cn(
+                    "mt-2 inline-flex h-9 shrink-0 items-center gap-1.5 rounded-full border px-3 text-[12.5px] font-semibold transition-colors duration-300 ease-soft lg:mt-0",
+                    "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-copper",
+                    expanded
+                      ? "border-teal bg-teal text-white"
+                      : custom
+                        ? "border-copper/40 bg-copper-tint text-copper"
+                        : "border-line bg-white text-teal hover:border-line-strong",
+                  )}
+                >
+                  <SlidersHorizontal className="size-3.5" strokeWidth={1.75} aria-hidden />
+                  {expanded ? copy.close : custom ? copy.customTag : copy.open}
+                </button>
+              )}
+            </div>
+            {expanded && (
+              <div id={`${inputId}-options`}>
+                <SpaceOptions
                   spaceId={space.id}
-                  value={cfg.area}
-                  disabled={!on}
-                  onCommit={(area) => onArea(space.id, area)}
+                  area={cfg.area}
+                  grade={grade}
+                  options={cfg.options}
+                  onOption={(group, value) => onOption(space.id, group, value)}
+                  onReset={() => onResetOptions(space.id)}
                 />
               </div>
-            </div>
+            )}
           </li>
         );
       })}

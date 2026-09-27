@@ -135,7 +135,7 @@ const SERVICE_KITCHEN: Service = {
     "Plumbing & electrical integration",
   ],
   priceChip: "From ₹1,350/sq.ft",
-  gradePrices: { standard: "₹1,350/sq.ft", premium: "₹1,820/sq.ft", luxury: "₹2,360/sq.ft" },
+  gradePrices: { standard: "₹1,350/sq.ft", premium: "₹2,000/sq.ft", luxury: "₹2,590/sq.ft" },
   image: "svc-kitchen",
   heroImage: "kitchen-teal-hero",
   headlineLead: "Modular kitchens built around how",
@@ -332,7 +332,7 @@ const SERVICE_KITCHEN: Service = {
     {
       grade: "premium",
       name: "Premium",
-      from: "₹1,820/sq.ft",
+      from: "₹2,000/sq.ft",
       bullets: [
         "BWP waterproof plywood",
         "Acrylic / high-gloss finishes",
@@ -344,7 +344,7 @@ const SERVICE_KITCHEN: Service = {
     {
       grade: "luxury",
       name: "Luxury",
-      from: "₹2,360/sq.ft",
+      from: "₹2,590/sq.ft",
       bullets: [
         "HDHMR / Boilo",
         "PU / veneer finish",
@@ -413,7 +413,7 @@ const SERVICE_WARDROBES: Service = {
     "Custom internal accessories",
   ],
   priceChip: "From ₹1,550/sq.ft",
-  gradePrices: { standard: "₹1,550/sq.ft", premium: "₹2,090/sq.ft", luxury: "₹2,710/sq.ft" },
+  gradePrices: { standard: "₹1,550/sq.ft", premium: "₹2,200/sq.ft", luxury: "₹3,140/sq.ft" },
   image: "svc-wardrobes",
   heroImage: "grid-bedroom",
   headlineLead: "Wardrobes that fit wall to wall,",
@@ -573,7 +573,7 @@ const SERVICE_WARDROBES: Service = {
     {
       grade: "premium",
       name: "Premium",
-      from: "₹2,090/sq.ft",
+      from: "₹2,200/sq.ft",
       bullets: [
         "BWP waterproof plywood",
         "Acrylic / veneer finishes",
@@ -585,7 +585,7 @@ const SERVICE_WARDROBES: Service = {
     {
       grade: "luxury",
       name: "Luxury",
-      from: "₹2,710/sq.ft",
+      from: "₹3,140/sq.ft",
       bullets: [
         "HDHMR / Boilo",
         "PU paint / natural veneer",
@@ -649,8 +649,8 @@ const SERVICE_CEILING: Service = {
     "Fans, chandeliers and pendants",
     "Electrical and automation ready",
   ],
-  priceChip: "From ₹120/sq.ft",
-  gradePrices: { standard: "₹120/sq.ft", premium: "₹162/sq.ft", luxury: "₹210/sq.ft" },
+  priceChip: "From ₹105/sq.ft",
+  gradePrices: { standard: "₹105/sq.ft", premium: "₹180/sq.ft", luxury: "₹295/sq.ft" },
   image: "svc-ceiling",
   heroImage: "grid-cove-ceiling",
   headlineLead: "Ceilings that make every room",
@@ -660,7 +660,7 @@ const SERVICE_CEILING: Service = {
   heroPrimary: "Get my ceiling estimate",
   heroSecondary: "WhatsApp a photo of your room",
   factChips: [
-    { label: "From ₹120/sq.ft", sub: "Standard grade", icon: "IndianRupee" },
+    { label: "From ₹105/sq.ft", sub: "Standard grade", icon: "IndianRupee" },
     { label: "Free site visit", sub: "in Sambhar, Nawa, Jaipur", icon: "MapPin" },
     { label: "Crack-free finish", sub: "Taped and jointed", icon: "ShieldCheck" },
   ],
@@ -831,7 +831,7 @@ const SERVICE_CEILING: Service = {
     {
       grade: "standard",
       name: "Standard",
-      from: "₹120/sq.ft",
+      from: "₹105/sq.ft",
       bullets: [
         "Gypsum board",
         "Peripheral or flat design",
@@ -843,7 +843,7 @@ const SERVICE_CEILING: Service = {
     {
       grade: "premium",
       name: "Premium",
-      from: "₹162/sq.ft",
+      from: "₹180/sq.ft",
       bullets: [
         "Gypsum with POP detailing",
         "Cove and island designs",
@@ -855,7 +855,7 @@ const SERVICE_CEILING: Service = {
     {
       grade: "luxury",
       name: "Luxury",
-      from: "₹210/sq.ft",
+      from: "₹295/sq.ft",
       bullets: [
         "Coffered and wooden rafters",
         "Layered lighting scenes",
@@ -1174,7 +1174,7 @@ const SERVICE_COMPLETE_HOME: Service = {
     "False ceiling & lighting",
     "End-to-end execution",
   ],
-  priceChip: "From ₹4.8 lakh",
+  priceChip: "From ₹3.9 lakh",
   gradePrices: { standard: null, premium: null, luxury: null },
   image: "svc-complete-home",
   heroImage: "hero-living",
@@ -1185,7 +1185,7 @@ const SERVICE_COMPLETE_HOME: Service = {
   heroPrimary: "Book a free site visit",
   heroSecondary: "WhatsApp your floor plan",
   factChips: [
-    { label: "From ₹4.8 lakh", sub: "2–3 BHK", icon: "IndianRupee" },
+    { label: "From ₹3.9 lakh", sub: "2–3 BHK", icon: "IndianRupee" },
     { label: "Free site visit", sub: "in Sambhar, Nawa, Jaipur", icon: "MapPin" },
     { label: "One timeline", sub: "Design to handover", icon: "CalendarDays" },
   ],

@@ -34,10 +34,13 @@ each item. File paths point at where the value lives.
 - [ ] Social profile links are `#` (`site.ts`: `SOCIAL`).
 - [ ] The Hindi language toggle (EN | हिंदी) is visual only; no Hindi content exists yet.
 
-## Prices and rates (`src/content/pricing.ts`, `materials.ts`, `services.ts`)
+## Prices
+
+- The estimator now prices from `RATE_CARD` in `src/content/pricing.ts` (2026 indicative Jaipur-region rates per part: boards, finishes, hardware, labour, counters, accessories, ceilings, lighting, panels) and adds 18% GST. The catalogue prices in `src/content/catalogue.ts` use the same figures. Confirm every rate against current supplier quotes before launch.
+  and rates (`src/content/pricing.ts`, `materials.ts`, `services.ts`)
 
 - [ ] Base rates: kitchen ₹1,350, wardrobe ₹1,550, ceiling ₹120, TV unit ₹1,450, panelling ₹450
-      per sq.ft; full home from ₹4.8 lakh.
+      per sq.ft; full home from ₹3.9 lakh.
 - [ ] Grade multipliers ×1.00 / ×1.35 / ×1.75 and the ±range (×0.95 / ×1.08).
 - [ ] Derived "From" prices on service and grade cards (₹1,820, ₹2,360, ₹2,090, ₹2,710, ₹162,
       ₹210 per sq.ft).

@@ -7,22 +7,23 @@ TanStack Start (file routes, SSR) + React 19 + Tailwind CSS v4 + shadcn/ui + `mo
 The references live outside the repo during the build at
 `C:\Users\Aditya\AppData\Local\Temp\claude\D--KINBOX-CTRL-shivansinteriorsolution-main\6ff0629a-e2c4-4753-a913-3ec286da7103\images\<n>.webp`:
 
-| # | Screen | Route |
-|---|--------|-------|
-| 1 | Home, full page | `/` |
-| 2 | Home, hero detail (header, ruler, hero, marquee, manifesto, stats) | `/` |
-| 3 | Projects: grid view (left) and map view (right) | `/projects` |
-| 4 | Project case study: Teal & Copper Kitchen | `/projects/teal-copper-kitchen` |
-| 5, 6 | Services overview (two renders, same layout) | `/services` |
-| 7 | Service detail: Modular Kitchens (two columns of one long page) | `/services/modular-kitchens` |
-| 8 | How We Build | `/how-we-build` |
-| 9 | About | `/about` |
-| 10 | Estimator | `/estimator` |
-| 11 | Contact & booking | `/contact` |
-| 12 | Booking confirmed | `/contact/thank-you` |
-| 13 | Journal listing | `/journal` |
-| 14 | Journal article: BWP vs MR plywood | `/journal/bwp-vs-mr-plywood` |
-| 15 | 404 | any unknown URL |
+| #    | Screen                                                             | Route                           |
+| ---- | ------------------------------------------------------------------ | ------------------------------- |
+| 1    | Home, full page                                                    | `/`                             |
+| 2    | Home, hero detail (header, ruler, hero, marquee, manifesto, stats) | `/`                             |
+| 3    | Projects: grid view (left) and map view (right)                    | `/projects`                     |
+| 4    | Project case study: Teal & Copper Kitchen                          | `/projects/teal-copper-kitchen` |
+| 5, 6 | Services overview (two renders, same layout)                       | `/services`                     |
+| 7    | Service detail: Modular Kitchens (two columns of one long page)    | `/services/modular-kitchens`    |
+| 8    | How We Build                                                       | `/how-we-build`                 |
+| 9    | About                                                              | `/about`                        |
+| 10   | Estimator                                                          | `/estimator`                    |
+| 11   | Contact & booking                                                  | `/contact`                      |
+| 12   | Booking confirmed                                                  | `/contact/thank-you`            |
+| 13   | Journal listing                                                    | `/journal`                      |
+| 14   | Journal article: BWP vs MR plywood                                 | `/journal/bwp-vs-mr-plywood`    |
+| 15   | 404                                                                | any unknown URL                 |
+| —    | Product catalogue (no reference; built in the same system)         | `/catalogue`                    |
 
 The section-by-section spec that produced each reference is in the prompt file
 `scratchpad/tools/prompts.md` (same folder as the tools). Read the reference image first, the
@@ -32,25 +33,25 @@ prompt second: the image wins whenever they differ.
 
 ### Colours (Tailwind names, defined in `src/styles.css`)
 
-| Name | Hex | Use |
-|------|-----|-----|
-| `cloud` | #FBFAF7 | page background |
-| `linen` | #F4F1EA | alternate bands, footer, inputs |
-| `mist` | #E8F0EE | pale teal bands, chips, gradient washes |
-| `white` | #FFFFFF | cards, header glass, receipts |
-| `ink` | #0F2E30 | body text, dark headings |
-| `ink-soft` | #5C6F70 | muted text |
-| `teal` | #003C48 | headings (most h1/h2 in the references are teal), links, icons, header button |
-| `teal-hover` | #0A5E6B | teal hover |
-| `teal-soft` | #DCE9E7 | selected-chip fill, table header tint |
-| `copper` | #A9531F | primary buttons, eyebrow labels, small copper text, numbers "01" |
-| `copper-hover` | #8E4418 | button hover |
-| `copper-bright` | #C66935 | large italic headline phrase, big stat numbers, lines (24px+ only) |
-| `copper-tint` | #F7E9DE | tags, chips, soft highlights |
-| `line` | #E6E3DB | hairline borders |
-| `line-strong` | #D3CEC3 | stronger borders |
-| `whatsapp` | #25D366 | floating WhatsApp button only |
-| `walnut` / `oak` | #6B4428 / #B67945 | decorative only |
+| Name             | Hex               | Use                                                                           |
+| ---------------- | ----------------- | ----------------------------------------------------------------------------- |
+| `cloud`          | #FBFAF7           | page background                                                               |
+| `linen`          | #F4F1EA           | alternate bands, footer, inputs                                               |
+| `mist`           | #E8F0EE           | pale teal bands, chips, gradient washes                                       |
+| `white`          | #FFFFFF           | cards, header glass, receipts                                                 |
+| `ink`            | #0F2E30           | body text, dark headings                                                      |
+| `ink-soft`       | #5C6F70           | muted text                                                                    |
+| `teal`           | #003C48           | headings (most h1/h2 in the references are teal), links, icons, header button |
+| `teal-hover`     | #0A5E6B           | teal hover                                                                    |
+| `teal-soft`      | #DCE9E7           | selected-chip fill, table header tint                                         |
+| `copper`         | #A9531F           | primary buttons, eyebrow labels, small copper text, numbers "01"              |
+| `copper-hover`   | #8E4418           | button hover                                                                  |
+| `copper-bright`  | #C66935           | large italic headline phrase, big stat numbers, lines (24px+ only)            |
+| `copper-tint`    | #F7E9DE           | tags, chips, soft highlights                                                  |
+| `line`           | #E6E3DB           | hairline borders                                                              |
+| `line-strong`    | #D3CEC3           | stronger borders                                                              |
+| `whatsapp`       | #25D366           | floating WhatsApp button only                                                 |
+| `walnut` / `oak` | #6B4428 / #B67945 | decorative only                                                               |
 
 The shadcn tokens are mapped onto these (`primary`=teal, `accent`=copper, `background`=cloud,
 `secondary`/`muted`=linen, `card`=white, `border`=line, `ring`=copper), so existing `ui/*`
@@ -61,7 +62,7 @@ No dark sections anywhere. Photographs supply all the depth.
 ### Type
 
 - `font-display` Fraunces (headings, big numbers, pull quotes). Headline key phrase in
-  *italic* `text-copper-bright`. Weight 500, tight leading (1.02–1.08), tracking -0.02em.
+  _italic_ `text-copper-bright`. Weight 500, tight leading (1.02–1.08), tracking -0.02em.
 - `font-sans` Manrope (body, UI). Body 16px/1.65, lead 18px.
 - `font-mono` DM Mono (dimensions, specs, prices in tables, step numbers, meta lines like
   "KITCHEN · PREMIUM · 2024", ruler labels).
@@ -88,7 +89,7 @@ Mobile: hero 40–44px, h2 32–36px.
   components and harvested `sketch-*` PNGs; keep them behind content (`pointer-events-none`,
   `-z-10`), `opacity 0.5–0.8`, hidden on mobile where they would crowd the layout.
 - Eyebrow labels: 24px copper rule + `tracking-[0.28em] uppercase text-[11px] font-semibold
-  text-copper` (`<Eyebrow>`).
+text-copper` (`<Eyebrow>`).
 - Numbered items use DM Mono copper "01 02 03".
 - Section rhythm: `py-16 lg:py-24`. Container: `max-w-[1320px] mx-auto px-5 sm:px-8 lg:px-10`.
 - Rulers: a thin ruler along the very top with tick marks and small DM Mono numbers that doubles
@@ -115,7 +116,7 @@ src/
   routes/                      one file per route; thin: head() meta + lazyRouteComponent
     __root.tsx                 fonts, meta, <SiteChrome> around <Outlet/>, notFoundComponent
     index.tsx  projects/index.tsx  projects/$slug.tsx  services/index.tsx  services/$slug.tsx
-    how-we-build.tsx  about.tsx  estimator.tsx  contact/index.tsx  contact/thank-you.tsx
+    how-we-build.tsx  about.tsx  estimator.tsx  catalogue.tsx  contact/index.tsx  contact/thank-you.tsx
     journal/index.tsx  journal/$slug.tsx
   components/
     site/                      shared chrome + primitives (owned by the foundation)
@@ -157,30 +158,30 @@ Rules that keep parallel work safe:
 
 ## 3. Shared components (contract; implemented in `src/components/site/`)
 
-| Component | Props / behaviour |
-|-----------|-------------------|
-| `SiteChrome` | wraps pages: `<RulerBar/>`, `<SiteHeader/>`, `<main>`, `<SiteFooter/>`, `<WhatsAppFab/>`, `<MobileActionBar/>`, Lenis provider |
-| `SiteHeader` | logo (monogram + wordmark "Shivansh / INTERIOR SOLUTIONS"), nav from `NAV` with copper underline on active, right: `LangToggle` (EN \| हिंदी), round phone button (`tel:`), teal pill "Book a free site visit →" → `/contact`; white glass, hairline after 80px, hide/show on scroll; mobile menu button → `MobileMenu` |
-| `SiteFooter` | brand column (logo + "Interiors built with craft, not shortcuts."), Studio, Explore, Services, Visit & Contact (address, phone, email, social icons), right column "Send us your floor plan on WhatsApp and we'll send an estimate." + copper "Chat on WhatsApp →"; giant faint "Shivansh" wordmark; bottom row © year · Privacy · Terms · Sitemap |
-| `Container` | `className?`; max-w 1320 |
-| `Section` | `id? tone?: "cloud" \| "linen" \| "mist" \| "white"`, `wash?`, `grid?`, `jali?`, `className?`, padding `py-16 lg:py-24` |
-| `Eyebrow` | `children`, `className?` |
-| `Heading` | `as?: "h1"\|"h2"\|"h3"`, `size?: "display"\|"xl"\|"lg"\|"md"`, `tone?: "teal"\|"ink"`, children may include `<em>` (renders italic copper-bright) |
-| `Button` | `variant: "primary" (copper) \| "secondary" (teal outline) \| "teal" (solid) \| "ghost" \| "whatsapp"`, `size?: "sm"\|"md"\|"lg"`, `arrow?`, `icon?`, renders `<Link>` when `to`, `<a>` when `href`, else `<button>` |
-| `Chip` | `tone?: "mist"\|"copper"\|"white"\|"teal"`, `selected?`, `icon?` |
-| `Card` | white card with border+shadow; `hover?` lifts |
-| `PhotoPanel` | `src alt`, `radius?`, `offset?: "mist"` (12px-offset Mist rectangle behind), `aspect?`, `className?` |
-| `Reveal` | `as?`, `delay?`, `y?`, wraps children with `data-reveal` |
-| `CountUp` | `to: number`, `suffix?`, `prefix?`, `duration?` |
-| `Marquee` | `items: string[]`, `speed?` |
-| `SlatReveal` | wraps an `<img>`; 7 Linen slats collapse on enter |
-| `BeforeAfterSlider` | `before: {src, alt, label}`, `after: {...}`, `initial?`, keyboard + touch, round white compass handle |
-| `FaqAccordion` | `items: {q, a}[]`, numbered 01…, first open by default, plus/minus |
-| `ProjectCard` | `project: Project`, `variant?: "grid"\|"wide"`; glass location chip, Fraunces title, DM Mono meta |
-| `ArticleCard` | `article: Article`, `variant?: "featured"\|"grid"` |
-| `CtaBand` | `title` (may include `<em>`), `text?`, `primary: {label, to|href}`, `secondary?`, gradient wash + sketches |
-| `Sketch` | `kind: "plant"\|"plant-large"\|"arch"\|"jali"\|"kitchen"\|"ladder"`, positioned decor, `className?` |
-| `HandNote` | `children`, `arrow?: "down-left"\|"down-right"\|"left"\|"right"`, `className?` |
+| Component                                                                                                           | Props / behaviour                                                                                                                                                                                                                                                                                                                                  |
+| ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `SiteChrome`                                                                                                        | wraps pages: `<RulerBar/>`, `<SiteHeader/>`, `<main>`, `<SiteFooter/>`, `<WhatsAppFab/>`, `<MobileActionBar/>`, Lenis provider                                                                                                                                                                                                                     |
+| `SiteHeader`                                                                                                        | logo (monogram + wordmark "Shivansh / INTERIOR SOLUTIONS"), nav from `NAV` with copper underline on active, right: `LangToggle` (EN \| हिंदी), round phone button (`tel:`), teal pill "Book a free site visit →" → `/contact`; white glass, hairline after 80px, hide/show on scroll; mobile menu button → `MobileMenu`                            |
+| `SiteFooter`                                                                                                        | brand column (logo + "Interiors built with craft, not shortcuts."), Studio, Explore, Services, Visit & Contact (address, phone, email, social icons), right column "Send us your floor plan on WhatsApp and we'll send an estimate." + copper "Chat on WhatsApp →"; giant faint "Shivansh" wordmark; bottom row © year · Privacy · Terms · Sitemap |
+| `Container`                                                                                                         | `className?`; max-w 1320                                                                                                                                                                                                                                                                                                                           |
+| `Section`                                                                                                           | `id? tone?: "cloud" \| "linen" \| "mist" \| "white"`, `wash?`, `grid?`, `jali?`, `className?`, padding `py-16 lg:py-24`                                                                                                                                                                                                                            |
+| `Eyebrow`                                                                                                           | `children`, `className?`                                                                                                                                                                                                                                                                                                                           |
+| `Heading`                                                                                                           | `as?: "h1"\|"h2"\|"h3"`, `size?: "display"\|"xl"\|"lg"\|"md"`, `tone?: "teal"\|"ink"`, children may include `<em>` (renders italic copper-bright)                                                                                                                                                                                                  |
+| `Button`                                                                                                            | `variant: "primary" (copper) \| "secondary" (teal outline) \| "teal" (solid) \| "ghost" \| "whatsapp"`, `size?: "sm"\|"md"\|"lg"`, `arrow?`, `icon?`, renders `<Link>` when `to`, `<a>` when `href`, else `<button>`                                                                                                                               |
+| `Chip`                                                                                                              | `tone?: "mist"\|"copper"\|"white"\|"teal"`, `selected?`, `icon?`                                                                                                                                                                                                                                                                                   |
+| `Card`                                                                                                              | white card with border+shadow; `hover?` lifts                                                                                                                                                                                                                                                                                                      |
+| `PhotoPanel`                                                                                                        | `src alt`, `radius?`, `offset?: "mist"` (12px-offset Mist rectangle behind), `aspect?`, `className?`                                                                                                                                                                                                                                               |
+| `Reveal`                                                                                                            | `as?`, `delay?`, `y?`, wraps children with `data-reveal`                                                                                                                                                                                                                                                                                           |
+| `CountUp`                                                                                                           | `to: number`, `suffix?`, `prefix?`, `duration?`                                                                                                                                                                                                                                                                                                    |
+| `Marquee`                                                                                                           | `items: string[]`, `speed?`                                                                                                                                                                                                                                                                                                                        |
+| `SlatReveal`                                                                                                        | wraps an `<img>`; 7 Linen slats collapse on enter                                                                                                                                                                                                                                                                                                  |
+| `BeforeAfterSlider`                                                                                                 | `before: {src, alt, label}`, `after: {...}`, `initial?`, keyboard + touch, round white compass handle                                                                                                                                                                                                                                              |
+| `FaqAccordion`                                                                                                      | `items: {q, a}[]`, numbered 01…, first open by default, plus/minus                                                                                                                                                                                                                                                                                 |
+| `ProjectCard`                                                                                                       | `project: Project`, `variant?: "grid"\|"wide"`; glass location chip, Fraunces title, DM Mono meta                                                                                                                                                                                                                                                  |
+| `ArticleCard`                                                                                                       | `article: Article`, `variant?: "featured"\|"grid"`                                                                                                                                                                                                                                                                                                 |
+| `CtaBand`                                                                                                           | `title` (may include `<em>`), `text?`, `primary: {label, to                                                                                                                                                                                                                                                                                        | href}`, `secondary?`, gradient wash + sketches |
+| `Sketch`                                                                                                            | `kind: "plant"\|"plant-large"\|"arch"\|"jali"\|"kitchen"\|"ladder"`, positioned decor, `className?`                                                                                                                                                                                                                                                |
+| `HandNote`                                                                                                          | `children`, `arrow?: "down-left"\|"down-right"\|"left"\|"right"`, `className?`                                                                                                                                                                                                                                                                     |
 | `RulerBar`, `VerticalRuler`, `MobileActionBar`, `WhatsAppFab`, `WhatsAppIcon`, `SocialIcons`, `Lightbox` (optional) |
 
 ## 4. Content model (in `src/content/`)
@@ -203,9 +204,13 @@ Rules that keep parallel work safe:
 - `team.ts`: `FOUNDER_NOTE`, `MILESTONES` (2014…Today), `WORKSHOP_PHOTOS`, `VALUES`, `TEAM`, `PROMISES`.
 - `faqs.ts`: `SERVICES_FAQ`, `ESTIMATOR_FAQ`, `CONTACT_FAQ`.
 - `testimonials.ts`: 3 quotes (name, town, project, image).
-- `pricing.ts`: `RATES` (kitchen 1350, wardrobe 1550, ceiling 120, tvUnit, panelling per sq.ft;
-  fullHome from 480000), `GRADE_MULTIPLIER` (1 / 1.35 / 1.75), `estimate(config)` → line items +
-  low/high (×0.95 / ×1.08), `formatINR`, `formatLakh`, `HOME_TYPES` presets.
+- `pricing.ts`: `RATE_CARD` (per-part 2026 rates: carcass, finish, hardware, labour, counters,
+  accessories, ceilings, lighting, panels), `SPACES` with per-space `options` (layout, board,
+  finish, hardware, counter, loft, lighting …), `GRADE_DEFAULTS`, `estimate(config)` → itemised
+  lines with `parts`, subtotal, logistics, 18% GST, total and a ×0.95 / ×1.08 range; `quickEstimate`,
+  `gradeRate`, `formatINR`, `formatLakh`, `HOME_TYPES` presets.
+- `catalogue.ts`: `CATALOGUE_CATEGORIES`, `PRODUCTS` (indicative ex-GST prices per sq.ft / rft /
+  sheet / pair / set), `CATALOGUE_PAGE` copy.
 - `PLACEHOLDERS.md` (repo root): every placeholder (photos, names, years, quotes, hours, prices to
   confirm) so the client can replace them.
 
