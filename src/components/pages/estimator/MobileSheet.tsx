@@ -128,7 +128,7 @@ export function MobileSheet({ config, result, receiptRef }: MobileSheetProps) {
                       <span className="min-w-0">
                         <span className="block font-medium text-ink">{line.label}</span>
                         <span className="block font-mono text-[11px] text-ink-soft">
-                          {line.area} sq.ft · {GRADE_LABEL[line.grade]}
+                          {line.area} sq.ft · {line.summary || GRADE_LABEL[line.grade]}
                         </span>
                       </span>
                       <span className="font-display text-[18px] font-medium text-ink">
@@ -138,6 +138,14 @@ export function MobileSheet({ config, result, receiptRef }: MobileSheetProps) {
                   ))}
                   {result.lines.length === 0 && (
                     <li className="py-2 text-[13px] text-ink-soft">No spaces selected yet.</li>
+                  )}
+                  {result.lines.length > 0 && (
+                    <li className="flex items-center justify-between gap-3 py-2 text-[12px] text-ink-soft">
+                      <span>
+                        {COPY.logisticsLabel} + {COPY.gstLabel}
+                      </span>
+                      <span className="font-mono">{formatINR(result.logistics + result.gst)}</span>
+                    </li>
                   )}
                 </ul>
                 <p className="mt-2 text-[11px] leading-snug text-ink-soft">{COPY.note}</p>

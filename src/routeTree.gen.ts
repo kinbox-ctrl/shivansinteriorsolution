@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as CatalogueRouteImport } from './routes/catalogue'
 import { Route as EstimatorRouteImport } from './routes/estimator'
 import { Route as HowWeBuildRouteImport } from './routes/how-we-build'
 import { Route as ContactIndexRouteImport } from './routes/contact/index'
@@ -30,6 +31,11 @@ const IndexRoute = IndexRouteImport.update({
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CatalogueRoute = CatalogueRouteImport.update({
+  id: '/catalogue',
+  path: '/catalogue',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EstimatorRoute = EstimatorRouteImport.update({
@@ -86,6 +92,7 @@ const ServicesSlugRoute = ServicesSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/catalogue': typeof CatalogueRoute
   '/estimator': typeof EstimatorRoute
   '/how-we-build': typeof HowWeBuildRoute
   '/contact/thank-you': typeof ContactThankYouRoute
@@ -100,6 +107,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/catalogue': typeof CatalogueRoute
   '/estimator': typeof EstimatorRoute
   '/how-we-build': typeof HowWeBuildRoute
   '/contact/thank-you': typeof ContactThankYouRoute
@@ -115,6 +123,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/catalogue': typeof CatalogueRoute
   '/estimator': typeof EstimatorRoute
   '/how-we-build': typeof HowWeBuildRoute
   '/contact/thank-you': typeof ContactThankYouRoute
@@ -131,6 +140,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/catalogue'
     | '/estimator'
     | '/how-we-build'
     | '/contact/thank-you'
@@ -145,6 +155,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/catalogue'
     | '/estimator'
     | '/how-we-build'
     | '/contact/thank-you'
@@ -159,6 +170,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/catalogue'
     | '/estimator'
     | '/how-we-build'
     | '/contact/thank-you'
@@ -174,6 +186,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  CatalogueRoute: typeof CatalogueRoute
   EstimatorRoute: typeof EstimatorRoute
   HowWeBuildRoute: typeof HowWeBuildRoute
   ContactThankYouRoute: typeof ContactThankYouRoute
@@ -200,6 +213,13 @@ declare module '@tanstack/react-router' {
       path: '/about'
       fullPath: '/about'
       preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/catalogue': {
+      id: '/catalogue'
+      path: '/catalogue'
+      fullPath: '/catalogue'
+      preLoaderRoute: typeof CatalogueRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/estimator': {
@@ -278,6 +298,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  CatalogueRoute: CatalogueRoute,
   EstimatorRoute: EstimatorRoute,
   HowWeBuildRoute: HowWeBuildRoute,
   ContactThankYouRoute: ContactThankYouRoute,

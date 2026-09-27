@@ -101,7 +101,7 @@ export const ARTICLES: Article[] = [
                 "Blum / Hettich premium",
               ],
               ["Hardware warranty", "1 year", "5 years", "10 years"],
-              ["Price from", "₹1,350/sq.ft", "₹1,820/sq.ft", "₹2,360/sq.ft"],
+              ["Price from", "₹1,350/sq.ft", "₹2,000/sq.ft", "₹2,590/sq.ft"],
             ],
           },
           {

@@ -133,8 +133,11 @@ export function EstimatorPage() {
                 >
                   <SpaceRows
                     spaces={config.spaces}
+                    grade={config.grade}
                     onToggle={(id, on) => dispatch({ type: "toggle", id, on })}
                     onArea={(id, area) => dispatch({ type: "area", id, area })}
+                    onOption={(id, group, value) => dispatch({ type: "option", id, group, value })}
+                    onResetOptions={(id) => dispatch({ type: "resetOptions", id })}
                   />
                 </StepRow>
                 <StepRow

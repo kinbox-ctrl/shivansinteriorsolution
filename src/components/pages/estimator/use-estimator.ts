@@ -3,7 +3,8 @@ import {
   SPACE_BY_ID,
   defaultConfig,
   estimate,
-  getHomeType,
+  optionsForGrade,
+  spacesForHome,
   type EstimateConfig,
   type EstimateResult,
   type GradeId,
@@ -19,6 +20,8 @@ export type EstimatorAction =
   | { type: "home"; id: HomeTypeId }
   | { type: "toggle"; id: SpaceId; on: boolean }
   | { type: "area"; id: SpaceId; area: number }
+  | { type: "option"; id: SpaceId; group: string; value: string }
+  | { type: "resetOptions"; id: SpaceId }
   | { type: "grade"; id: GradeId };
 
 export function clampArea(id: SpaceId, area: number): number {
@@ -31,18 +34,11 @@ export function estimatorReducer(state: EstimatorState, action: EstimatorAction)
   switch (action.type) {
     case "home": {
       if (action.id === state.config.homeType) return state;
-      const preset = getHomeType(action.id).spaces;
       return {
         config: {
           ...state.config,
           homeType: action.id,
-          spaces: {
-            kitchen: { ...preset.kitchen },
-            wardrobe: { ...preset.wardrobe },
-            ceiling: { ...preset.ceiling },
-            tvUnit: { ...preset.tvUnit },
-            panelling: { ...preset.panelling },
-          },
+          spaces: spacesForHome(action.id, state.config.grade),
         },
         touched: { ...state.touched, home: true },
       };
@@ -70,10 +66,45 @@ export function estimatorReducer(state: EstimatorState, action: EstimatorAction)
         touched: { ...state.touched, spaces: true },
       };
     }
+    case "option": {
+      const current = state.config.spaces[action.id];
+      if (current.options[action.group] === action.value) return state;
+      return {
+        config: {
+          ...state.config,
+          spaces: {
+            ...state.config.spaces,
+            [action.id]: {
+              ...current,
+              options: { ...current.options, [action.group]: action.value },
+            },
+          },
+        },
+        touched: { ...state.touched, spaces: true, grade: true },
+      };
+    }
+    case "resetOptions": {
+      const current = state.config.spaces[action.id];
+      return {
+        config: {
+          ...state.config,
+          spaces: {
+            ...state.config.spaces,
+            [action.id]: { ...current, options: optionsForGrade(action.id, state.config.grade) },
+          },
+        },
+        touched: state.touched,
+      };
+    }
     case "grade": {
       if (action.id === state.config.grade) return state;
+      // A grade sets the board, finish and hardware for every space.
+      const spaces = { ...state.config.spaces };
+      for (const id of Object.keys(spaces) as SpaceId[]) {
+        spaces[id] = { ...spaces[id], options: optionsForGrade(id, action.id) };
+      }
       return {
-        config: { ...state.config, grade: action.id },
+        config: { ...state.config, grade: action.id, spaces },
         touched: { ...state.touched, grade: true },
       };
     }
@@ -95,7 +126,7 @@ export type Estimator = {
   dispatch: (action: EstimatorAction) => void;
 };
 
-/** Configurator state: home type preset, spaces (on/area), grade, and the derived estimate. */
+/** Configurator state: home type preset, spaces (on/area/options), grade, and the estimate. */
 export function useEstimator(): Estimator {
   const [state, dispatch] = useReducer(estimatorReducer, undefined, init);
   const result = useMemo(() => estimate(state.config), [state.config]);

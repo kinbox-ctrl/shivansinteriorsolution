@@ -1,4 +1,4 @@
-import { Download, MapPin } from "lucide-react";
+import { ChevronDown, Download, MapPin } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState, type Ref } from "react";
 import { Button } from "@/components/site";
@@ -9,6 +9,7 @@ import {
   formatINR,
   formatLakh,
   formatLakhRange,
+  formatQty,
   getHomeType,
   roundTo100,
   type EstimateConfig,
@@ -102,6 +103,7 @@ export type ReceiptProps = {
 export function Receipt({ config, result, className, ref }: ReceiptProps) {
   const home = getHomeType(config.homeType);
   const [opening, setOpening] = useState(false);
+  const [breakdown, setBreakdown] = useState(false);
   useEffect(() => {
     if (!opening) return;
     const t = window.setTimeout(() => setOpening(false), 2500);
@@ -197,7 +199,7 @@ export function Receipt({ config, result, className, ref }: ReceiptProps) {
                       <span className="text-[13px] leading-tight font-medium text-ink">
                         {line.label}
                         <span className="block font-mono text-[11px] text-ink-soft sm:hidden">
-                          {line.area} sq.ft · {GRADE_LABEL[line.grade]}
+                          {line.area} sq.ft · {line.summary || GRADE_LABEL[line.grade]}
                         </span>
                       </span>
                     </span>
@@ -205,8 +207,13 @@ export function Receipt({ config, result, className, ref }: ReceiptProps) {
                   <td className="hidden py-3 pr-2 font-mono text-[13px] text-ink-soft sm:table-cell">
                     {line.area} sq.ft
                   </td>
-                  <td className="hidden py-3 pr-2 text-[13px] text-ink-soft sm:table-cell">
-                    {GRADE_LABEL[line.grade]}
+                  <td className="hidden max-w-[150px] py-3 pr-2 text-[12px] leading-snug text-ink-soft sm:table-cell">
+                    {line.summary || GRADE_LABEL[line.grade]}
+                    {line.custom && (
+                      <span className="ml-1 font-mono text-[10px] tracking-[0.1em] text-copper uppercase">
+                        custom
+                      </span>
+                    )}
                   </td>
                   <td className="py-3 text-right">
                     <Tween
@@ -219,6 +226,36 @@ export function Receipt({ config, result, className, ref }: ReceiptProps) {
               );
             })}
           </AnimatePresence>
+          {breakdown &&
+            result.lines.map((line) => (
+              <tr key={`${line.id}-parts`} className="border-b border-line/80 bg-cloud/60">
+                <td colSpan={4} className="px-2 py-2">
+                  <p className="mb-1 font-mono text-[10px] tracking-[0.12em] text-ink-soft uppercase">
+                    {line.label}
+                  </p>
+                  <ul className="m-0 grid list-none gap-1 p-0">
+                    {line.parts.map((p) => (
+                      <li
+                        key={p.id}
+                        className="flex items-baseline justify-between gap-3 text-[12px] leading-snug"
+                      >
+                        <span className="min-w-0 text-ink">
+                          {p.label}
+                          {formatQty(p) && (
+                            <span className="ml-1.5 font-mono text-[11px] text-ink-soft">
+                              {formatQty(p)} × {formatINR(p.rate)}
+                            </span>
+                          )}
+                        </span>
+                        <span className="shrink-0 font-mono text-[12px] text-ink">
+                          {formatINR(p.amount)}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </td>
+              </tr>
+            ))}
           {result.lines.length === 0 && (
             <tr>
               <td colSpan={4} className="py-4 text-[13px] text-ink-soft">
@@ -229,7 +266,43 @@ export function Receipt({ config, result, className, ref }: ReceiptProps) {
         </tbody>
       </table>
 
-      <div className="mt-6">
+      {result.lines.length > 0 && (
+        <>
+          <button
+            type="button"
+            onClick={() => setBreakdown((v) => !v)}
+            aria-expanded={breakdown}
+            className="mt-2 inline-flex items-center gap-1 rounded-full py-1 text-[12.5px] font-semibold text-copper focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-copper"
+            data-print-hide
+          >
+            {breakdown ? COPY.breakdownClose : COPY.breakdown}
+            <ChevronDown
+              className={cn(
+                "size-4 transition-transform duration-300 ease-soft",
+                breakdown && "rotate-180",
+              )}
+              strokeWidth={1.5}
+              aria-hidden
+            />
+          </button>
+          <dl className="mt-3 grid gap-1.5 border-t border-line pt-3 text-[13px]">
+            <div className="flex justify-between gap-3">
+              <dt className="text-ink-soft">{COPY.subtotalLabel}</dt>
+              <dd className="m-0 font-mono text-ink">{formatINR(result.subtotal)}</dd>
+            </div>
+            <div className="flex justify-between gap-3">
+              <dt className="text-ink-soft">{COPY.logisticsLabel}</dt>
+              <dd className="m-0 font-mono text-ink">{formatINR(result.logistics)}</dd>
+            </div>
+            <div className="flex justify-between gap-3">
+              <dt className="text-ink-soft">{COPY.gstLabel}</dt>
+              <dd className="m-0 font-mono text-ink">{formatINR(result.gst)}</dd>
+            </div>
+          </dl>
+        </>
+      )}
+
+      <div className="mt-5">
         <p className="text-[15px] font-medium text-ink">{COPY.totalLabel}</p>
         <p className="mt-1 font-display text-[36px] leading-none font-medium tracking-[-0.02em] text-teal sm:text-[42px] lg:text-[44px]">
           <TweenRange low={result.low} high={result.high} />

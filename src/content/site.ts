@@ -49,21 +49,27 @@ export const WHATSAPP_PHOTO = waLink(
   "Hello Shivansh Interior Solutions, here is a photo of my space. What would you suggest?",
 );
 
-export type NavItem = { label: string; to: string };
+export type NavItem = {
+  label: string;
+  to: string;
+  /** Hide in the desktop header below xl. */ compact?: boolean;
+};
 
 export const NAV: NavItem[] = [
   { label: "Projects", to: "/projects" },
   { label: "Services", to: "/services" },
+  { label: "Catalogue", to: "/catalogue" },
   { label: "How We Build", to: "/how-we-build" },
   { label: "About", to: "/about" },
   { label: "Estimator", to: "/estimator" },
-  { label: "Journal", to: "/journal" },
+  { label: "Journal", to: "/journal", compact: true },
   { label: "Contact", to: "/contact" },
 ];
 
 export const FOOTER_EXPLORE: NavItem[] = [
   { label: "Projects", to: "/projects" },
   { label: "Services", to: "/services" },
+  { label: "Catalogue", to: "/catalogue" },
   { label: "How We Build", to: "/how-we-build" },
   { label: "About", to: "/about" },
   { label: "Estimator", to: "/estimator" },
