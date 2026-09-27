@@ -152,7 +152,7 @@ export function ProjectMap({ projects }: ProjectMapProps) {
       </div>
 
       {/* Map panel */}
-      <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-line bg-linen shadow-soft sm:aspect-[16/10] lg:aspect-auto lg:h-[620px]">
+      <div className="relative aspect-[10/7] overflow-hidden rounded-3xl border border-line bg-linen shadow-soft lg:aspect-auto lg:h-[620px]">
         <img
           src={img("map-region")}
           alt="Map of the Sambhar, Nawa and Jaipur region with project locations"

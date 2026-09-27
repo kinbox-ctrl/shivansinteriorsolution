@@ -1,44 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1140" preserveAspectRatio="xMidYMid slice" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid slice" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
   <defs>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M40 0H0V40" fill="none" stroke="#E6E3DB" stroke-width="0.8"/>
     </pattern>
   </defs>
-  <rect width="1000" height="1140" fill="#F4F1EA"/>
-  <rect width="1000" height="1140" fill="url(#grid)"/>
+  <rect width="1000" height="700" fill="#F4F1EA"/>
+  <rect width="1000" height="700" fill="url(#grid)"/>
   <g fill="#ECE8DF">
-    <path d="M0 120C120 80 260 140 400 100S640 60 780 110 920 90 1000 130V0H0Z"/>
-    <path d="M0 1140C150 1080 300 1120 470 1060S760 1100 1000 1040V1140Z"/>
-    <path d="M620 380C700 340 820 360 900 420S960 560 880 620 700 640 640 560 560 420 620 380Z"/>
+    <path d="M0 70C120 40 260 90 400 60S640 20 780 70 920 50 1000 80V0H0Z"/>
+    <path d="M0 700C150 650 300 690 470 640S760 680 1000 620V700Z"/>
+    <path d="M700 300C760 260 860 280 920 330S950 450 880 480 740 480 700 420 660 330 700 300Z"/>
   </g>
-  <!-- Sambhar Lake -->
-  <path d="M120 470C170 400 280 380 360 400 430 420 470 470 500 470 560 470 590 520 560 580 530 640 450 650 390 640 320 630 280 680 210 660 140 640 80 560 120 470Z" fill="#DCE9E7" stroke="#B8D3CF" stroke-width="2"/>
-  <text x="330" y="545" text-anchor="middle" font-size="20" font-style="italic" fill="#5C8F8B">Sambhar Lake</text>
+  <!-- Sambhar Lake: Sambhar town sits on its north-east shore -->
+  <path d="M150 300C190 240 290 220 360 240 420 255 450 290 470 300 520 320 540 360 510 400 480 440 410 445 350 435 290 428 250 460 200 445 140 425 110 360 150 300Z" fill="#DCE9E7" stroke="#B8D3CF" stroke-width="2"/>
+  <text x="320" y="350" text-anchor="middle" font-size="18" font-style="italic" fill="#5C8F8B">Sambhar Lake</text>
   <!-- roads -->
   <g fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M40 820C160 720 340 560 470 440S700 300 1000 330"/>
-    <path d="M560 330C600 440 620 560 700 660S820 900 860 1140"/>
-    <path d="M470 440C520 520 600 600 690 700"/>
-    <path d="M0 300C120 320 220 310 330 260"/>
+    <path d="M60 600C160 520 340 400 470 280S720 250 1000 300"/>
+    <path d="M560 150C590 240 620 340 690 470S820 620 860 700"/>
+    <path d="M470 280C540 330 620 400 690 470"/>
+    <path d="M0 200C120 220 230 200 330 110"/>
   </g>
   <g fill="none" stroke="#D3CEC3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M40 820C160 720 340 560 470 440S700 300 1000 330"/>
-    <path d="M560 330C600 440 620 560 700 660S820 900 860 1140"/>
-    <path d="M470 440C520 520 600 600 690 700"/>
-    <path d="M0 300C120 320 220 310 330 260"/>
+    <path d="M60 600C160 520 340 400 470 280S720 250 1000 300"/>
+    <path d="M560 150C590 240 620 340 690 470S820 620 860 700"/>
+    <path d="M470 280C540 330 620 400 690 470"/>
+    <path d="M0 200C120 220 230 200 330 110"/>
   </g>
+  <text x="780" y="262" font-size="12" fill="#8A8479" transform="rotate(4 780 262)">NH-48 · Nawa Road</text>
   <!-- towns -->
   <g fill="#FFFFFF" stroke="#B9B2A4" stroke-width="1.5">
-    <circle cx="470" cy="440" r="7"/><circle cx="40" cy="820" r="7"/><circle cx="900" cy="700" r="8"/><circle cx="560" cy="330" r="5"/><circle cx="690" cy="700" r="5"/><circle cx="330" cy="260" r="5"/><circle cx="760" cy="960" r="5"/><circle cx="820" cy="380" r="5"/>
+    <circle cx="470" cy="280" r="7"/><circle cx="60" cy="600" r="7"/><circle cx="900" cy="480" r="8"/><circle cx="560" cy="150" r="5"/><circle cx="690" cy="470" r="5"/><circle cx="330" cy="110" r="5"/><circle cx="760" cy="640" r="5"/><circle cx="820" cy="150" r="5"/>
   </g>
   <g font-size="17" font-weight="600" fill="#0F2E30">
-    <text x="470" y="414" text-anchor="middle">Sambhar</text>
-    <text x="40" y="852" text-anchor="middle">Nawa</text>
-    <text x="900" y="735" text-anchor="middle" font-size="20">Jaipur</text>
-    <text x="560" y="312" text-anchor="middle" font-weight="500" font-size="14">Phulera</text>
-    <text x="690" y="730" text-anchor="middle" font-weight="500" font-size="14">Jobner</text>
-    <text x="330" y="244" text-anchor="middle" font-weight="500" font-size="14">Kishangarh Renwal</text>
-    <text x="760" y="990" text-anchor="middle" font-weight="500" font-size="14">Bagru</text>
-    <text x="820" y="364" text-anchor="middle" font-weight="500" font-size="14">Chomu</text>
+    <text x="470" y="256" text-anchor="middle">Sambhar</text>
+    <text x="60" y="632" text-anchor="middle">Nawa</text>
+    <text x="900" y="516" text-anchor="middle" font-size="20">Jaipur</text>
+    <text x="560" y="134" text-anchor="middle" font-weight="500" font-size="14">Phulera</text>
+    <text x="690" y="500" text-anchor="middle" font-weight="500" font-size="14">Jobner</text>
+    <text x="330" y="96" text-anchor="middle" font-weight="500" font-size="14">Kishangarh Renwal</text>
+    <text x="760" y="670" text-anchor="middle" font-weight="500" font-size="14">Bagru</text>
+    <text x="820" y="136" text-anchor="middle" font-weight="500" font-size="14">Chomu</text>
   </g>
 </svg>
