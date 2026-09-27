@@ -27,7 +27,9 @@ export const HOURS = [
 
 const MAP_QUERY = encodeURIComponent("Sambhar Lake, Nawa Road, Sambhar, Jaipur, Rajasthan 303604");
 export const MAP_LINK = `https://www.google.com/maps/search/?api=1&query=${MAP_QUERY}`;
-export const MAP_EMBED = `https://www.google.com/maps?q=${MAP_QUERY}&z=13&output=embed`;
+/** The embed centres on Sambhar town itself: "Nawa Road" alone geocodes to Nawa. */
+const MAP_EMBED_QUERY = encodeURIComponent("Sambhar Lake Town, Jaipur, Rajasthan 303604");
+export const MAP_EMBED = `https://www.google.com/maps?q=${MAP_EMBED_QUERY}&z=14&output=embed`;
 
 /** Google Maps embed centred on a town in the Jaipur region (no API key needed). */
 export function mapEmbedFor(place: string): string {

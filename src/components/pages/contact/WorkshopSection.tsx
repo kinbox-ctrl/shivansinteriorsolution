@@ -21,7 +21,7 @@ export function WorkshopSection() {
           </Reveal>
 
           <Reveal delay={70} className="relative">
-            <div className="relative overflow-hidden rounded-4xl bg-linen shadow-soft lg:h-[256px]">
+            <div className="relative overflow-hidden rounded-4xl bg-linen shadow-soft lg:h-[330px]">
               <iframe
                 src={MAP_EMBED}
                 title={`Google map of the ${SITE_NAME} workshop in Sambhar`}
@@ -31,7 +31,7 @@ export function WorkshopSection() {
                 className="block aspect-[16/7] h-full w-full border-0 lg:aspect-auto"
               />
             </div>
-            <div className="relative mx-4 -mt-8 flex flex-col rounded-2xl border border-line bg-white p-5 shadow-lift lg:absolute lg:inset-y-2.5 lg:right-2.5 lg:mx-0 lg:mt-0 lg:w-[222px] lg:justify-between lg:p-3.5">
+            <div className="relative mx-4 -mt-8 flex flex-col rounded-2xl border border-line bg-white p-5 shadow-lift lg:absolute lg:inset-y-3 lg:right-3 lg:mx-0 lg:mt-0 lg:w-[232px] lg:justify-between lg:overflow-hidden lg:p-4">
               <div>
                 <p className="text-[14px] font-semibold leading-tight whitespace-nowrap text-teal">
                   {SITE_NAME}
@@ -88,7 +88,7 @@ export function WorkshopSection() {
           </Reveal>
 
           <Reveal delay={140}>
-            <div className="overflow-hidden rounded-3xl shadow-soft lg:h-[256px]">
+            <div className="overflow-hidden rounded-3xl shadow-soft lg:h-[330px]">
               <img
                 src={img(WORKSHOP_SECTION.photo)}
                 alt={`The ${SITE_NAME} workshop in Sambhar, with the signboard and the open carpentry bay`}
