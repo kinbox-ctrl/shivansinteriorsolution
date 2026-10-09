@@ -34,7 +34,6 @@ const PLACEMENT: Record<string, Placement> = {
   "Ceiling & Lights": { dot: { x: 50.1, y: 15.1 }, chip: { left: 54.7, top: 6.6, w: 19.2 } },
   Wardrobes: { dot: { x: 28.5, y: 29.2 }, chip: { left: 11, top: 25.9, w: 13.6 } },
   "Wall Panels": { dot: { x: 87.8, y: 52.2 }, chip: { left: 90.4, top: 49.1, w: 15.5 } },
-  Kitchen: { dot: { x: 31.2, y: 57.9 }, chip: { left: 31.4, top: 62.1, w: 11.4 } },
   "Living Room": { dot: { x: 67.5, y: 74.5 }, chip: { left: 70.4, top: 71.1, w: 16.6 } },
   Flooring: { dot: { x: 46.9, y: 87.8 }, chip: { left: 49.3, top: 84.6, w: 13.1 } },
 };
@@ -138,7 +137,7 @@ export function ServicesHero() {
             <div className="relative mr-7 aspect-[3/2] @container sm:mr-0">
               <img
                 src={img("iso-home")}
-                alt="Isometric cut-away of a 3BHK home showing the kitchen, wardrobes, ceiling lights, wall panels, living room and flooring"
+                alt="Isometric cut-away of a 3BHK home showing the wardrobes, ceiling lights, wall panels, living room and flooring"
                 width={954}
                 height={636}
                 loading="eager"

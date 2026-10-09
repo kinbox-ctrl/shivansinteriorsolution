@@ -56,8 +56,8 @@ export function HomeHero() {
     <section className="wash relative overflow-x-clip bg-cloud">
       <VerticalRuler />
       <Sketch
-        kind="kitchen"
-        className="absolute bottom-2 left-[3%] hidden w-[400px] lg:block"
+        kind="jali"
+        className="absolute bottom-2 left-[3%] hidden w-[220px] lg:block"
         opacity={0.14}
       />
       <Sketch

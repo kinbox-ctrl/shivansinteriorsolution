@@ -83,9 +83,9 @@ export function EstimatorPage() {
       <Section wash className="overflow-hidden pt-10 pb-16 lg:pt-14 lg:pb-24">
         <VerticalRuler />
         <Sketch
-          kind="kitchen"
+          kind="jali"
           opacity={0.26}
-          className="absolute -top-8 right-[-120px] hidden w-[640px] xl:block"
+          className="absolute -top-8 right-[-60px] hidden w-[360px] xl:block"
         />
         <Sketch
           kind="plant-large"

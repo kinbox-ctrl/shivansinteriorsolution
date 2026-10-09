@@ -1,14 +1,14 @@
 // Estimator: rate card, options, presets and the quantity-based calculation.
 //
 // Every space is priced from its parts (board, shutter finish, hardware, labour, counters,
-// lighting …) at indicative 2026 rates for the Jaipur region. Cabinet work (kitchens, wardrobes,
+// lighting …) at indicative 2026 rates for the Jaipur region. Cabinet work (wardrobes,
 // TV units) is priced per sq.ft of cabinet (shutter) area, the industry basis; ceilings and
 // panelling per sq.ft of surface. GST at 18% is added on top, as on a real quotation.
 // The client should confirm the RATE_CARD figures before launch (see PLACEHOLDERS.md).
 
 import { waLink } from "./site";
 
-export type SpaceId = "kitchen" | "wardrobe" | "ceiling" | "tvUnit" | "panelling";
+export type SpaceId = "wardrobe" | "ceiling" | "tvUnit" | "panelling";
 export type GradeId = "standard" | "premium" | "luxury";
 export type HomeTypeId = "1bhk" | "2bhk" | "3bhk" | "4bhk" | "shop";
 
@@ -40,21 +40,13 @@ export const RATE_CARD = {
   /** Sliding track, rollers and dampers, added per sq.ft for sliding wardrobes. */
   slidingExtra: 350,
   /** Cutting, assembly, transport and installation per sq.ft of cabinet area. */
-  labour: { kitchen: 220, wardrobe: 220, tvUnit: 200 },
+  labour: { wardrobe: 220, tvUnit: 200 },
   /** Extra shelving allowance inside wardrobes and TV units. */
   shelving: { wardrobe: 120, tvUnit: 40 },
-  /** Wardrobe carcass is taller and carries more shelving than a kitchen box. */
+  /** Wardrobe carcass is taller and carries more shelving than a TV unit box. */
   wardrobeCarcassExtra: 80,
   /** Loft above a wardrobe: share of the wardrobe area, priced at laminate. */
   loftShare: 0.22,
-  /** Kitchen layout factors (corner units and returns cost more). */
-  layout: { straight: 0.95, l: 1, parallel: 1.02, u: 1.06, island: 1 },
-  /** Island unit: 6 rft of base cabinets plus counter, priced flat. */
-  islandFlat: 48000,
-  /** Countertop per sq.ft of counter (600 mm deep). */
-  counter: { none: 0, granite: 350, marble: 750, quartz: 900 },
-  /** Kitchen accessory sets, flat. */
-  accessories: { none: 0, basic: 9000, standard: 32000, full: 68000 },
   /** Wardrobe interior upgrades per sq.ft. */
   interior: { basic: 0, organised: 180, premium: 380 },
   /** False ceiling per sq.ft of ceiling, painted, including framing. */
@@ -146,54 +138,6 @@ const HARDWARE: OptionGroup = {
 };
 
 export const SPACES: Space[] = [
-  {
-    id: "kitchen",
-    label: "Modular kitchen",
-    short: "Kitchen",
-    icon: "CookingPot",
-    areaHint: "Cabinet area (base + wall units). An 8 × 10 ft kitchen is about 120 sq.ft.",
-    defaultArea: 120,
-    min: 50,
-    max: 500,
-    step: 10,
-    options: [
-      {
-        id: "layout",
-        label: "Layout",
-        choices: [
-          { id: "straight", label: "Straight" },
-          { id: "l", label: "L-shaped" },
-          { id: "parallel", label: "Parallel" },
-          { id: "u", label: "U-shaped" },
-          { id: "island", label: "Island", note: "L + island unit" },
-        ],
-      },
-      CARCASS,
-      FINISH,
-      HARDWARE,
-      {
-        id: "counter",
-        label: "Countertop",
-        hint: "600 mm deep, priced per sq.ft of counter.",
-        choices: [
-          { id: "none", label: "Keep existing" },
-          { id: "granite", label: "Granite" },
-          { id: "marble", label: "Marble" },
-          { id: "quartz", label: "Quartz" },
-        ],
-      },
-      {
-        id: "accessories",
-        label: "Accessories",
-        choices: [
-          { id: "none", label: "None" },
-          { id: "basic", label: "Basic", note: "Cutlery tray, bottle pull-out" },
-          { id: "standard", label: "Standard", note: "+ corner carousel, tall pantry" },
-          { id: "full", label: "Full", note: "+ magic corner, tandem baskets" },
-        ],
-      },
-    ],
-  },
   {
     id: "wardrobe",
     label: "Wardrobes & storage",
@@ -322,11 +266,10 @@ export const SPACES: Space[] = [
 ];
 
 export const SPACE_BY_ID: Record<SpaceId, Space> = {
-  kitchen: SPACES[0] as Space,
-  wardrobe: SPACES[1] as Space,
-  ceiling: SPACES[2] as Space,
-  tvUnit: SPACES[3] as Space,
-  panelling: SPACES[4] as Space,
+  wardrobe: SPACES[0] as Space,
+  ceiling: SPACES[1] as Space,
+  tvUnit: SPACES[2] as Space,
+  panelling: SPACES[3] as Space,
 };
 
 /** Chosen option id per option group. */
@@ -338,14 +281,6 @@ export type SpaceConfig = SpacePreset & { options: SpaceOptions };
 /** What each grade means, space by space. Changing the grade resets to these. */
 export const GRADE_DEFAULTS: Record<GradeId, Record<SpaceId, SpaceOptions>> = {
   standard: {
-    kitchen: {
-      layout: "l",
-      carcass: "mr",
-      finish: "laminate",
-      hardware: "standard",
-      counter: "granite",
-      accessories: "basic",
-    },
     wardrobe: {
       type: "hinged",
       carcass: "mr",
@@ -359,14 +294,6 @@ export const GRADE_DEFAULTS: Record<GradeId, Record<SpaceId, SpaceOptions>> = {
     panelling: { material: "laminate" },
   },
   premium: {
-    kitchen: {
-      layout: "l",
-      carcass: "bwp",
-      finish: "acrylic",
-      hardware: "hettich",
-      counter: "quartz",
-      accessories: "standard",
-    },
     wardrobe: {
       type: "hinged",
       carcass: "bwp",
@@ -380,14 +307,6 @@ export const GRADE_DEFAULTS: Record<GradeId, Record<SpaceId, SpaceOptions>> = {
     panelling: { material: "wpc" },
   },
   luxury: {
-    kitchen: {
-      layout: "l",
-      carcass: "hdhmr",
-      finish: "pu",
-      hardware: "blum",
-      counter: "quartz",
-      accessories: "full",
-    },
     wardrobe: {
       type: "sliding",
       carcass: "hdhmr",
@@ -438,7 +357,6 @@ export const HOME_TYPES: HomeType[] = [
     range: "Up to 600 sq.ft",
     icon: "Home",
     spaces: {
-      kitchen: { on: true, area: 80 },
       wardrobe: { on: true, area: 40 },
       ceiling: { on: true, area: 150 },
       tvUnit: { on: false, area: 30 },
@@ -451,7 +369,6 @@ export const HOME_TYPES: HomeType[] = [
     range: "600 – 1,000 sq.ft",
     icon: "Home",
     spaces: {
-      kitchen: { on: true, area: 100 },
       wardrobe: { on: true, area: 60 },
       ceiling: { on: true, area: 220 },
       tvUnit: { on: false, area: 40 },
@@ -464,7 +381,6 @@ export const HOME_TYPES: HomeType[] = [
     range: "1,000 – 1,500 sq.ft",
     icon: "Building2",
     spaces: {
-      kitchen: { on: true, area: 120 },
       wardrobe: { on: true, area: 80 },
       ceiling: { on: true, area: 300 },
       tvUnit: { on: false, area: 40 },
@@ -477,7 +393,6 @@ export const HOME_TYPES: HomeType[] = [
     range: "1,500+ sq.ft",
     icon: "Warehouse",
     spaces: {
-      kitchen: { on: true, area: 150 },
       wardrobe: { on: true, area: 120 },
       ceiling: { on: true, area: 500 },
       tvUnit: { on: true, area: 50 },
@@ -490,7 +405,6 @@ export const HOME_TYPES: HomeType[] = [
     range: "Commercial space",
     icon: "Store",
     spaces: {
-      kitchen: { on: false, area: 60 },
       wardrobe: { on: true, area: 60 },
       ceiling: { on: true, area: 400 },
       tvUnit: { on: false, area: 40 },
@@ -520,7 +434,6 @@ function withOptions(preset: SpacePreset, space: SpaceId, grade: GradeId): Space
 export function spacesForHome(homeType: HomeTypeId, grade: GradeId): Record<SpaceId, SpaceConfig> {
   const p = getHomeType(homeType).spaces;
   return {
-    kitchen: withOptions(p.kitchen, "kitchen", grade),
     wardrobe: withOptions(p.wardrobe, "wardrobe", grade),
     ceiling: withOptions(p.ceiling, "ceiling", grade),
     tvUnit: withOptions(p.tvUnit, "tvUnit", grade),
@@ -600,39 +513,6 @@ function part(
 ): EstimatePart {
   const amount = unit === "set" || unit === "lot" ? rate : qty * rate;
   return { id, label, qty, unit, rate, amount: Math.round(amount) };
-}
-
-function kitchenParts(area: number, o: SpaceOptions): EstimatePart[] {
-  const R = RATE_CARD;
-  const layout = pick(R.layout, o["layout"] ?? "l", "l");
-  const cabinetRate = Math.round(
-    (pick(R.carcass, o["carcass"] ?? "mr", "mr") +
-      pick(R.finish, o["finish"] ?? "laminate", "laminate")) *
-      layout,
-  );
-  const parts = [
-    part("cabinets", "Base, wall & tall units (carcass + shutters)", area, "sq.ft", cabinetRate),
-    part(
-      "hardware",
-      "Hinges, channels & fittings",
-      area,
-      "sq.ft",
-      pick(R.hardware, o["hardware"] ?? "standard", "standard"),
-    ),
-  ];
-  if (o["layout"] === "island")
-    parts.push(part("island", "Island unit with counter", 1, "set", R.islandFlat));
-  const counterRate = pick(R.counter, o["counter"] ?? "none", "none");
-  if (counterRate > 0) {
-    const rft = Math.max(6, Math.round(area / 6.5));
-    parts.push(part("counter", `Countertop, ${rft} rft × 2 ft`, rft * 2, "sq.ft", counterRate));
-  }
-  const acc = pick(R.accessories, o["accessories"] ?? "none", "none");
-  if (acc > 0) parts.push(part("accessories", "Accessory set", 1, "set", acc));
-  parts.push(
-    part("labour", "Manufacturing, transport & installation", area, "sq.ft", R.labour.kitchen),
-  );
-  return parts;
 }
 
 function wardrobeParts(area: number, o: SpaceOptions): EstimatePart[] {
@@ -753,8 +633,6 @@ function panellingParts(area: number, o: SpaceOptions): EstimatePart[] {
 
 function partsFor(space: SpaceId, area: number, o: SpaceOptions): EstimatePart[] {
   switch (space) {
-    case "kitchen":
-      return kitchenParts(area, o);
     case "wardrobe":
       return wardrobeParts(area, o);
     case "ceiling":
@@ -772,8 +650,7 @@ function summaryFor(space: SpaceId, o: SpaceOptions): string {
       const id = o[g.id];
       if (!id) return null;
       if (g.id === "loft" && id === "no") return null;
-      if ((g.id === "counter" || g.id === "accessories" || g.id === "panel") && id === "none")
-        return null;
+      if (g.id === "panel" && id === "none") return null;
       return optionLabel(space, g.id, id);
     })
     .filter((s): s is string => Boolean(s))
@@ -807,7 +684,7 @@ export function lineAmount(space: SpaceId, area: number, grade: GradeId): number
 
 /**
  * Itemised estimate: every switched-on space priced from its parts, then logistics, 18% GST and
- * the indicative range. With the 3BHK preset at Premium the grand total lands near ₹6 lakh.
+ * the indicative range. With the 3BHK preset at Premium the grand total lands in the low lakhs.
  */
 export function estimate(config: EstimateConfig): EstimateResult {
   const lines: EstimateLine[] = [];
@@ -859,15 +736,11 @@ export function quickEstimate(
 }
 
 /**
- * Effective "from" rate per sq.ft at a grade, excluding GST and one-off items such as counters,
- * accessories or the island: cabinet work at 100 sq.ft. Rounded to ₹10 above ₹1,000.
+ * Effective "from" rate per sq.ft at a grade, excluding GST and one-off items such as lofts,
+ * interiors or back panels: cabinet work at 100 sq.ft. Rounded to ₹10 above ₹1,000.
  */
 export function gradeRate(space: SpaceId, grade: GradeId): number {
   const options = optionsForGrade(space, grade);
-  if (space === "kitchen") {
-    options["counter"] = "none";
-    options["accessories"] = "none";
-  }
   if (space === "wardrobe") {
     options["loft"] = "no";
     options["interior"] = "basic";
@@ -880,7 +753,6 @@ export function gradeRate(space: SpaceId, grade: GradeId): number {
 
 /** Standard-grade "from" rates per sq.ft, kept for the home teaser and service chips. */
 export const RATES: Record<SpaceId, number> = {
-  kitchen: gradeRate("kitchen", "standard"),
   wardrobe: gradeRate("wardrobe", "standard"),
   ceiling: gradeRate("ceiling", "standard"),
   tvUnit: gradeRate("tvUnit", "standard"),
@@ -892,8 +764,7 @@ export const RATES: Record<SpaceId, number> = {
  * grade, including logistics and GST.
  */
 export const FULL_HOME_FROM = roundTo100(
-  (lineAmount("kitchen", 100, "standard") +
-    lineAmount("wardrobe", 60, "standard") +
+  (lineAmount("wardrobe", 60, "standard") +
     lineAmount("ceiling", 220, "standard") +
     lineAmount("tvUnit", 40, "standard") +
     RATE_CARD.logistics) *
@@ -1074,11 +945,11 @@ export const ESTIMATOR_COPY = {
   },
   teaser: {
     eyebrow: "Quick estimate",
-    title: "What will my kitchen cost?",
+    title: "What will my wardrobes cost?",
     rangeLabel: "Indicative range (incl. GST)",
     primary: "Send this estimate on WhatsApp",
     link: "Open full estimator",
-    spaces: ["kitchen", "wardrobe", "ceiling"] as SpaceId[],
+    spaces: ["wardrobe", "ceiling", "panelling"] as SpaceId[],
     fullHomeLabel: "Full home",
   },
 } as const;

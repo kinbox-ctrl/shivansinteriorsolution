@@ -58,12 +58,12 @@ function isGrade(value: string): value is GradeId {
   return (GRADE_IDS as string[]).includes(value);
 }
 
-/** "Estimate your kitchen": area + grade selects, live quickEstimate range, link to /estimator. */
+/** "Estimate your wardrobe": area + grade selects, live quickEstimate range, link to /estimator. */
 export function EstimateCard() {
   const id = useId();
-  const [area, setArea] = useState<number>(120);
+  const [area, setArea] = useState<number>(80);
   const [grade, setGrade] = useState<GradeId>("premium");
-  const { low, high } = quickEstimate("kitchen", area, grade);
+  const { low, high } = quickEstimate("wardrobe", area, grade);
   const copy = ARTICLE_PAGE.estimateCard;
 
   return (

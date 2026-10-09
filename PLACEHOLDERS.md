@@ -8,12 +8,12 @@ each item. File paths point at where the value lives.
 
 - [ ] Every image under `src/assets/ref/` is a crop of a Google Stitch render, not a real
       photograph. Replace with real project, workshop and team photos before launch. This includes
-      the hero living room, all nine project grid cards, the Teal & Copper Kitchen case study
-      (hero, before/after, gallery, materials, drawings), service heroes and galleries, material
+      the hero living room, all project grid cards, the case studies
+      (hero, gallery, materials, drawings), service heroes and galleries, material
       boards, grade cards, timeline photos (`tl-*`), workshop photos (`ws-*`), team portraits
       (`team-1`…`team-5`), the founder portrait, journal covers and the workshop exterior.
-- [ ] The "before" kitchen photo (`kitchen-before`) is a render. Only the Teal & Copper Kitchen has
-      a before/after pair; every other project has `before: null` (`src/content/projects.ts`).
+- [ ] No project has a real before/after pair; every project has `before: null`
+      (`src/content/projects.ts`).
 - [ ] Maps are Google Maps embeds (`MAP_EMBED`, `mapEmbedFor` in `site.ts`). The workshop pin uses the
       address query in `site.ts`; confirm it lands on the actual workshop. Project maps only pan to the
       town (`place`), not the street.
@@ -38,8 +38,8 @@ each item. File paths point at where the value lives.
 - The estimator now prices from `RATE_CARD` in `src/content/pricing.ts` (2026 indicative Jaipur-region rates per part: boards, finishes, hardware, labour, counters, accessories, ceilings, lighting, panels) and adds 18% GST. The catalogue prices in `src/content/catalogue.ts` use the same figures. Confirm every rate against current supplier quotes before launch.
   and rates (`src/content/pricing.ts`, `materials.ts`, `services.ts`)
 
-- [ ] Base rates: kitchen ₹1,350, wardrobe ₹1,550, ceiling ₹120, TV unit ₹1,450, panelling ₹450
-      per sq.ft; full home from ₹3.9 lakh.
+- [ ] Base rates: wardrobe ₹1,550, ceiling ₹105, TV unit ₹1,370, panelling ₹260 per sq.ft;
+      full home from ₹2.1 lakh (computed in `pricing.ts` as `FULL_HOME_FROM`).
 - [ ] Grade multipliers ×1.00 / ×1.35 / ×1.75 and the ±range (×0.95 / ×1.08).
 - [ ] Derived "From" prices on service and grade cards (₹1,820, ₹2,360, ₹2,090, ₹2,710, ₹162,
       ₹210 per sq.ft).
@@ -70,15 +70,12 @@ each item. File paths point at where the value lives.
 
 ## Projects (`src/content/projects.ts`)
 
-- [ ] Only Teal & Copper Kitchen follows the reference case study. The other nine (Walnut & Teal
-      Living Room, Master Bedroom Suite, Office with Timber Slats, Cove Ceiling & Lighting,
-      Fluted TV Wall, Ivory Acrylic Kitchen, Kids Room with Study, Boutique Shop Interior, Pooja
-      Unit with Jali) have invented stories, briefs, materials, timelines and budgets.
-- [ ] Teal & Copper Kitchen: card says 148 sq.ft / 2024 (reference 1 and 3) while the case study
-      facts say 120 sq.ft / completed 2025 (reference 4). Both kept as drawn; reconcile.
-- [ ] The reference grid card is titled "Teal Shaker Kitchen"; the site uses "Teal & Copper
-      Kitchen" everywhere so the card links to the case study. Reference 1 names the third home
-      card "Office Panelling"; the site uses "Office with Timber Slats".
+- [ ] All eight projects (Walnut & Teal Living Room, Master Bedroom Suite, Office with Timber
+      Slats, Cove Ceiling & Lighting, Fluted TV Wall, Kids Room with Study, Boutique Shop
+      Interior, Pooja Unit with Jali) have invented stories, briefs, materials, timelines and
+      budgets. The two kitchen case studies were removed on 9 Oct 2026 (see `backup/kitchen`).
+- [ ] Reference 1 names the third home card "Office Panelling"; the site uses "Office with
+      Timber Slats".
 - [ ] Project years, grades and places are as drawn in reference 3.
 
 ## Services (`src/content/services.ts`)

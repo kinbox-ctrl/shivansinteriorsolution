@@ -19,7 +19,7 @@ function toCardData(p: Project) {
     slug: p.slug,
     title: p.title,
     place: p.place,
-    // The shared card joins category and area with "  ·  "; we want "KITCHEN · PREMIUM · 2024".
+    // The shared card joins category and area with "  ·  "; we want "BEDROOM · PREMIUM · 2024".
     category: `${p.kind}  ·  ${p.grade}`,
     year: p.year,
     image: img(p.image),

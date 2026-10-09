@@ -5,22 +5,15 @@ import type { ImageKey } from "./image-keys";
 import i_heroLiving from "@/assets/ref/hero-living.jpg";
 import i_pillWood from "@/assets/ref/pill-wood.jpg";
 import i_pillHandle from "@/assets/ref/pill-handle.jpg";
-import i_blueprintKitchen from "@/assets/ref/blueprint-kitchen.svg";
-import i_kitchenIslandFinished from "@/assets/ref/kitchen-island-finished.jpg";
 import i_testimonialRoom from "@/assets/ref/testimonial-room.jpg";
 import i_featuredLiving from "@/assets/ref/featured-living.jpg";
-import i_gridKitchen from "@/assets/ref/grid-kitchen.jpg";
 import i_gridBedroom from "@/assets/ref/grid-bedroom.jpg";
 import i_gridOffice from "@/assets/ref/grid-office.jpg";
 import i_gridCoveCeiling from "@/assets/ref/grid-cove-ceiling.jpg";
 import i_gridFlutedTv from "@/assets/ref/grid-fluted-tv.jpg";
-import i_gridIvoryKitchen from "@/assets/ref/grid-ivory-kitchen.jpg";
 import i_gridKidsRoom from "@/assets/ref/grid-kids-room.jpg";
 import i_gridBoutique from "@/assets/ref/grid-boutique.jpg";
 import i_gridPooja from "@/assets/ref/grid-pooja.jpg";
-import i_kitchenTealHero from "@/assets/ref/kitchen-teal-hero.jpg";
-import i_kitchenBefore from "@/assets/ref/kitchen-before.jpg";
-import i_kitchenAfter from "@/assets/ref/kitchen-after.jpg";
 import i_floorPlan from "@/assets/ref/floor-plan.svg";
 import i_render3d from "@/assets/ref/render-3d.jpg";
 import i_elevation from "@/assets/ref/elevation.svg";
@@ -29,14 +22,10 @@ import i_matBwpPlywood from "@/assets/ref/mat-bwp-plywood.jpg";
 import i_matCopperHandle from "@/assets/ref/mat-copper-handle.jpg";
 import i_matMarble from "@/assets/ref/mat-marble.jpg";
 import i_matHinge from "@/assets/ref/mat-hinge.jpg";
-import i_galleryKitchenWide from "@/assets/ref/gallery-kitchen-wide.jpg";
-import i_galleryKitchenA from "@/assets/ref/gallery-kitchen-a.jpg";
-import i_galleryKitchenB from "@/assets/ref/gallery-kitchen-b.jpg";
 import i_galleryHandleDetail from "@/assets/ref/gallery-handle-detail.jpg";
 import i_nextBedroom from "@/assets/ref/next-bedroom.jpg";
 import i_isoHome from "@/assets/ref/iso-home.jpg";
 import i_svcCompleteHome from "@/assets/ref/svc-complete-home.jpg";
-import i_svcKitchen from "@/assets/ref/svc-kitchen.jpg";
 import i_svcWardrobes from "@/assets/ref/svc-wardrobes.jpg";
 import i_svcCeiling from "@/assets/ref/svc-ceiling.jpg";
 import i_svcPanelling from "@/assets/ref/svc-panelling.jpg";
@@ -45,14 +34,8 @@ import i_gradeStandard from "@/assets/ref/grade-standard.jpg";
 import i_gradePremium from "@/assets/ref/grade-premium.jpg";
 import i_gradeLuxury from "@/assets/ref/grade-luxury.jpg";
 import i_cabinetInside from "@/assets/ref/cabinet-inside.jpg";
-import i_planLShaped from "@/assets/ref/plan-l-shaped.svg";
 import i_layoutPhoto from "@/assets/ref/layout-photo.jpg";
 import i_finishPreview from "@/assets/ref/finish-preview.jpg";
-import i_kitchenGallery1 from "@/assets/ref/kitchen-gallery-1.jpg";
-import i_kitchenGallery2 from "@/assets/ref/kitchen-gallery-2.jpg";
-import i_kitchenGallery3 from "@/assets/ref/kitchen-gallery-3.jpg";
-import i_kitchenGallery4 from "@/assets/ref/kitchen-gallery-4.jpg";
-import i_kitchenGallery5 from "@/assets/ref/kitchen-gallery-5.jpg";
 import i_wardrobeElevation from "@/assets/ref/wardrobe-elevation.png";
 import i_processMeasure from "@/assets/ref/process-measure.jpg";
 import i_boardMr from "@/assets/ref/board-mr.jpg";
@@ -83,7 +66,6 @@ import i_livingSlatPanel from "@/assets/ref/living-slat-panel.jpg";
 import i_bedroomModern from "@/assets/ref/bedroom-modern.jpg";
 import i_sketchPlantLeft from "@/assets/ref/sketch-plant-left.png";
 import i_sketchArchRight from "@/assets/ref/sketch-arch-right.png";
-import i_journalKitchenFeatured from "@/assets/ref/journal-kitchen-featured.jpg";
 import i_journalPlywood from "@/assets/ref/journal-plywood.jpg";
 import i_journalCeiling from "@/assets/ref/journal-ceiling.jpg";
 import i_journalWardrobeFinish from "@/assets/ref/journal-wardrobe-finish.jpg";
@@ -95,9 +77,6 @@ import i_plywoodHero from "@/assets/ref/plywood-hero.jpg";
 import i_sketchPlant404 from "@/assets/ref/sketch-plant-404.png";
 import i_sketchLadder404 from "@/assets/ref/sketch-ladder-404.png";
 import i_sketchRoom404 from "@/assets/ref/sketch-room-404.png";
-import i_catBaseUnit from "@/assets/ref/cat-base-unit.jpg";
-import i_catWallUnit from "@/assets/ref/cat-wall-unit.jpg";
-import i_catTallUnit from "@/assets/ref/cat-tall-unit.jpg";
 import i_catLaminateSheets from "@/assets/ref/cat-laminate-sheets.jpg";
 import i_catAcrylic from "@/assets/ref/cat-acrylic.jpg";
 import i_catMembrane from "@/assets/ref/cat-membrane.jpg";
@@ -118,7 +97,6 @@ import i_catDesignerCeiling from "@/assets/ref/cat-designer-ceiling.jpg";
 import i_catProfileLight from "@/assets/ref/cat-profile-light.jpg";
 import i_catQuartz from "@/assets/ref/cat-quartz.jpg";
 import i_origHeroLiving from "@/assets/hero-living.jpg";
-import i_origWorkKitchen from "@/assets/work-kitchen.jpg";
 import i_origWorkBedroom from "@/assets/work-bedroom.jpg";
 import i_origWorkOffice from "@/assets/work-office.jpg";
 import i_origCraft from "@/assets/craft.jpg";
@@ -129,22 +107,15 @@ export const IMAGES: Record<ImageKey, string> = {
   "hero-living": i_heroLiving,
   "pill-wood": i_pillWood,
   "pill-handle": i_pillHandle,
-  "blueprint-kitchen": i_blueprintKitchen,
-  "kitchen-island-finished": i_kitchenIslandFinished,
   "testimonial-room": i_testimonialRoom,
   "featured-living": i_featuredLiving,
-  "grid-kitchen": i_gridKitchen,
   "grid-bedroom": i_gridBedroom,
   "grid-office": i_gridOffice,
   "grid-cove-ceiling": i_gridCoveCeiling,
   "grid-fluted-tv": i_gridFlutedTv,
-  "grid-ivory-kitchen": i_gridIvoryKitchen,
   "grid-kids-room": i_gridKidsRoom,
   "grid-boutique": i_gridBoutique,
   "grid-pooja": i_gridPooja,
-  "kitchen-teal-hero": i_kitchenTealHero,
-  "kitchen-before": i_kitchenBefore,
-  "kitchen-after": i_kitchenAfter,
   "floor-plan": i_floorPlan,
   "render-3d": i_render3d,
   elevation: i_elevation,
@@ -153,14 +124,10 @@ export const IMAGES: Record<ImageKey, string> = {
   "mat-copper-handle": i_matCopperHandle,
   "mat-marble": i_matMarble,
   "mat-hinge": i_matHinge,
-  "gallery-kitchen-wide": i_galleryKitchenWide,
-  "gallery-kitchen-a": i_galleryKitchenA,
-  "gallery-kitchen-b": i_galleryKitchenB,
   "gallery-handle-detail": i_galleryHandleDetail,
   "next-bedroom": i_nextBedroom,
   "iso-home": i_isoHome,
   "svc-complete-home": i_svcCompleteHome,
-  "svc-kitchen": i_svcKitchen,
   "svc-wardrobes": i_svcWardrobes,
   "svc-ceiling": i_svcCeiling,
   "svc-panelling": i_svcPanelling,
@@ -169,14 +136,8 @@ export const IMAGES: Record<ImageKey, string> = {
   "grade-premium": i_gradePremium,
   "grade-luxury": i_gradeLuxury,
   "cabinet-inside": i_cabinetInside,
-  "plan-l-shaped": i_planLShaped,
   "layout-photo": i_layoutPhoto,
   "finish-preview": i_finishPreview,
-  "kitchen-gallery-1": i_kitchenGallery1,
-  "kitchen-gallery-2": i_kitchenGallery2,
-  "kitchen-gallery-3": i_kitchenGallery3,
-  "kitchen-gallery-4": i_kitchenGallery4,
-  "kitchen-gallery-5": i_kitchenGallery5,
   "wardrobe-elevation": i_wardrobeElevation,
   "process-measure": i_processMeasure,
   "board-mr": i_boardMr,
@@ -207,7 +168,6 @@ export const IMAGES: Record<ImageKey, string> = {
   "bedroom-modern": i_bedroomModern,
   "sketch-plant-left": i_sketchPlantLeft,
   "sketch-arch-right": i_sketchArchRight,
-  "journal-kitchen-featured": i_journalKitchenFeatured,
   "journal-plywood": i_journalPlywood,
   "journal-ceiling": i_journalCeiling,
   "journal-wardrobe-finish": i_journalWardrobeFinish,
@@ -219,9 +179,6 @@ export const IMAGES: Record<ImageKey, string> = {
   "sketch-plant-404": i_sketchPlant404,
   "sketch-ladder-404": i_sketchLadder404,
   "sketch-room-404": i_sketchRoom404,
-  "cat-base-unit": i_catBaseUnit,
-  "cat-wall-unit": i_catWallUnit,
-  "cat-tall-unit": i_catTallUnit,
   "cat-laminate-sheets": i_catLaminateSheets,
   "cat-acrylic": i_catAcrylic,
   "cat-membrane": i_catMembrane,
@@ -242,7 +199,6 @@ export const IMAGES: Record<ImageKey, string> = {
   "cat-profile-light": i_catProfileLight,
   "cat-quartz": i_catQuartz,
   "orig-hero-living": i_origHeroLiving,
-  "orig-work-kitchen": i_origWorkKitchen,
   "orig-work-bedroom": i_origWorkBedroom,
   "orig-work-office": i_origWorkOffice,
   "orig-craft": i_origCraft,

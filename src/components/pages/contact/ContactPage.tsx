@@ -20,11 +20,6 @@ function QuickAnswers() {
         opacity={0.28}
         className="absolute -bottom-10 -left-8 hidden w-[200px] lg:block"
       />
-      <Sketch
-        kind="kitchen"
-        opacity={0.4}
-        className="absolute -right-8 bottom-4 hidden w-[300px] lg:block"
-      />
       <Container className="relative">
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,2.3fr)] lg:gap-12 lg:pl-16">
           <Reveal>

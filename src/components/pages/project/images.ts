@@ -7,19 +7,16 @@
 import type { ImageKey } from "@/content/image-keys";
 import { img } from "@/content/images";
 import type { Project } from "@/content/projects";
-import kitchenTealHeroClean from "./assets/kitchen-teal-hero-clean.jpg";
 
 /** Keys whose harvested crop carries UI baked in, mapped to a clean alternative. */
 const CLEAN_KEY: Partial<Record<ImageKey, ImageKey>> = {
   "hero-living": "orig-hero-living", // "Lights ON" toggle → the original photo
   "grid-bedroom": "orig-work-bedroom", // heart + "JAIPUR" pin → the original photo
   "grid-cove-ceiling": "journal-cove", // heart + "JAIPUR" pin → clean cove crop
-  "cabinet-inside": "kitchen-gallery-2", // copper "3 / 4 / 3" badges → clean shelf crop
 };
 
-/** Hero photos per project: the kitchen hero is a clean re-crop of reference 4 (2×). */
+/** Hero photos per project that use the original, uncropped photo. */
 const HERO_SRC: Record<string, string> = {
-  "teal-copper-kitchen": kitchenTealHeroClean,
   "master-bedroom-suite": img("orig-work-bedroom"),
   "walnut-teal-living-room": img("orig-hero-living"),
 };

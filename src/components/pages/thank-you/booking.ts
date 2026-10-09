@@ -82,7 +82,7 @@ function slotLabel(value: string | undefined): string | undefined {
   return slot ? `${slot.label} (${slot.time})` : v;
 }
 
-/** "kitchen,wardrobes" → "Kitchen, Wardrobes" (known options keep their canonical casing). */
+/** "ceiling,wardrobes" → "Ceiling, Wardrobes" (known options keep their canonical casing). */
 function planningLabel(value: string | undefined): string | undefined {
   const v = clean(value);
   if (!v) return undefined;

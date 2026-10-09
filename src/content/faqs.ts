@@ -8,8 +8,8 @@ export const SERVICES_FAQ: Faq[] = [
     a: "Yes, the site visit is completely free. We measure the space, understand your requirements and share a rough estimate along with design suggestions.",
   },
   {
-    q: "How long does a modular kitchen take?",
-    a: "A typical 100–150 sq.ft kitchen takes 4–6 weeks from design sign-off: about three weeks of manufacturing in our workshop and one to two weeks of installation on site. Complete homes take 8–12 weeks depending on size.",
+    q: "How long does a wardrobe or a full home take?",
+    a: "A wardrobe, TV unit or ceiling takes 3–4 weeks from design sign-off: about two weeks of manufacturing in our workshop and one week of installation on site. Complete homes take 8–12 weeks depending on size.",
   },
   {
     q: "Do you give a written warranty?",
@@ -32,7 +32,7 @@ export const ESTIMATOR_FAQ: Faq[] = [
   },
   {
     q: "Why is Premium recommended?",
-    a: "Premium uses BWP waterproof plywood, soft-close branded hardware and acrylic or high-gloss finishes, which is the combination most of our clients choose. It costs more than Standard but lasts much longer in kitchens and other wet areas, and comes with a 5-year hardware warranty.",
+    a: "Premium uses BWP waterproof plywood, soft-close branded hardware and acrylic or high-gloss finishes, which is the combination most of our clients choose. It costs more than Standard but lasts much longer in bathrooms and other wet areas, and comes with a 5-year hardware warranty.",
   },
   {
     q: "Can I pay in stages?",
@@ -51,7 +51,7 @@ export const CONTACT_FAQ: Faq[] = [
   },
   {
     q: "How soon can you start?",
-    a: "We can usually visit within 2–3 days of your booking. Manufacturing starts once the design and quotation are signed off, and most kitchens are installed within 4–6 weeks of that.",
+    a: "We can usually visit within 2–3 days of your booking. Manufacturing starts once the design and quotation are signed off, and most wardrobes and ceilings are installed within 3–5 weeks of that.",
   },
 ];
 

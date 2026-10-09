@@ -14,20 +14,20 @@ export type Testimonial = {
 export const TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      "They understood what we wanted before we knew how to explain it. The finished kitchen feels like it was always meant to be there.",
+      "They understood what we wanted before we knew how to explain it. The finished wardrobes feel like they were always meant to be there.",
     name: "Priya Sharma",
     town: "Sambhar",
-    project: "Modular Kitchen",
+    project: "Wardrobes & TV unit",
     image: "testimonial-room",
     rating: 5,
   },
   {
     quote:
-      "They understood our needs so well and gave us a kitchen that is beautiful, functional and easy to maintain. We couldn't be happier with the result.",
+      "They understood our needs so well and gave us a living room wall that is beautiful, functional and easy to keep clean. We couldn't be happier with the result.",
     name: "Rohit Sharma",
     town: "Sambhar",
-    project: "Teal & Copper Kitchen",
-    image: "kitchen-after",
+    project: "Fluted TV Wall",
+    image: "grid-fluted-tv",
     rating: 5,
   },
   {

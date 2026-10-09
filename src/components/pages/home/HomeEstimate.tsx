@@ -76,8 +76,8 @@ function rovingKeyDown<T>(
 
 /** "Quick estimate" teaser card: space, area and grade in, an indicative range out. */
 export function HomeEstimate() {
-  const [choice, setChoice] = useState<Choice>("kitchen");
-  const [area, setArea] = useState<number>(SPACE_BY_ID.kitchen.defaultArea);
+  const [choice, setChoice] = useState<Choice>("wardrobe");
+  const [area, setArea] = useState<number>(SPACE_BY_ID.wardrobe.defaultArea);
   const [grade, setGrade] = useState<GradeId>(DEFAULT_GRADE);
   const areaId = useId();
 

@@ -76,7 +76,7 @@ export function ServiceGallery({ gallery, label, link, title }: Props) {
         onOpenChange={(o) => {
           if (!o) setOpen(null);
         }}
-        src={img(current ?? tiles[0] ?? gallery[0] ?? "kitchen-teal-hero")}
+        src={img(current ?? tiles[0] ?? gallery[0] ?? "hero-living")}
         alt={`${title} photo ${(open ?? 0) + 1}`}
         caption={`${label} · ${String((open ?? 0) + 1).padStart(2, "0")} / ${String(tiles.length).padStart(2, "0")}`}
       />

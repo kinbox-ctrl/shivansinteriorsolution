@@ -3,7 +3,7 @@ import { z } from "zod";
 
 const TITLE = "Product catalogue — Shivansh Interior Solutions";
 const DESCRIPTION =
-  "Boards, shutter finishes, hardware, kitchen modules, wardrobes, wall panels, ceilings and countertops with indicative 2026 prices for Sambhar, Nawa and Jaipur.";
+  "Boards, shutter finishes, hardware, wardrobes, wall panels, ceilings and countertops with indicative 2026 prices for Sambhar, Nawa and Jaipur.";
 
 const searchSchema = z.object({
   /** Category id, omitted for all products. */

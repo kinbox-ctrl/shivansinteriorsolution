@@ -19,7 +19,7 @@ export const EMPTY_FILTERS: Filters = { category: null, location: "all", grade: 
 
 export const SOFT_EASE = [0.22, 1, 0.36, 1] as const;
 
-/** Reverse lookup of `PROJECT_CATEGORY_IDS` (`kitchens` → "Kitchens"). */
+/** Reverse lookup of `PROJECT_CATEGORY_IDS` (`bedrooms-wardrobes` → "Bedrooms & Wardrobes"). */
 export function categoryFromId(id: string | undefined): ProjectCategory | null {
   if (!id) return null;
   const hit = (Object.entries(PROJECT_CATEGORY_IDS) as [ProjectCategory, string][]).find(
@@ -37,7 +37,7 @@ export function applyFilters(projects: readonly Project[], filters: Filters): Pr
   );
 }
 
-/** "KITCHEN · PREMIUM · 2024" style meta used across the page. */
+/** "BEDROOM · PREMIUM · 2024" style meta used across the page. */
 export function projectMeta(p: Project): string {
   return `${p.kind} · ${p.grade} · ${p.year}`;
 }

@@ -12,9 +12,9 @@ The references live outside the repo during the build at
 | 1    | Home, full page                                                    | `/`                             |
 | 2    | Home, hero detail (header, ruler, hero, marquee, manifesto, stats) | `/`                             |
 | 3    | Projects: grid view (left) and map view (right)                    | `/projects`                     |
-| 4    | Project case study: Teal & Copper Kitchen                          | `/projects/teal-copper-kitchen` |
+| 4    | Project case study (template; kitchen study removed, see backup)   | `/projects/fluted-tv-wall`      |
 | 5, 6 | Services overview (two renders, same layout)                       | `/services`                     |
-| 7    | Service detail: Modular Kitchens (two columns of one long page)    | `/services/modular-kitchens`    |
+| 7    | Service detail (template; kitchens removed, see backup/kitchen)    | `/services/wardrobes-storage`   |
 | 8    | How We Build                                                       | `/how-we-build`                 |
 | 9    | About                                                              | `/about`                        |
 | 10   | Estimator                                                          | `/estimator`                    |
@@ -65,7 +65,7 @@ No dark sections anywhere. Photographs supply all the depth.
   _italic_ `text-copper-bright`. Weight 500, tight leading (1.02–1.08), tracking -0.02em.
 - `font-sans` Manrope (body, UI). Body 16px/1.65, lead 18px.
 - `font-mono` DM Mono (dimensions, specs, prices in tables, step numbers, meta lines like
-  "KITCHEN · PREMIUM · 2024", ruler labels).
+  "BEDROOM · PREMIUM · 2024", ruler labels).
 - `font-hand` Caveat (the handwritten annotations with little arrows seen in the references:
   "Thoughtful interiors, built to last", "Homes designed locally"…). Teal, 18–22px, rotated a few
   degrees.
@@ -84,7 +84,7 @@ Mobile: hero 40–44px, h2 32–36px.
   bottom-right at ~40% (utility `.wash`).
 - Faint blueprint grid on Mist/Cloud sections (utility `.grid-paper`), faint jali pattern on
   Linen bands (`.jali`), both at ≤6% opacity.
-- Decorative line-art sketches (plants, arches, jali, kitchen outlines) in pale teal in the
+- Decorative line-art sketches (plants, arches, jali outlines) in pale teal in the
   margins of most sections, plus handwritten notes with arrows. Implement with the `<Sketch>`
   components and harvested `sketch-*` PNGs; keep them behind content (`pointer-events-none`,
   `-z-10`), `opacity 0.5–0.8`, hidden on mobile where they would crowd the layout.
@@ -180,7 +180,7 @@ Rules that keep parallel work safe:
 | `ProjectCard`                                                                                                       | `project: Project`, `variant?: "grid"\|"wide"`; glass location chip, Fraunces title, DM Mono meta                                                                                                                                                                                                                                                  |
 | `ArticleCard`                                                                                                       | `article: Article`, `variant?: "featured"\|"grid"`                                                                                                                                                                                                                                                                                                 |
 | `CtaBand`                                                                                                           | `title` (may include `<em>`), `text?`, `primary: {label, to                                                                                                                                                                                                                                                                                        | href}`, `secondary?`, gradient wash + sketches |
-| `Sketch`                                                                                                            | `kind: "plant"\|"plant-large"\|"arch"\|"jali"\|"kitchen"\|"ladder"`, positioned decor, `className?`                                                                                                                                                                                                                                                |
+| `Sketch`                                                                                                            | `kind: "plant"\|"plant-large"\|"arch"\|"jali"\|"ladder"`, positioned decor, `className?`                                                                                                                                                                                                                                                |
 | `HandNote`                                                                                                          | `children`, `arrow?: "down-left"\|"down-right"\|"left"\|"right"`, `className?`                                                                                                                                                                                                                                                                     |
 | `RulerBar`, `VerticalRuler`, `MobileActionBar`, `WhatsAppFab`, `WhatsAppIcon`, `SocialIcons`, `Lightbox` (optional) |
 
@@ -199,7 +199,7 @@ Rules that keep parallel work safe:
   sections with heading/paragraphs/table/quote/callout/list, related[]), `ARTICLES`, `getArticle`.
 - `process.ts`: `HOME_STEPS` (4), `BUILD_STEPS` (6 with includes + image), `HANDOVER_CHECKLIST`.
 - `materials.ts`: `MATERIAL_TABS` (boards/finishes/hardware/walls-floors with water-resistance
-  0–5), `GRADES` (standard/premium/luxury: bullets, kitchen/wardrobe/ceiling from-prices),
+  0–5), `GRADES` (standard/premium/luxury: bullets, wardrobe/ceiling from-prices),
   `GRADE_TABLE_ROWS`, `WARRANTY_CARDS`.
 - `team.ts`: `FOUNDER_NOTE`, `MILESTONES` (2014…Today), `WORKSHOP_PHOTOS`, `VALUES`, `TEAM`, `PROMISES`.
 - `faqs.ts`: `SERVICES_FAQ`, `ESTIMATOR_FAQ`, `CONTACT_FAQ`.
@@ -227,3 +227,11 @@ node "<scratchpad>/tools/shot.mjs" http://localhost:8080/about "<scratchpad>/sho
 Compare against the reference image side by side: section order, proportions, type sizes,
 colours, spacing, imagery placement, copy. Fix and repeat. Then `npx tsc --noEmit`,
 `npx eslint <files>`, `npx prettier --write <files>`.
+
+## Removed: modular kitchens (9 Oct 2026)
+
+The modular-kitchen offering was taken off the site: the service page, the two kitchen case
+studies, the kitchen estimator space and rate-card entries, the "Kitchen modules" catalogue
+category, two journal articles, and every kitchen-only image. Everything removed is filed under
+`backup/kitchen/` (snippets, images and a reverse patch) so it can be restored later; see
+`backup/kitchen/README.md`.

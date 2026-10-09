@@ -54,119 +54,8 @@ const AUTHOR_BIO =
 
 export const ARTICLES: Article[] = [
   {
-    slug: "modular-kitchen-cost-jaipur-2026",
-    title: "Modular kitchen cost in Jaipur (2026): a complete breakdown",
-    dek: "Everything you need to know about modular kitchen pricing in Jaipur, including material options, hardware brands, area-wise estimates and tips to get the best value for your budget.",
-    category: "Cost guide",
-    readTime: "8 min read",
-    date: "20 Sep 2026",
-    image: "journal-kitchen-featured",
-    hero: "journal-kitchen-featured",
-    author: AUTHOR,
-    featured: true,
-    sections: [
-      {
-        id: "how-priced",
-        heading: "How a modular kitchen is priced",
-        blocks: [
-          {
-            type: "p",
-            text: "Most studios in Jaipur, including ours, quote a modular kitchen per square foot of cabinet face area: the front surface of all base units, wall units and tall units added together. A typical L-shaped kitchen in a 2BHK or 3BHK apartment works out to 100–150 sq.ft. The rate you are quoted depends on three things: the board inside the cabinets, the finish on the shutters and the hardware that makes drawers and doors move.",
-          },
-          {
-            type: "p",
-            text: "At Shivansh our 2026 rates start at ₹1,350 per sq.ft for Standard, ₹1,820 for Premium and ₹2,360 for Luxury. The counter, chimney, hob and sink are quoted separately, because brands and sizes vary so much from family to family.",
-          },
-        ],
-      },
-      {
-        id: "by-grade",
-        heading: "What each grade includes",
-        blocks: [
-          {
-            type: "table",
-            head: ["", "Standard", "Premium", "Luxury"],
-            rows: [
-              ["Carcass", "MR plywood", "BWP marine plywood", "HDHMR / Boilo"],
-              [
-                "Shutter finish",
-                "Matte laminate",
-                "Acrylic / high-gloss / PU",
-                "PU paint / veneer",
-              ],
-              [
-                "Hardware",
-                "Standard fittings",
-                "Soft-close (Hettich / Hafele)",
-                "Blum / Hettich premium",
-              ],
-              ["Hardware warranty", "1 year", "5 years", "10 years"],
-              ["Price from", "₹1,350/sq.ft", "₹2,000/sq.ft", "₹2,590/sq.ft"],
-            ],
-          },
-          {
-            type: "p",
-            text: "Standard is a sound kitchen for dry areas and tight budgets. Premium is what most of our clients in Sambhar and Jaipur choose, because BWP plywood and soft-close hardware are the two things you will notice every day for the next fifteen years. Luxury adds handle-less profiles, PU paint and top-end drawer systems.",
-          },
-        ],
-      },
-      {
-        id: "area-estimates",
-        heading: "Area-wise estimates",
-        blocks: [
-          {
-            type: "p",
-            text: "A small straight kitchen of 80 sq.ft at Standard grade starts around ₹1.1 lakh. A 120 sq.ft L-shaped kitchen at Premium, the most common brief we get, lands between ₹2.08 and ₹2.36 lakh. A 150 sq.ft U-shaped kitchen at Luxury crosses ₹3.5 lakh before the counter and appliances. Our estimator on this site uses the same rates, so you can try your own numbers in a minute.",
-          },
-          {
-            type: "callout",
-            text: "Rule of thumb for Jaipur in 2026: budget ₹1.8–2.4 lakh for a Premium kitchen in a 2–3 BHK apartment, plus ₹40,000–80,000 for the counter, sink and chimney.",
-          },
-        ],
-      },
-      {
-        id: "hidden-costs",
-        heading: "Costs people forget",
-        blocks: [
-          {
-            type: "list",
-            items: [
-              "Countertop: granite from about ₹180 per sq.ft, quartz from ₹350, both fitted.",
-              "Electrical points for the chimney, hob, microwave and under-cabinet lights.",
-              "Plumbing shifts if the sink moves from where the builder placed it.",
-              "Tall units and corner pull-outs, which cost more per sq.ft than plain base units.",
-              "Dismantling and disposing of an old kitchen during a renovation.",
-            ],
-          },
-        ],
-      },
-      {
-        id: "best-value",
-        heading: "How to get the best value",
-        blocks: [
-          {
-            type: "p",
-            text: "Spend on the parts that touch water and move every day: BWP plywood for the carcass and branded soft-close hinges and channels. Save on the parts that do not: a plain laminate on the inside of shutters, standard shelves in tall units and a simple loft instead of glass-fronted wall units. Ask for an itemised quotation so you can see exactly where each rupee goes, and compare quotes on the same grade, not just the total.",
-          },
-        ],
-      },
-    ],
-    quickTips: [
-      "Ask for the rate per sq.ft and the total face area, not just a lump sum.",
-      "Insist on BWP plywood for base units under the sink.",
-      "Check that hinge and channel brands are written in the quotation.",
-      "Keep 15–20% of the budget for the counter, sink and chimney.",
-    ],
-    authorBio: AUTHOR_BIO,
-    related: [
-      "bwp-vs-mr-plywood",
-      "laminate-acrylic-pu-wardrobe-finishes",
-      "inside-our-workshop-how-a-kitchen-gets-built",
-    ],
-  },
-  {
     slug: "bwp-vs-mr-plywood",
-    title: "BWP vs MR plywood: which one for your kitchen?",
+    title: "BWP vs MR plywood: which one for your home?",
     dek: "Why the board inside your cabinets matters more than the finish outside.",
     category: "Materials",
     readTime: "6 min read",
@@ -175,6 +64,7 @@ export const ARTICLES: Article[] = [
     hero: "plywood-hero",
     heroNotes: ["BWP plywood (Marine grade) for wet areas", "MR plywood for dry areas"],
     author: AUTHOR,
+    featured: true,
     sections: [
       {
         id: "what-are-mr-and-bwp",
@@ -182,7 +72,7 @@ export const ARTICLES: Article[] = [
         blocks: [
           {
             type: "p",
-            text: "Plywood is the structural base inside your modular kitchen cabinets. While the outside finish (laminate, acrylic, PU) gives the look, it is the plywood that gives strength, stability and long life. Every shutter, shelf and drawer box in a kitchen is cut from a board, and the board decides whether the cabinet is still square and dry after ten monsoons.",
+            text: "Plywood is the structural base inside every wardrobe, TV unit and cabinet we build. While the outside finish (laminate, acrylic, PU) gives the look, it is the plywood that gives strength, stability and long life. Every shutter, shelf and drawer box is cut from a board, and the board decides whether the cabinet is still square and dry after ten monsoons.",
           },
           {
             type: "p",
@@ -190,11 +80,11 @@ export const ARTICLES: Article[] = [
           },
           {
             type: "p",
-            text: "The two boards can look almost identical on the shelf. The difference is in the glue between the layers and in how the veneers are treated. Under a hot, humid kitchen sink that difference is everything: MR glue softens and the layers slowly separate, while BWP glue stays bonded even after hours in boiling water, which is exactly the test the standard requires.",
+            text: "The two boards can look almost identical on the shelf. The difference is in the glue between the layers and in how the veneers are treated. Under a bathroom vanity or on a damp utility wall that difference is everything: MR glue softens and the layers slowly separate, while BWP glue stays bonded even after hours in boiling water, which is exactly the test the standard requires.",
           },
           {
             type: "quote",
-            text: "The finish is what you see, but the plywood is what keeps your kitchen strong for years.",
+            text: "The finish is what you see, but the plywood is what keeps your cabinets strong for years.",
           },
         ],
       },
@@ -208,7 +98,7 @@ export const ARTICLES: Article[] = [
             rows: [
               ["Water resistance", "Resistant to moisture", "Waterproof (boiling water proof)"],
               ["Strength", "Good for dry areas", "Higher strength and durability"],
-              ["Best for", "Wardrobes, TV units, dry rooms", "Kitchens, bathrooms, utility areas"],
+              ["Best for", "Wardrobes, TV units, dry rooms", "Bathrooms, utility areas, balconies"],
               ["Typical price (18 mm)", "₹50 – 70 per sq.ft", "₹90 – 130 per sq.ft"],
               ["Lifespan", "8–10 years (indoor, dry use)", "15+ years (even in wet conditions)"],
             ],
@@ -225,13 +115,13 @@ export const ARTICLES: Article[] = [
         blocks: [
           {
             type: "p",
-            text: "Use BWP plywood for kitchen base and wall cabinets, especially near the sink, dishwasher or any water source. MR plywood is a good choice for wardrobes, TV units and other dry areas like bedrooms and living rooms. In a bathroom vanity or a utility area with a washing machine, BWP is not optional.",
+            text: "Use BWP plywood for any cabinet near a water source: bathroom vanities, utility units and wardrobes on damp walls. MR plywood is a good choice for wardrobes, TV units and other dry areas like bedrooms and living rooms. In a bathroom vanity or a utility area with a washing machine, BWP is not optional.",
           },
           {
             type: "list",
             items: [
-              "Kitchen base units and the sink unit: BWP, always.",
-              "Kitchen wall units: BWP, because steam from the hob rises straight into them.",
+              "Bathroom vanities and utility units: BWP, always.",
+              "Wardrobes on external or bathroom walls: BWP, because damp travels through the plaster.",
               "Bedroom wardrobes and lofts: MR is fine in a dry room; BWP if the wall has ever shown damp.",
               "TV units, study tables, bookshelves: MR.",
               "Bathroom vanities, utility and balcony storage: BWP.",
@@ -239,7 +129,7 @@ export const ARTICLES: Article[] = [
           },
           {
             type: "callout",
-            text: "Our rule of thumb: BWP for kitchens and other wet areas; MR is fine for wardrobes in dry bedrooms.",
+            text: "Our rule of thumb: BWP for wet areas; MR is fine for wardrobes in dry bedrooms.",
           },
         ],
       },
@@ -249,11 +139,11 @@ export const ARTICLES: Article[] = [
         blocks: [
           {
             type: "p",
-            text: "On paper BWP costs almost double per board. In a real kitchen the gap is much smaller than it looks. A 120 sq.ft L-shaped kitchen uses roughly 12–14 sheets of 18 mm plywood for the carcasses. At Jaipur 2026 prices that is about ₹22,000 in MR or ₹38,000 in BWP: a difference of around ₹15,000–18,000 on a kitchen that costs ₹2 lakh or more with finishes and hardware.",
+            text: "On paper BWP costs almost double per board. In a real project the gap is much smaller than it looks. A 7 × 8 ft wardrobe with a loft uses roughly 5–6 sheets of 18 mm plywood for the carcass. At Jaipur 2026 prices that is about ₹9,000 in MR or ₹16,000 in BWP: a difference of around ₹6,000–7,000 on a wardrobe that costs ₹1.2 lakh or more with finishes and hardware.",
           },
           {
             type: "p",
-            text: "Compare that with the cost of replacing a swollen sink unit after five years, which means new boards, new laminate, new hinges and two days of a carpenter on site. The premium for BWP pays for itself the first time a pipe joint weeps or a monsoon leaves the wall damp. This is why BWP is standard in our Premium and Luxury grades and why we recommend it even for Standard kitchens.",
+            text: "Compare that with the cost of replacing a swollen vanity or wardrobe base after five years, which means new boards, new laminate, new hinges and two days of a carpenter on site. The premium for BWP pays for itself the first time a pipe joint weeps or a monsoon leaves the wall damp. This is why BWP is standard in our Premium and Luxury grades and why we recommend it even for Standard wet-area units.",
           },
           {
             type: "p",
@@ -267,7 +157,7 @@ export const ARTICLES: Article[] = [
         blocks: [
           {
             type: "p",
-            text: "For every kitchen we build in Sambhar, Nawa and Jaipur we use 18 mm BWP marine plywood for the carcasses and drawer boxes, with all cut edges sealed with PVC edge-banding so water cannot enter through the end grain. For wardrobes in dry bedrooms we are happy to use MR plywood to keep the budget in check, and we say so in the quotation.",
+            text: "For every wet-area unit we build in Sambhar, Nawa and Jaipur we use 18 mm BWP marine plywood for the carcasses and drawer boxes, with all cut edges sealed with PVC edge-banding so water cannot enter through the end grain. For wardrobes in dry bedrooms we are happy to use MR plywood to keep the budget in check, and we say so in the quotation.",
           },
           {
             type: "p",
@@ -293,14 +183,14 @@ export const ARTICLES: Article[] = [
       },
     ],
     quickTips: [
-      "Use BWP plywood for all kitchen cabinets, especially below the sink.",
+      "Use BWP plywood for every cabinet near water, especially bathroom vanities.",
       "Check for ISI mark and brand (eg. Century, Greenply, Anchor).",
       "Make sure edges are properly sealed with PVC edge-banding.",
       "Use good quality hardware for longer life.",
     ],
     authorBio: AUTHOR_BIO,
     related: [
-      "modular-kitchen-cost-jaipur-2026",
+      "wpc-wall-panels-pros-cons-costs",
       "false-ceiling-designs-small-rooms",
       "laminate-acrylic-pu-wardrobe-finishes",
     ],
@@ -367,7 +257,7 @@ export const ARTICLES: Article[] = [
     related: [
       "cove-lighting-101-warm-or-neutral-white",
       "wpc-wall-panels-pros-cons-costs",
-      "modular-kitchen-cost-jaipur-2026",
+      "laminate-acrylic-pu-wardrobe-finishes",
     ],
   },
   {
@@ -452,85 +342,8 @@ export const ARTICLES: Article[] = [
     authorBio: AUTHOR_BIO,
     related: [
       "bwp-vs-mr-plywood",
-      "modular-kitchen-cost-jaipur-2026",
-      "inside-our-workshop-how-a-kitchen-gets-built",
-    ],
-  },
-  {
-    slug: "inside-our-workshop-how-a-kitchen-gets-built",
-    title: "Inside our workshop: how a kitchen gets built",
-    dek: "From a measured drawing to a finished carcass, step by step in our Sambhar workshop.",
-    category: "Behind the build",
-    readTime: "6 min read",
-    date: "15 Aug 2026",
-    image: "journal-workshop",
-    hero: "journal-workshop",
-    author: AUTHOR,
-    sections: [
-      {
-        id: "drawing",
-        heading: "It starts with a drawing, not a saw",
-        blocks: [
-          {
-            type: "p",
-            text: "Every kitchen we build begins as a set of measured drawings: a plan, elevations of each wall and a cutting list that names every panel with its size, board grade and finish. The site measurements are taken twice, once at the first visit and again after the counter is fixed, because a platform that is 12 mm out of level changes every base unit. Nothing is cut until the client has signed the 3D view and the itemised quotation.",
-          },
-        ],
-      },
-      {
-        id: "cutting",
-        heading: "Cutting and edge-banding",
-        blocks: [
-          {
-            type: "p",
-            text: "Boards are sized on an industrial panel saw that cuts to the millimetre and keeps every edge square, which is what makes cabinets close without gaps. Each panel then goes through the edge-bander, where a PVC strip is glued to every exposed edge and trimmed flush. This is the step most site carpenters skip, and it is the step that stops moisture getting into the plywood.",
-          },
-          {
-            type: "list",
-            items: [
-              "Panel saw: 18 mm BWP plywood cut from the cutting list, labelled by unit.",
-              "Edge-bander: 2 mm PVC on shutter edges, 0.8 mm on internal panels.",
-              "Drilling: hinge cups and shelf pins drilled on a jig so every door lines up.",
-            ],
-          },
-        ],
-      },
-      {
-        id: "assembly",
-        heading: "Assembly and hardware",
-        blocks: [
-          {
-            type: "p",
-            text: "Carcasses are assembled with minifix fittings and dowels, checked for square with a diagonal measure and fitted with hinges, tandem drawer channels and pull-outs in the workshop. Every drawer is opened and closed before it leaves. Shutters are laminated on a hydraulic press so the finish sits flat with no bubbles, then hung on the carcass and adjusted.",
-          },
-        ],
-      },
-      {
-        id: "site",
-        heading: "On site",
-        blocks: [
-          {
-            type: "p",
-            text: "Units arrive wrapped and numbered. Our own installation team levels the base units, fixes the wall units to the brickwork with anchor bolts, fits the counter and connects the chimney and lights. Because everything was assembled in the workshop, the site work for a 120 sq.ft kitchen takes about a week, and the family gets photo updates on WhatsApp each evening.",
-          },
-          {
-            type: "callout",
-            text: "You are welcome to visit the workshop in Sambhar while your kitchen is being built. Message us on WhatsApp and we will fix a time.",
-          },
-        ],
-      },
-    ],
-    quickTips: [
-      "Ask where your cabinets will be built: workshop or on site.",
-      "Edge-banding on every edge is a sign of a proper workshop.",
-      "Drawers should be tested before delivery, not after.",
-      "Numbered units mean a faster, cleaner installation.",
-    ],
-    authorBio: AUTHOR_BIO,
-    related: [
-      "bwp-vs-mr-plywood",
-      "modular-kitchen-cost-jaipur-2026",
-      "laminate-acrylic-pu-wardrobe-finishes",
+      "false-ceiling-designs-small-rooms",
+      "wpc-wall-panels-pros-cons-costs",
     ],
   },
   {
@@ -561,7 +374,7 @@ export const ARTICLES: Article[] = [
           {
             type: "list",
             items: [
-              "Fully waterproof and termite-proof, so it works in bathrooms, balconies and kitchens.",
+              "Fully waterproof and termite-proof, so it works in bathrooms, balconies and utility areas.",
               "Light and quick to fit: a 96 sq.ft TV wall takes a day or two.",
               "No painting or polishing; wipe clean with a damp cloth.",
               "Hides uneven plaster and cable runs behind the panel.",
@@ -640,7 +453,7 @@ export const ARTICLES: Article[] = [
             type: "list",
             items: [
               "Bedrooms and living rooms: warm 2700K in the cove, warm spots to match.",
-              "Kitchens: neutral 4000K under the wall units so vegetables and spices look right, warm in the cove above.",
+              "Study corners: neutral 4000K over the desk so reading is comfortable, warm in the cove above.",
               "Study and work corners: neutral 4000K, dimmable if possible.",
               "Pooja units: warm 2700K, low output, so the niche glows rather than glares.",
             ],
@@ -677,7 +490,7 @@ export const ARTICLES: Article[] = [
       },
     ],
     quickTips: [
-      "2700K for bedrooms and living rooms, 4000K for kitchens and studies.",
+      "2700K for bedrooms and living rooms, 4000K for studies and dressing areas.",
       "Always use an aluminium profile with a diffuser.",
       "Separate switches for cove, spots and fan.",
       "Size the driver with 20% spare capacity.",
@@ -686,7 +499,7 @@ export const ARTICLES: Article[] = [
     related: [
       "false-ceiling-designs-small-rooms",
       "wpc-wall-panels-pros-cons-costs",
-      "modular-kitchen-cost-jaipur-2026",
+      "laminate-acrylic-pu-wardrobe-finishes",
     ],
   },
 ];
@@ -745,8 +558,8 @@ export const ARTICLE_PAGE = {
   tocTitle: "In this article",
   share: { whatsapp: "Share on WhatsApp", copy: "Copy link" },
   estimateCard: {
-    title: "Estimate your kitchen",
-    text: "Get an approximate cost for your modular kitchen in 60 seconds.",
+    title: "Estimate your wardrobe",
+    text: "Get an approximate cost for your wardrobes in 60 seconds.",
     areaLabel: "Area (sq.ft)",
     gradeLabel: "Material grade",
     button: "Get my estimate",

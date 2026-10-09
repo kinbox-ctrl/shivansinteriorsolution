@@ -14,7 +14,6 @@ export const HOME_HERO = {
 } as const;
 
 export const MARQUEE_ITEMS: string[] = [
-  "Modular Kitchens",
   "Wardrobes",
   "False Ceilings",
   "Wall Panelling",
@@ -49,9 +48,9 @@ export const BLUEPRINT_SECTION = {
   eyebrow: "Our process",
   titleLines: ["Blueprint", "to Reality"],
   text: "From measured drawing to finished installation.",
-  before: { image: "blueprint-kitchen" as ImageKey, label: "Our design" },
-  after: { image: "kitchen-island-finished" as ImageKey, label: "Delivered" },
-  dimensions: ["2440 mm", "900 mm"],
+  before: { image: "elevation" as ImageKey, label: "Our design" },
+  after: { image: "grid-fluted-tv" as ImageKey, label: "Delivered" },
+  dimensions: ["3000 mm", "2400 mm"],
 } as const;
 
 export const HOME_CTA = {
@@ -65,7 +64,7 @@ export const HOME_CTA = {
 export const NOT_FOUND = {
   dimension: "404 mm",
   title: "This room isn't built yet.",
-  text: "The page you're looking for doesn't exist, but your dream kitchen could.",
+  text: "The page you're looking for doesn't exist, but your dream home could.",
   primary: "Back to home",
   secondary: "See our projects",
   link: "or chat with us on WhatsApp",

@@ -162,6 +162,18 @@
     -webkit-text-size-adjust: 100%;
   }
 
+  /* Desktop screens sit further from the eye than a phone: scale the whole page up a touch. */
+  @media (min-width: 1280px) {
+    html {
+      zoom: 1.1;
+    }
+  }
+  @media (min-width: 1800px) {
+    html {
+      zoom: 1.2;
+    }
+  }
+
   body {
     background-color: var(--color-cloud);
     color: var(--color-ink);

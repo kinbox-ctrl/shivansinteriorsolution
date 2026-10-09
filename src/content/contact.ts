@@ -48,7 +48,6 @@ export const TOWN_OPTIONS = ["Sambhar", "Nawa", "Jaipur", "Other"] as const;
 export type TownOption = (typeof TOWN_OPTIONS)[number];
 
 export const PLANNING_OPTIONS = [
-  "Kitchen",
   "Wardrobes",
   "Ceiling",
   "Full home",
@@ -125,7 +124,7 @@ export const THANK_YOU_SAMPLE = {
   date: "Sat, 3 Oct 2026",
   slot: "Morning (10 AM – 12 PM)",
   town: "Jaipur",
-  planning: "Kitchen, Wardrobes",
+  planning: "Wardrobes, Ceiling",
   reference: "SIS-2410",
 } as const;
 
@@ -200,7 +199,7 @@ export const THANK_YOU = {
     eyebrow: "Explore while you wait",
     title: "Find ideas for your home.",
     text: "Take a look at some of our recent projects to get inspired.",
-    slugs: ["teal-copper-kitchen", "master-bedroom-suite", "walnut-teal-living-room"],
+    slugs: ["fluted-tv-wall", "master-bedroom-suite", "walnut-teal-living-room"],
     viewAll: "View all projects",
   },
 } as const;
