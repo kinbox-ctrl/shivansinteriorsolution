@@ -793,6 +793,52 @@ export function getCategory(id: string): CatalogueCategory | undefined {
   return CATALOGUE_CATEGORIES.find((c) => c.id === id);
 }
 
+export type Brochure = {
+  id: string;
+  title: string;
+  /** One line on what the brochure covers. */
+  text: string;
+  /** Public URL of the PDF (served from /public/brochures). */
+  file: string;
+  /** Public URL of the rendered cover page. */
+  cover: string;
+  /** Filename the browser saves the PDF as. */
+  download: string;
+  pages: number;
+  size: string;
+  /** Size and thickness line from the brochure. */
+  spec: string;
+  category: CatalogueCategoryId;
+};
+
+/** Printed product brochures customers can download. Files live in /public/brochures. */
+export const BROCHURES: Brochure[] = [
+  {
+    id: "wpc-louvers",
+    title: "WPC Louvers",
+    text: "The full SIS louver range: wood-grain, marble and solid finishes with the WL codes to quote from.",
+    file: "/brochures/sis-wpc-louvers.pdf",
+    cover: "/brochures/sis-wpc-louvers-cover.jpg",
+    download: "Shivansh-WPC-Louvers-2026.pdf",
+    pages: 12,
+    size: "3.5 MB",
+    spec: "200 mm × 2900 mm · 13–17 mm thick",
+    category: "panels-floors",
+  },
+  {
+    id: "soffit-panel-500",
+    title: "Soffit Panel 500 Series",
+    text: "Exterior and ceiling soffit panels in the 500 series, every finish with its SF code.",
+    file: "/brochures/sis-soffit-panel-500-series.pdf",
+    cover: "/brochures/sis-soffit-panel-500-series-cover.jpg",
+    download: "Shivansh-Soffit-Panel-500-Series-2026.pdf",
+    pages: 11,
+    size: "0.6 MB",
+    spec: "300 mm × 2950 mm",
+    category: "ceilings-lighting",
+  },
+];
+
 export const CATALOGUE_PAGE = {
   eyebrow: "Product catalogue",
   headlineLead: "Everything we build with,",
@@ -805,6 +851,14 @@ export const CATALOGUE_PAGE = {
   fromLabel: "From",
   emptyTitle: "Nothing matches that search.",
   emptyText: "Try another word, or ask us on WhatsApp and we will find it.",
+  brochures: {
+    eyebrow: "Brochures",
+    title: "Download the product brochures",
+    text: "Our printed catalogues as PDFs, with every finish and its product code. Save them, share them with your designer, or send us a code on WhatsApp to get a price.",
+    download: "Download PDF",
+    open: "View",
+    heroLink: "Download brochures",
+  },
   pricesTitle: "How to read these prices",
   prices: [
     "All rates exclude 18% GST. The estimator adds GST for you.",

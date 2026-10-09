@@ -3,6 +3,8 @@ import {
   Calculator,
   CookingPot,
   DoorClosed,
+  ExternalLink,
+  FileDown,
   Layers,
   Lightbulb,
   Palette,
@@ -26,6 +28,7 @@ import {
   VerticalRuler,
 } from "@/components/site";
 import {
+  BROCHURES,
   CATALOGUE_CATEGORIES,
   CATALOGUE_PAGE,
   CATALOGUE_TAGS,
@@ -140,6 +143,13 @@ export function CataloguePage() {
               <p className="mt-4 max-w-xl text-[16px] leading-relaxed text-ink-soft lg:text-[17px]">
                 {copy.sub}
               </p>
+              <a
+                href="#brochures"
+                className="mt-4 inline-flex items-center gap-2 text-[14px] font-semibold text-copper underline-offset-4 hover:underline"
+              >
+                <FileDown className="size-4" strokeWidth={1.5} aria-hidden />
+                {copy.brochures.heroLink}
+              </a>
             </div>
             <div className="relative lg:col-span-5">
               <HandNote
@@ -288,6 +298,91 @@ export function CataloguePage() {
               );
             })}
           </div>
+        </Container>
+      </Section>
+
+      {/* Brochures -------------------------------------------------------------------- */}
+      <Section
+        id="brochures"
+        tone="cloud"
+        className="scroll-mt-24 border-t border-line/70 py-12 lg:py-16"
+      >
+        <Container>
+          <Reveal className="grid gap-8 lg:grid-cols-12 lg:items-start">
+            <div className="lg:col-span-4">
+              <Eyebrow className="mb-4">{copy.brochures.eyebrow}</Eyebrow>
+              <Heading as="h2" size="md" className="lg:text-[34px] lg:leading-[1.08]">
+                {copy.brochures.title}
+              </Heading>
+              <p className="mt-3 max-w-[340px] text-[15px] leading-relaxed text-ink-soft">
+                {copy.brochures.text}
+              </p>
+            </div>
+            <ul className="m-0 grid list-none gap-5 p-0 sm:grid-cols-2 lg:col-span-8">
+              {BROCHURES.map((b) => {
+                const cat = getCategory(b.category);
+                return (
+                  <li
+                    key={b.id}
+                    className="flex gap-4 rounded-3xl border border-line bg-white p-4 shadow-soft transition-[transform,box-shadow] duration-500 ease-soft hover:-translate-y-0.5 hover:shadow-lift"
+                  >
+                    <a
+                      href={b.file}
+                      download={b.download}
+                      className="block w-[112px] shrink-0 self-start overflow-hidden rounded-2xl border border-line bg-linen sm:w-[132px]"
+                      aria-label={`${copy.brochures.download}: ${b.title}`}
+                    >
+                      <img
+                        src={b.cover}
+                        alt={`${b.title} brochure cover`}
+                        loading="lazy"
+                        decoding="async"
+                        width={900}
+                        height={900}
+                        className="aspect-square h-auto w-full object-cover"
+                      />
+                    </a>
+                    <div className="flex min-w-0 flex-1 flex-col">
+                      {cat && (
+                        <span className="font-mono text-[10px] tracking-[0.14em] text-ink-soft uppercase">
+                          {cat.label}
+                        </span>
+                      )}
+                      <h3 className="mt-1 font-display text-[20px] leading-tight font-medium text-teal">
+                        {b.title}
+                      </h3>
+                      <p className="mt-1.5 text-[13px] leading-relaxed text-ink-soft">{b.text}</p>
+                      <p className="mt-2 text-[12px] text-ink">{b.spec}</p>
+                      <p className="mt-0.5 font-mono text-[10.5px] tracking-[0.12em] text-ink-soft uppercase">
+                        PDF · {b.pages} pages · {b.size}
+                      </p>
+                      <div className="mt-auto flex flex-wrap gap-2 pt-3">
+                        <Button
+                          href={b.file}
+                          download={b.download}
+                          variant="primary"
+                          size="sm"
+                          icon={<FileDown strokeWidth={1.5} aria-hidden />}
+                        >
+                          {copy.brochures.download}
+                        </Button>
+                        <Button
+                          href={b.file}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          variant="secondary"
+                          size="sm"
+                          icon={<ExternalLink strokeWidth={1.5} aria-hidden />}
+                        >
+                          {copy.brochures.open}
+                        </Button>
+                      </div>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </Reveal>
         </Container>
       </Section>
 
