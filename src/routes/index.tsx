@@ -2,7 +2,7 @@ import { createFileRoute, lazyRouteComponent } from "@tanstack/react-router";
 
 const TITLE = "Shivansh Interior Solutions | Interiors in Sambhar, Jaipur";
 const DESCRIPTION =
-  "Modular kitchens, wardrobes, false ceilings and complete home interiors designed, manufactured and installed by our own team across Sambhar, Nawa and Jaipur. Interiors built with craft, not shortcuts.";
+  "Wardrobes, false ceilings, wall panelling and complete home interiors designed, manufactured and installed by our own team across Sambhar, Nawa and Jaipur. Interiors built with craft, not shortcuts.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

@@ -6,7 +6,6 @@ import type { ImageKey } from "./image-keys";
 import type { SpaceId } from "./pricing";
 
 export type CatalogueCategoryId =
-  | "kitchens"
   | "wardrobes"
   | "boards"
   | "finishes"
@@ -24,12 +23,6 @@ export type CatalogueCategory = {
 };
 
 export const CATALOGUE_CATEGORIES: CatalogueCategory[] = [
-  {
-    id: "kitchens",
-    label: "Kitchen modules",
-    icon: "CookingPot",
-    blurb: "Base, wall and tall units, islands and the accessories that go inside them.",
-  },
   {
     id: "wardrobes",
     label: "Wardrobes",
@@ -70,7 +63,8 @@ export const CATALOGUE_CATEGORIES: CatalogueCategory[] = [
     id: "countertops",
     label: "Countertops",
     icon: "Square",
-    blurb: "Granite, marble and quartz counters, cut and polished on site.",
+    blurb:
+      "Granite, marble and quartz for vanities, pooja bases and utility counters, cut and polished on site.",
   },
 ];
 
@@ -108,121 +102,6 @@ export type Product = {
 };
 
 export const PRODUCTS: Product[] = [
-  /* ---------------------------------------------------------------- kitchens */
-  {
-    id: "base-unit",
-    category: "kitchens",
-    name: "Base units",
-    tagline: "Drawers, shutters and sink units below the counter.",
-    specs: [
-      "600 mm deep, 850 mm high",
-      "18 mm carcass, 2 mm PVC edge",
-      "Soft-close drawers optional",
-    ],
-    priceFrom: 4200,
-    priceTo: 6500,
-    unit: "per rft",
-    priceNote: "installed, Standard to Premium",
-    leadTime: "3–4 weeks",
-    warranty: "5 years on hardware",
-    image: "cat-base-unit",
-    tags: ["Popular"],
-    estimatorSpace: "kitchen",
-  },
-  {
-    id: "wall-unit",
-    category: "kitchens",
-    name: "Wall units",
-    tagline: "Overhead storage with lift-up or hinged shutters.",
-    specs: [
-      "350 mm deep, 600–720 mm high",
-      "Profile light under the unit",
-      "Glass or solid shutters",
-    ],
-    priceFrom: 3200,
-    priceTo: 4800,
-    unit: "per rft",
-    priceNote: "installed",
-    leadTime: "3–4 weeks",
-    image: "cat-wall-unit",
-    tags: [],
-    estimatorSpace: "kitchen",
-  },
-  {
-    id: "tall-unit",
-    category: "kitchens",
-    name: "Tall & pantry units",
-    tagline: "Floor-to-ceiling storage for groceries, oven and fridge housing.",
-    specs: ["2,100–2,400 mm high", "Pull-out pantry baskets", "Built-in oven or microwave niche"],
-    priceFrom: 7500,
-    priceTo: 11000,
-    unit: "per rft",
-    priceNote: "installed",
-    leadTime: "3–4 weeks",
-    image: "cat-tall-unit",
-    tags: ["Premium"],
-    estimatorSpace: "kitchen",
-  },
-  {
-    id: "island",
-    category: "kitchens",
-    name: "Island unit",
-    tagline: "A 6 ft island with counter, drawers and a breakfast ledge.",
-    specs: [
-      "1,800 × 900 mm",
-      "Counter and shutters matched to the kitchen",
-      "Optional hob or sink",
-    ],
-    priceFrom: 48000,
-    unit: "per set",
-    priceNote: "installed, excluding counter stone upgrade",
-    leadTime: "4 weeks",
-    image: "render-3d",
-    tags: ["Premium"],
-    estimatorSpace: "kitchen",
-  },
-  {
-    id: "accessories-basic",
-    category: "kitchens",
-    name: "Accessory set · Basic",
-    tagline: "Cutlery tray and a bottle pull-out.",
-    specs: ["SS cutlery tray", "Bottle pull-out, 150 mm", "Fits any base unit"],
-    priceFrom: 9000,
-    unit: "per set",
-    leadTime: "In stock",
-    brands: "Ebco, Ozone",
-    image: "cat-tandem-drawer",
-    tags: ["Budget"],
-    estimatorSpace: "kitchen",
-  },
-  {
-    id: "accessories-standard",
-    category: "kitchens",
-    name: "Accessory set · Standard",
-    tagline: "Basic set plus a corner carousel and tall pantry baskets.",
-    specs: ["Corner carousel or D-tray", "Pantry pull-out, 4 baskets", "Plate and thali racks"],
-    priceFrom: 32000,
-    unit: "per set",
-    leadTime: "1–2 weeks",
-    brands: "Hettich, Hafele",
-    image: "cabinet-inside",
-    tags: ["Recommended", "Popular"],
-    estimatorSpace: "kitchen",
-  },
-  {
-    id: "accessories-full",
-    category: "kitchens",
-    name: "Accessory set · Full",
-    tagline: "Magic corner, tandem baskets and wicker units.",
-    specs: ["Magic corner unit", "Tandem baskets on every drawer", "Wicker and oil pull-outs"],
-    priceFrom: 68000,
-    unit: "per set",
-    leadTime: "2–3 weeks",
-    brands: "Blum, Hettich",
-    image: "cabinet-inside",
-    tags: ["Premium"],
-    estimatorSpace: "kitchen",
-  },
   /* --------------------------------------------------------------- wardrobes */
   {
     id: "hinged-wardrobe",
@@ -312,11 +191,11 @@ export const PRODUCTS: Product[] = [
     id: "bwp-plywood",
     category: "boards",
     name: "BWP marine plywood",
-    tagline: "Boiling-water-proof plywood for kitchens and wet areas.",
+    tagline: "Boiling-water-proof plywood for bathrooms and wet areas.",
     specs: [
       "18 mm, 8 × 4 ft, IS 710",
       "Phenolic resin, borer-proof",
-      "Kitchens, bathrooms, utility",
+      "Bathrooms, utility, balconies",
     ],
     priceFrom: 3800,
     priceTo: 5600,
@@ -350,7 +229,7 @@ export const PRODUCTS: Product[] = [
     category: "boards",
     name: "Boilo board",
     tagline: "Waterproof engineered board for refined shutters.",
-    specs: ["18 mm, 8 × 4 ft", "Boiling-water-resistant", "Kitchen shutters, bathroom vanities"],
+    specs: ["18 mm, 8 × 4 ft", "Boiling-water-resistant", "Wardrobe shutters, bathroom vanities"],
     priceFrom: 3400,
     priceTo: 4200,
     unit: "per sheet",
@@ -750,9 +629,8 @@ export const PRODUCTS: Product[] = [
     unit: "per sq.ft",
     priceNote: "installed",
     leadTime: "1 week",
-    image: "gallery-kitchen-a",
+    image: "mat-copper-handle",
     tags: ["Budget", "Popular"],
-    estimatorSpace: "kitchen",
   },
   {
     id: "marble",
@@ -766,7 +644,6 @@ export const PRODUCTS: Product[] = [
     leadTime: "2 weeks",
     image: "mat-marble",
     tags: ["Premium"],
-    estimatorSpace: "kitchen",
   },
   {
     id: "quartz",
@@ -781,7 +658,6 @@ export const PRODUCTS: Product[] = [
     brands: "Kalinga, Caesarstone",
     image: "cat-quartz",
     tags: ["Recommended"],
-    estimatorSpace: "kitchen",
   },
 ];
 

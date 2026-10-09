@@ -1,0 +1,80 @@
+// Removed from the site on 9 Oct 2026. Original source: see backup/kitchen/README.md
+
+  {
+    slug: "teal-copper-kitchen",
+    title: "Teal & Copper Kitchen",
+    place: "Sambhar",
+    category: "Kitchens",
+    kind: "Kitchen",
+    grade: "Premium",
+    year: "2024",
+    area: "148 sq.ft",
+    image: "grid-kitchen",
+    hero: "kitchen-teal-hero",
+    summary:
+      "A modern, functional kitchen designed for a family of five. Warm, durable materials with a timeless colour palette that feels like home.",
+    story: {
+      title: "A kitchen that works as beautifully as it looks.",
+      paragraphs: [
+        "A family of five in Sambhar wanted a kitchen with more storage, easy cleaning and a colour that felt like them: modern, warm and timeless. They loved the idea of a bold yet calm space, with premium fittings that would last for years.",
+        "We kept the existing platform, planned an L-shaped layout with a small island and built every unit in petrol teal matte laminate on BWP marine plywood, finished with copper bar handles and a marble-look counter.",
+      ],
+    },
+    asked: [
+      "More storage for a family of five",
+      "Easy to clean and maintain",
+      "A modern colour palette with character",
+      "Premium yet durable materials",
+      "A functional layout for everyday cooking",
+      "Soft-close drawers and shutters",
+    ],
+    facts: {
+      space: "Modular kitchen",
+      area: "120 sq.ft",
+      grade: "Premium",
+      timeline: "5 weeks",
+      completed: "2025",
+    },
+    materials: [
+      {
+        name: "Teal matte laminate",
+        note: "Durable, elegant and easy to clean.",
+        image: "mat-teal-laminate",
+      },
+      {
+        name: "BWP marine plywood",
+        note: "Moisture resistant and long lasting.",
+        image: "mat-bwp-plywood",
+      },
+      { name: "Copper bar handles", note: "A warm, premium detail.", image: "mat-copper-handle" },
+      {
+        name: "Marble-look countertop",
+        note: "Elegant, durable and practical.",
+        image: "mat-marble",
+      },
+      { name: "Soft-close hinges", note: "Smooth, quiet and built to last.", image: "mat-hinge" },
+    ],
+    timeline: KITCHEN_TIMELINE,
+    drawings: KITCHEN_DRAWINGS,
+    gallery: [
+      "gallery-kitchen-wide",
+      "gallery-kitchen-a",
+      "gallery-kitchen-b",
+      "gallery-handle-detail",
+    ],
+    before: "kitchen-before",
+    after: "kitchen-after",
+    quote: {
+      text: "They understood our needs so well and gave us a kitchen that is beautiful, functional and easy to maintain. We couldn't be happier with the result.",
+      name: "Rohit Sharma",
+      town: "Sambhar, Rajasthan",
+      image: "testimonial-room",
+    },
+    budget: {
+      label: "This kitchen:",
+      range: "₹2.1 – 2.4 lakh",
+      note: "Premium, 120 sq.ft",
+      cta: "Estimate your kitchen",
+    },
+    next: "master-bedroom-suite",
+  },

@@ -122,287 +122,9 @@ const SHARED_FAQ_SITE_VISIT: ServiceFaq = {
   a: "Yes, the site visit is completely free. We measure the space, understand your requirements and share a rough estimate along with design suggestions.",
 };
 
-const SERVICE_KITCHEN: Service = {
-  slug: "modular-kitchens",
-  n: "02",
-  title: "Modular Kitchens",
-  short: "Made-to-measure kitchens built around how you cook, store and live.",
-  long: "Moisture-resistant kitchens built around how your family cooks, stores and lives. Every carcass is cut and edge-banded in our Sambhar workshop and fitted by our own team.",
-  includes: [
-    "Modular cabinets & drawers",
-    "Premium shutters & finishes",
-    "Chimney, hob & accessories",
-    "Plumbing & electrical integration",
-  ],
-  priceChip: "From ₹1,350/sq.ft",
-  gradePrices: { standard: "₹1,350/sq.ft", premium: "₹2,000/sq.ft", luxury: "₹2,590/sq.ft" },
-  image: "svc-kitchen",
-  heroImage: "kitchen-teal-hero",
-  headlineLead: "Modular kitchens built around how",
-  headlineEm: "your family cooks.",
-  heroSub:
-    "Moisture-resistant BWP plywood, premium hardware and in-house installation for kitchens that last.",
-  heroPrimary: "Get my kitchen estimate",
-  heroSecondary: "WhatsApp a photo of your kitchen",
-  factChips: [
-    { label: "From ₹1,350/sq.ft", sub: "Standard grade", icon: "IndianRupee" },
-    { label: "Free site visit", sub: "in Sambhar, Nawa, Jaipur", icon: "MapPin" },
-    { label: "Hardware warranty", sub: "Up to 10 years", icon: "ShieldCheck" },
-  ],
-  callouts: [
-    { label: "BWP marine plywood carcass", x: 22, y: 34 },
-    { label: "Soft-close hinges & tandem drawers", x: 74, y: 78 },
-    { label: "Profile-lit wall units", x: 70, y: 22 },
-  ],
-  lightsToggle: false,
-  options: {
-    kind: "layout",
-    label: "Choose your kitchen layout",
-    moreLabel: "View more layouts",
-    items: [
-      {
-        id: "l-shaped",
-        label: "L-shaped",
-        icon: "Columns2",
-        drawing: "plan-l-shaped",
-        dimensions: ["3040 mm", "2440 mm"],
-        image: "layout-photo",
-        bestFor: [
-          "Most common and versatile",
-          "Works well in Indian homes",
-          "Good for small to medium spaces",
-          "Keeps cooking, cleaning and storage close",
-        ],
-      },
-      {
-        id: "u-shaped",
-        label: "U-shaped",
-        icon: "Columns3",
-        drawing: "plan-l-shaped",
-        dimensions: ["3350 mm", "2740 mm"],
-        image: "kitchen-gallery-2",
-        bestFor: [
-          "Maximum counter and storage space",
-          "Ideal for large families who cook a lot",
-          "Needs a room at least 2.4 m wide",
-          "Separate zones for prep, cooking and washing",
-        ],
-      },
-      {
-        id: "parallel",
-        label: "Parallel",
-        icon: "Rows2",
-        drawing: "plan-l-shaped",
-        dimensions: ["3660 mm", "2130 mm"],
-        image: "kitchen-gallery-3",
-        bestFor: [
-          "Narrow kitchens with doors at both ends",
-          "Efficient two-wall work triangle",
-          "Common in Jaipur apartments",
-          "Easy to keep wet and dry sides apart",
-        ],
-      },
-      {
-        id: "straight",
-        label: "Straight",
-        icon: "Rows3",
-        drawing: "plan-l-shaped",
-        dimensions: ["3050 mm", "600 mm"],
-        image: "kitchen-gallery-4",
-        bestFor: [
-          "Compact 1BHK and studio kitchens",
-          "Open-plan living and dining areas",
-          "Lowest cost per running foot",
-          "Tall units add storage on one wall",
-        ],
-      },
-      {
-        id: "island",
-        label: "Island",
-        icon: "LayoutGrid",
-        drawing: "plan-l-shaped",
-        dimensions: ["4270 mm", "3660 mm"],
-        image: "kitchen-gallery-1",
-        bestFor: [
-          "Large open kitchens and villas",
-          "Extra prep space and breakfast seating",
-          "A social kitchen for entertaining",
-          "Needs about 1 m of walking space all round",
-        ],
-      },
-    ],
-  },
-  finishes: {
-    caption: "Tap a finish to preview it on the kitchen.",
-    previewImage: "finish-preview",
-    previewLabel: "Petrol Teal matte with copper handles",
-    groups: [
-      {
-        id: "shutter",
-        label: "Shutter Finish",
-        swatches: [
-          { id: "petrol-teal", label: "Petrol Teal", hex: "#1F5F63", sub: "Matte laminate" },
-          { id: "sage", label: "Sage Green", hex: "#8FA694", sub: "Matte laminate" },
-          { id: "walnut", label: "Walnut Veneer", hex: "#6B4428", sub: "Wood finish" },
-          { id: "ivory", label: "Ivory Acrylic", hex: "#EFE9DC", sub: "High-gloss" },
-          { id: "graphite", label: "Graphite", hex: "#3B3F41", sub: "PU finish" },
-        ],
-      },
-      {
-        id: "handle",
-        label: "Handle Finish",
-        swatches: [
-          { id: "copper", label: "Copper", hex: "#B87333", sub: "Bar handle" },
-          { id: "brass", label: "Brass", hex: "#C9A24B", sub: "Bar handle" },
-          { id: "black", label: "Matte Black", hex: "#1E1E1E", sub: "Bar handle" },
-          { id: "handleless", label: "Handle-less", hex: "#D9D4C8", sub: "Profile" },
-        ],
-      },
-    ],
-  },
-  fixChips: null,
-  inside: {
-    eyebrow: "Inside every Shivansh kitchen",
-    title: "Built to perform, inside and out.",
-    text: "Quality materials, proper detailing and expert installation in every kitchen.",
-    image: "cabinet-inside",
-  },
-  hotspots: [
-    {
-      n: 1,
-      title: "18 mm BWP plywood carcass",
-      text: "Moisture-resistant and durable.",
-      x: 28,
-      y: 14,
-    },
-    {
-      n: 2,
-      title: "Sealed edge-banding",
-      text: "Protects from moisture and gives a clean finish.",
-      x: 68,
-      y: 48,
-    },
-    { n: 3, title: "Soft-close hinges", text: "Smooth, quiet and long-lasting.", x: 86, y: 66 },
-    {
-      n: 4,
-      title: "Tandem drawer systems",
-      text: "Easy access and high load-bearing.",
-      x: 36,
-      y: 70,
-    },
-    {
-      n: 5,
-      title: "Corner pull-outs",
-      text: "Makes the most of every inch of space.",
-      x: 14,
-      y: 86,
-    },
-  ],
-  materials: [
-    {
-      name: "BWP Marine Plywood",
-      note: "Moisture-resistant and long lasting.",
-      image: "board-bwp",
-    },
-    {
-      name: "Matte / Acrylic Finish",
-      note: "Wide range of colours and finishes.",
-      image: "mat-teal-laminate",
-    },
-    {
-      name: "Quartz / Marble-look",
-      note: "Durable, easy to clean and elegant.",
-      image: "mat-marble",
-    },
-    { name: "Soft-close Hardware", note: "Hinges and tandem drawers.", image: "mat-hinge" },
-    {
-      name: "Accessories",
-      note: "Corner pull-outs, organizers and more.",
-      image: "cabinet-inside",
-    },
-  ],
-  gradeRows: [
-    {
-      grade: "standard",
-      name: "Standard",
-      from: "₹1,350/sq.ft",
-      bullets: ["MR grade plywood", "Matte laminates", "Standard fittings", "1 year warranty"],
-      recommended: false,
-    },
-    {
-      grade: "premium",
-      name: "Premium",
-      from: "₹2,000/sq.ft",
-      bullets: [
-        "BWP waterproof plywood",
-        "Acrylic / high-gloss finishes",
-        "Soft-close hardware",
-        "5 years warranty",
-      ],
-      recommended: true,
-    },
-    {
-      grade: "luxury",
-      name: "Luxury",
-      from: "₹2,590/sq.ft",
-      bullets: [
-        "HDHMR / Boilo",
-        "PU / veneer finish",
-        "Blum / Hettich hardware",
-        "10 years warranty",
-      ],
-      recommended: false,
-    },
-  ],
-  gallery: [
-    "kitchen-gallery-1",
-    "kitchen-gallery-2",
-    "kitchen-gallery-3",
-    "kitchen-gallery-4",
-    "kitchen-gallery-5",
-    "gallery-handle-detail",
-  ],
-  galleryLabel: "Kitchen gallery",
-  galleryLink: { label: "View all kitchens", to: "/projects?category=kitchens" },
-  caseStudySlug: "teal-copper-kitchen",
-  caseStudyQuote: {
-    text: "Shivansh understood how we cook and designed a kitchen that is both beautiful and practical.",
-    name: "Priya Sharma",
-    town: "Sambhar, Rajasthan",
-  },
-  faqs: [
-    SHARED_FAQ_SITE_VISIT,
-    {
-      q: "How long does a modular kitchen take?",
-      a: "A typical 100–150 sq.ft kitchen takes 4–6 weeks from design sign-off: about three weeks of manufacturing in our workshop and one to two weeks of installation on site.",
-    },
-    {
-      q: "Do you give a written warranty?",
-      a: "Yes. Every quotation lists the warranty for each item: 1 year at Standard, 5 years at Premium and 10 years at Luxury on branded hardware, plus our own workmanship guarantee.",
-    },
-    {
-      q: "Can you work with my existing platform?",
-      a: "Yes. If your granite or marble platform is level and in good condition, we build the base units to fit it. If it needs replacing, we quote that separately so you can decide.",
-    },
-    {
-      q: "Do you handle electrical and lighting too?",
-      a: "Yes. Chimney, hob, socket points and under-cabinet profile lights are planned in the drawing and wired before the units go in, so nothing is cut or patched later.",
-    },
-  ],
-  stickyBar: {
-    label: "Kitchen · 120 sq.ft · Premium",
-    note: "≈ ₹2.08 – 2.36 lakh",
-    sub: "(indicative range)",
-    primary: "Send on WhatsApp",
-    secondary: "Adjust",
-  },
-  quickEstimate: { space: "kitchen", area: 120, grade: "premium" },
-  related: ["wardrobes-storage", "false-ceiling-lighting", "wall-panelling-flooring"],
-};
-
 const SERVICE_WARDROBES: Service = {
   slug: "wardrobes-storage",
-  n: "03",
+  n: "02",
   title: "Wardrobes & Storage",
   short: "Smart storage for calmer, clutter-free living.",
   long: "Floor-to-ceiling wardrobes, lofts, TV units and smart storage for clutter-free living. Every unit is planned around what you own and built to use the full height of the wall.",
@@ -634,12 +356,12 @@ const SERVICE_WARDROBES: Service = {
     secondary: "Adjust",
   },
   quickEstimate: { space: "wardrobe", area: 80, grade: "premium" },
-  related: ["modular-kitchens", "false-ceiling-lighting", "complete-home-interiors"],
+  related: ["false-ceiling-lighting", "wall-panelling-flooring", "complete-home-interiors"],
 };
 
 const SERVICE_CEILING: Service = {
   slug: "false-ceiling-lighting",
-  n: "04",
+  n: "03",
   title: "False Ceiling & Lighting",
   short: "Beautiful ceilings with the right light for every space.",
   long: "POP and gypsum ceilings with layered profiles and lighting that sets the mood. We plan the wiring, cove and spotlights together so the room feels bigger and calmer.",
@@ -904,12 +626,12 @@ const SERVICE_CEILING: Service = {
     secondary: "Adjust",
   },
   quickEstimate: { space: "ceiling", area: 300, grade: "premium" },
-  related: ["modular-kitchens", "wall-panelling-flooring", "complete-home-interiors"],
+  related: ["wardrobes-storage", "wall-panelling-flooring", "complete-home-interiors"],
 };
 
 const SERVICE_PANELLING: Service = {
   slug: "wall-panelling-flooring",
-  n: "05",
+  n: "04",
   title: "Wall Panelling & Flooring",
   short: "Feature walls and durable flooring that feel like home.",
   long: "WPC and louvre panels, wallpaper, laminate, vinyl and wooden floors for warm, modern spaces. Concealed fixing, straight lines and finishes that stand up to Rajasthan heat.",
@@ -1140,7 +862,7 @@ const SERVICE_PANELLING: Service = {
     SHARED_FAQ_SITE_VISIT,
     {
       q: "Is WPC waterproof?",
-      a: "Yes. WPC (wood-polymer composite) does not absorb water, swell or attract termites, which makes it suitable for bathrooms, balconies and kitchens as well as living rooms.",
+      a: "Yes. WPC (wood-polymer composite) does not absorb water, swell or attract termites, which makes it suitable for bathrooms, balconies and utility areas as well as living rooms.",
     },
     {
       q: "Can panels go over existing walls?",
@@ -1159,7 +881,7 @@ const SERVICE_PANELLING: Service = {
     secondary: "Adjust",
   },
   quickEstimate: null,
-  related: ["false-ceiling-lighting", "modular-kitchens", "renovation-repair"],
+  related: ["false-ceiling-lighting", "wardrobes-storage", "renovation-repair"],
 };
 
 const SERVICE_COMPLETE_HOME: Service = {
@@ -1174,24 +896,24 @@ const SERVICE_COMPLETE_HOME: Service = {
     "False ceiling & lighting",
     "End-to-end execution",
   ],
-  priceChip: "From ₹3.9 lakh",
+  priceChip: "From ₹2.1 lakh",
   gradePrices: { standard: null, premium: null, luxury: null },
   image: "svc-complete-home",
   heroImage: "hero-living",
   headlineLead: "Your whole home, designed and delivered",
   headlineEm: "by one team.",
   heroSub:
-    "Kitchen, wardrobes, ceilings and panelling planned together, built in our workshop and installed on one timeline.",
+    "Wardrobes, ceilings, panelling and flooring planned together, built in our workshop and installed on one timeline.",
   heroPrimary: "Book a free site visit",
   heroSecondary: "WhatsApp your floor plan",
   factChips: [
-    { label: "From ₹3.9 lakh", sub: "2–3 BHK", icon: "IndianRupee" },
+    { label: "From ₹2.1 lakh", sub: "2–3 BHK", icon: "IndianRupee" },
     { label: "Free site visit", sub: "in Sambhar, Nawa, Jaipur", icon: "MapPin" },
     { label: "One timeline", sub: "Design to handover", icon: "CalendarDays" },
   ],
   callouts: [
     { label: "Space planning and 3D views", x: 24, y: 22 },
-    { label: "Kitchen, wardrobes, ceilings, panelling", x: 66, y: 44 },
+    { label: "Wardrobes, ceilings, panelling, flooring", x: 66, y: 44 },
     { label: "One timeline, one team", x: 40, y: 82 },
   ],
   lightsToggle: false,
@@ -1206,8 +928,8 @@ const SERVICE_COMPLETE_HOME: Service = {
         icon: "Home",
         drawing: "floor-plan",
         image: "bedroom-modern",
-        note: "Kitchen, one wardrobe, living ceiling",
-        checklist: ["Modular kitchen", "One bedroom wardrobe", "Living room ceiling", "TV unit"],
+        note: "One wardrobe, living ceiling, TV unit",
+        checklist: ["One bedroom wardrobe", "Living room ceiling", "TV unit", "Shoe rack"],
         timeline: "5–6 weeks",
         bestFor: ["Compact apartments", "First homes and rentals"],
       },
@@ -1217,10 +939,10 @@ const SERVICE_COMPLETE_HOME: Service = {
         icon: "Home",
         drawing: "floor-plan",
         image: "grid-bedroom",
-        note: "Kitchen, two wardrobes, ceilings",
+        note: "Two wardrobes, ceilings, TV unit",
         checklist: [
-          "Modular kitchen",
           "Two bedroom wardrobes",
+          "Crockery and study units",
           "Living and bedroom ceilings",
           "TV unit and shoe rack",
         ],
@@ -1233,10 +955,10 @@ const SERVICE_COMPLETE_HOME: Service = {
         icon: "Building2",
         drawing: "floor-plan",
         image: "featured-living",
-        note: "Kitchen, three wardrobes, ceilings, panelling",
+        note: "Three wardrobes, ceilings, panelling",
         checklist: [
-          "Modular kitchen",
           "Three bedroom wardrobes",
+          "Crockery, study and shoe units",
           "Ceilings in all rooms",
           "TV wall panelling and pooja unit",
         ],
@@ -1251,7 +973,7 @@ const SERVICE_COMPLETE_HOME: Service = {
         image: "hero-living",
         note: "Everything above, plus feature walls and lighting scenes",
         checklist: [
-          "Island or U-shaped kitchen",
+          "Bar and crockery units",
           "Walk-in and hinged wardrobes",
           "Layered ceilings and lighting",
           "Panelling, flooring and pooja room",
@@ -1289,7 +1011,7 @@ const SERVICE_COMPLETE_HOME: Service = {
             label: "Minimal Light",
             hex: "#EFE9DC",
             sub: "Oak + ivory",
-            image: "grid-ivory-kitchen",
+            image: "cat-laminate-floor",
           },
         ],
       },
@@ -1340,7 +1062,7 @@ const SERVICE_COMPLETE_HOME: Service = {
     },
   ],
   materials: [
-    { name: "BWP Marine Plywood", note: "Kitchens, wardrobes and wet areas.", image: "board-bwp" },
+    { name: "BWP Marine Plywood", note: "Wardrobes, vanities and wet areas.", image: "board-bwp" },
     {
       name: "Laminate / Acrylic / PU",
       note: "One palette across every room.",
@@ -1398,7 +1120,7 @@ const SERVICE_COMPLETE_HOME: Service = {
   gallery: [
     "featured-living",
     "hero-living",
-    "grid-kitchen",
+    "grid-fluted-tv",
     "grid-bedroom",
     "grid-pooja",
     "grid-cove-ceiling",
@@ -1415,7 +1137,7 @@ const SERVICE_COMPLETE_HOME: Service = {
     SHARED_FAQ_SITE_VISIT,
     {
       q: "What's included in a complete home?",
-      a: "Space planning and 3D views, the modular kitchen, wardrobes, TV and study units, false ceilings with lighting, wall panelling and a deep clean at handover. Civil work, painting and loose furniture are quoted separately if you need them.",
+      a: "Space planning and 3D views, wardrobes, TV and study units, false ceilings with lighting, wall panelling and a deep clean at handover. Civil work, painting and loose furniture are quoted separately if you need them.",
     },
     {
       q: "How are payments staged?",
@@ -1423,7 +1145,7 @@ const SERVICE_COMPLETE_HOME: Service = {
     },
     {
       q: "Can we live in the house during the work?",
-      a: "Yes, most families do. We work room by room, seal off the active area and clean up every evening. Kitchens are the only space that is out of use for a few days.",
+      a: "Yes, most families do. We work room by room, seal off the active area and clean up every evening. Each room is out of use for a few days at most.",
     },
   ],
   stickyBar: {
@@ -1434,12 +1156,12 @@ const SERVICE_COMPLETE_HOME: Service = {
     secondary: "Try the estimator",
   },
   quickEstimate: null,
-  related: ["modular-kitchens", "wardrobes-storage", "false-ceiling-lighting"],
+  related: ["wall-panelling-flooring", "wardrobes-storage", "false-ceiling-lighting"],
 };
 
 const SERVICE_RENOVATION: Service = {
   slug: "renovation-repair",
-  n: "06",
+  n: "05",
   title: "Renovation & Repair",
   short: "Updates and repairs handled by our own team.",
   long: "Room-by-room renovation, painting and furniture repair, with minimal disruption. We fix what can be fixed and replace only what needs replacing.",
@@ -1447,7 +1169,7 @@ const SERVICE_RENOVATION: Service = {
     "Civil, electrical and plumbing",
     "Painting & polishing",
     "Furniture repair and upgrades",
-    "Kitchen and wardrobe refitting",
+    "Wardrobe and TV unit refitting",
   ],
   priceChip: "Custom quote",
   gradePrices: { standard: null, premium: null, luxury: null },
@@ -1456,7 +1178,7 @@ const SERVICE_RENOVATION: Service = {
   headlineLead: "Refresh one room or the whole house,",
   headlineEm: "cleanly and on time.",
   heroSub:
-    "Painting, polishing, refitting and repairs by the same team that builds our kitchens, with a clear scope before we start.",
+    "Painting, polishing, refitting and repairs by the same team that builds our wardrobes and ceilings, with a clear scope before we start.",
   heroPrimary: "Get a renovation quote",
   heroSecondary: "WhatsApp photos of the room",
   factChips: [
@@ -1475,14 +1197,6 @@ const SERVICE_RENOVATION: Service = {
     label: "Which room needs work?",
     moreLabel: "Send us photos",
     items: [
-      {
-        id: "kitchen",
-        label: "Kitchen",
-        icon: "CookingPot",
-        image: "kitchen-before",
-        note: "Refit shutters, replace hinges, new counter",
-        bestFor: ["Peeling laminate", "Sagging shutters", "Old platform"],
-      },
       {
         id: "bedroom",
         label: "Bedroom",
@@ -1627,18 +1341,18 @@ const SERVICE_RENOVATION: Service = {
     },
   ],
   gallery: [
-    "kitchen-before",
-    "kitchen-after",
     "svc-renovation",
     "grid-bedroom",
-    "orig-work-kitchen",
+    "ws-install",
     "orig-craft",
+    "grid-cove-ceiling",
+    "hero-living",
   ],
   galleryLabel: "Renovation gallery",
   galleryLink: { label: "View all projects", to: "/projects" },
-  caseStudySlug: "teal-copper-kitchen",
+  caseStudySlug: "fluted-tv-wall",
   caseStudyQuote: {
-    text: "They kept the platform, replaced everything above it and we were cooking again in three weeks.",
+    text: "They kept the old wall, built the new slat panel over it and the living room was back in use in two weeks.",
     name: "Rohit Sharma",
     town: "Sambhar, Rajasthan",
   },
@@ -1665,13 +1379,12 @@ const SERVICE_RENOVATION: Service = {
     secondary: "Book a visit",
   },
   quickEstimate: null,
-  related: ["modular-kitchens", "wardrobes-storage", "wall-panelling-flooring"],
+  related: ["complete-home-interiors", "wardrobes-storage", "wall-panelling-flooring"],
 };
 
 /** In the order of SERVICE_SLUGS (site.ts) and of the numbered lists on Home and Services. */
 export const SERVICES: Service[] = [
   SERVICE_COMPLETE_HOME,
-  SERVICE_KITCHEN,
   SERVICE_WARDROBES,
   SERVICE_CEILING,
   SERVICE_PANELLING,
@@ -1695,7 +1408,6 @@ export const SERVICES_PAGE = {
     { label: "Ceiling & Lights", slug: "false-ceiling-lighting", x: 44, y: 8 },
     { label: "Wardrobes", slug: "wardrobes-storage", x: 12, y: 30 },
     { label: "Wall Panels", slug: "wall-panelling-flooring", x: 86, y: 52 },
-    { label: "Kitchen", slug: "modular-kitchens", x: 34, y: 66 },
     { label: "Living Room", slug: "complete-home-interiors", x: 66, y: 76 },
     { label: "Flooring", slug: "wall-panelling-flooring", x: 46, y: 92 },
   ] as { label: string; slug: ServiceSlug; x: number; y: number }[],

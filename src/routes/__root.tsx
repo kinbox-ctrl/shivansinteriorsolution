@@ -16,7 +16,7 @@ import { SITE_NAME, SITE_URL, TAGLINE } from "@/content/site";
 
 const DEFAULT_TITLE = `${SITE_NAME} — ${TAGLINE}`;
 const DEFAULT_DESCRIPTION =
-  "Modular kitchens, wardrobes, false ceilings and complete home interiors designed, manufactured and installed by our own team across Sambhar, Nawa and Jaipur.";
+  "Wardrobes, false ceilings, wall panelling and complete home interiors designed, manufactured and installed by our own team across Sambhar, Nawa and Jaipur.";
 
 const FONTS_HREF =
   "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Manrope:wght@400..800&family=DM+Mono:wght@400;500&family=Caveat:wght@500;600&family=Tiro+Devanagari+Hindi&display=swap";

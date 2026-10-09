@@ -1,11 +1,10 @@
 // Portfolio: the grid, the map pins and the case-study data for every project.
-// Only Teal & Copper Kitchen is fully specified by the references; the rest carry shorter
+// The modular-kitchen case studies were removed (see backup/kitchen); the projects carry shorter
 // placeholder stories (see PLACEHOLDERS.md).
 
 import type { ImageKey } from "./image-keys";
 
 export type ProjectCategory =
-  | "Kitchens"
   | "Bedrooms & Wardrobes"
   | "Living Rooms"
   | "Ceilings & Lighting"
@@ -25,7 +24,7 @@ export type Project = {
   place: ProjectLocation;
   /** Filter category. */
   category: ProjectCategory;
-  /** Short DM Mono meta label on cards, e.g. "Kitchen", "Wall panelling". */
+  /** Short DM Mono meta label on cards, e.g. "Bedroom", "Wall panelling". */
   kind: string;
   grade: ProjectGrade;
   year: string;
@@ -58,7 +57,6 @@ export type Project = {
 };
 
 export const PROJECT_CATEGORIES: ProjectCategory[] = [
-  "Kitchens",
   "Bedrooms & Wardrobes",
   "Living Rooms",
   "Ceilings & Lighting",
@@ -68,7 +66,6 @@ export const PROJECT_CATEGORIES: ProjectCategory[] = [
 
 /** URL-friendly ids for the category chips (?category=). */
 export const PROJECT_CATEGORY_IDS: Record<ProjectCategory, string> = {
-  Kitchens: "kitchens",
   "Bedrooms & Wardrobes": "bedrooms-wardrobes",
   "Living Rooms": "living-rooms",
   "Ceilings & Lighting": "ceilings-lighting",
@@ -84,7 +81,7 @@ export const PROJECT_COUNT = 48;
 export const PROJECT_COUNT_LABEL = "48 projects";
 export const SPACES_COUNT_LABEL = "350+ spaces.";
 
-const KITCHEN_TIMELINE: ProjectTimelineStep[] = [
+const PROJECT_TIMELINE: ProjectTimelineStep[] = [
   {
     day: "Day 1",
     title: "Measure",
@@ -152,7 +149,7 @@ function shortTimeline(build: string, install: string, handover: string): Projec
   ];
 }
 
-const KITCHEN_DRAWINGS: ProjectDrawing[] = [
+const PROJECT_DRAWINGS: ProjectDrawing[] = [
   { n: "01", label: "Floor plan", image: "floor-plan" },
   { n: "02", label: "3D render", image: "render-3d" },
   { n: "03", label: "Elevation", image: "elevation" },
@@ -178,7 +175,7 @@ export const PROJECTS: Project[] = [
       title: "One palette across every room.",
       paragraphs: [
         "A family moving into a new 3BHK in Jaipur wanted the whole apartment to feel like one considered home rather than a set of separate rooms. Walnut, petrol teal and warm white became the palette for every space.",
-        "We planned the kitchen, three wardrobes, ceilings and the slat TV wall together, built everything in our Sambhar workshop and installed on one timeline with one point of contact.",
+        "We planned the three wardrobes, ceilings, flooring and the slat TV wall together, built everything in our Sambhar workshop and installed on one timeline with one point of contact.",
       ],
     },
     asked: [
@@ -186,7 +183,7 @@ export const PROJECTS: Project[] = [
       "A slat TV wall as the living room focus",
       "Cove lighting in every room",
       "Wardrobes with lofts in all three bedrooms",
-      "A calm, uncluttered kitchen",
+      "Calm, uncluttered storage everywhere",
       "One timeline and one team",
     ],
     facts: {
@@ -199,7 +196,7 @@ export const PROJECTS: Project[] = [
     materials: [
       { name: "Walnut veneer slats", note: "Warm, matched grain.", image: "living-slat-panel" },
       { name: "BWP marine plywood", note: "For every carcass.", image: "mat-bwp-plywood" },
-      { name: "Teal matte laminate", note: "Kitchen and TV unit.", image: "mat-teal-laminate" },
+      { name: "Teal matte laminate", note: "TV unit and console.", image: "mat-teal-laminate" },
       {
         name: "Gypsum cove ceiling",
         note: "Warm 2700K profile light.",
@@ -208,7 +205,7 @@ export const PROJECTS: Project[] = [
       { name: "Soft-close hardware", note: "Every hinge and drawer.", image: "mat-hinge" },
     ],
     timeline: shortTimeline("Day 6 – 40", "Day 41 – 60", "Day 63"),
-    drawings: KITCHEN_DRAWINGS,
+    drawings: PROJECT_DRAWINGS,
     gallery: ["hero-living", "featured-living", "living-slat-panel", "grid-cove-ceiling"],
     before: null,
     after: "hero-living",
@@ -223,84 +220,6 @@ export const PROJECTS: Project[] = [
       range: "₹9.2 – 10.4 lakh",
       note: "Premium, 3BHK",
       cta: "Estimate your home",
-    },
-    next: "teal-copper-kitchen",
-  },
-  {
-    slug: "teal-copper-kitchen",
-    title: "Teal & Copper Kitchen",
-    place: "Sambhar",
-    category: "Kitchens",
-    kind: "Kitchen",
-    grade: "Premium",
-    year: "2024",
-    area: "148 sq.ft",
-    image: "grid-kitchen",
-    hero: "kitchen-teal-hero",
-    summary:
-      "A modern, functional kitchen designed for a family of five. Warm, durable materials with a timeless colour palette that feels like home.",
-    story: {
-      title: "A kitchen that works as beautifully as it looks.",
-      paragraphs: [
-        "A family of five in Sambhar wanted a kitchen with more storage, easy cleaning and a colour that felt like them: modern, warm and timeless. They loved the idea of a bold yet calm space, with premium fittings that would last for years.",
-        "We kept the existing platform, planned an L-shaped layout with a small island and built every unit in petrol teal matte laminate on BWP marine plywood, finished with copper bar handles and a marble-look counter.",
-      ],
-    },
-    asked: [
-      "More storage for a family of five",
-      "Easy to clean and maintain",
-      "A modern colour palette with character",
-      "Premium yet durable materials",
-      "A functional layout for everyday cooking",
-      "Soft-close drawers and shutters",
-    ],
-    facts: {
-      space: "Modular kitchen",
-      area: "120 sq.ft",
-      grade: "Premium",
-      timeline: "5 weeks",
-      completed: "2025",
-    },
-    materials: [
-      {
-        name: "Teal matte laminate",
-        note: "Durable, elegant and easy to clean.",
-        image: "mat-teal-laminate",
-      },
-      {
-        name: "BWP marine plywood",
-        note: "Moisture resistant and long lasting.",
-        image: "mat-bwp-plywood",
-      },
-      { name: "Copper bar handles", note: "A warm, premium detail.", image: "mat-copper-handle" },
-      {
-        name: "Marble-look countertop",
-        note: "Elegant, durable and practical.",
-        image: "mat-marble",
-      },
-      { name: "Soft-close hinges", note: "Smooth, quiet and built to last.", image: "mat-hinge" },
-    ],
-    timeline: KITCHEN_TIMELINE,
-    drawings: KITCHEN_DRAWINGS,
-    gallery: [
-      "gallery-kitchen-wide",
-      "gallery-kitchen-a",
-      "gallery-kitchen-b",
-      "gallery-handle-detail",
-    ],
-    before: "kitchen-before",
-    after: "kitchen-after",
-    quote: {
-      text: "They understood our needs so well and gave us a kitchen that is beautiful, functional and easy to maintain. We couldn't be happier with the result.",
-      name: "Rohit Sharma",
-      town: "Sambhar, Rajasthan",
-      image: "testimonial-room",
-    },
-    budget: {
-      label: "This kitchen:",
-      range: "₹2.1 – 2.4 lakh",
-      note: "Premium, 120 sq.ft",
-      cta: "Estimate your kitchen",
     },
     next: "master-bedroom-suite",
   },
@@ -562,71 +481,6 @@ export const PROJECTS: Project[] = [
       note: "Premium, 96 sq.ft",
       cta: "Get a quote for your wall",
     },
-    next: "ivory-acrylic-kitchen",
-  },
-  {
-    slug: "ivory-acrylic-kitchen",
-    title: "Ivory Acrylic Kitchen",
-    place: "Jaipur",
-    category: "Kitchens",
-    kind: "Kitchen",
-    grade: "Luxury",
-    year: "2024",
-    area: "132 sq.ft",
-    image: "grid-ivory-kitchen",
-    hero: "grid-ivory-kitchen",
-    summary:
-      "A handle-less ivory acrylic kitchen with a quartz counter, tall units and profile-lit shelves.",
-    story: {
-      title: "Bright, seamless and built for a serious cook.",
-      paragraphs: [
-        "A Jaipur family who cook for large gatherings wanted a bright kitchen with no handles to catch on, plenty of tall storage and a counter that could take heat and turmeric.",
-        "We built a parallel layout in ivory high-gloss acrylic on HDHMR, with Blum tandem drawers, a quartz counter and profile lights under every wall unit.",
-      ],
-    },
-    asked: [
-      "A bright, handle-less kitchen",
-      "Tall units for bulk storage",
-      "A stain-resistant counter",
-      "Heavy-duty drawers",
-      "Under-cabinet lighting",
-      "A built-in oven and microwave tower",
-    ],
-    facts: {
-      space: "Modular kitchen",
-      area: "132 sq.ft",
-      grade: "Luxury",
-      timeline: "6 weeks",
-      completed: "2024",
-    },
-    materials: [
-      {
-        name: "Ivory acrylic shutters",
-        note: "High-gloss, easy to wipe.",
-        image: "grid-ivory-kitchen",
-      },
-      { name: "HDHMR board", note: "Dense, screw-holding core.", image: "board-hdhmr" },
-      { name: "Quartz counter", note: "Stain and heat resistant.", image: "mat-marble" },
-      { name: "Blum tandem drawers", note: "10-year warranty.", image: "mat-hinge" },
-      { name: "Profile lights", note: "Neutral 4000K.", image: "journal-cove" },
-    ],
-    timeline: shortTimeline("Day 6 – 28", "Day 29 – 40", "Day 42"),
-    drawings: KITCHEN_DRAWINGS,
-    gallery: ["grid-ivory-kitchen", "kitchen-gallery-4", "kitchen-gallery-5", "cabinet-inside"],
-    before: null,
-    after: "grid-ivory-kitchen",
-    quote: {
-      text: "Everything closes softly, nothing catches on your clothes, and the counter still looks new after a year of cooking.",
-      name: "Neha Agarwal",
-      town: "Jaipur, Rajasthan",
-      image: "grid-ivory-kitchen",
-    },
-    budget: {
-      label: "This kitchen:",
-      range: "₹3.0 – 3.4 lakh",
-      note: "Luxury, 132 sq.ft",
-      cta: "Estimate your kitchen",
-    },
     next: "kids-room-study",
   },
   {
@@ -785,7 +639,7 @@ export const PROJECTS: Project[] = [
       "Marble base for the idols",
       "Warm, hidden lighting",
       "Rajasthani motifs across the home",
-      "Kitchen and wardrobes in the same palette",
+      "Wardrobes and ceilings in the same palette",
       "Storage for pooja items below",
     ],
     facts: {
@@ -803,8 +657,8 @@ export const PROJECTS: Project[] = [
       { name: "Warm LED backlight", note: "2700K niche light.", image: "journal-cove" },
     ],
     timeline: shortTimeline("Day 6 – 45", "Day 46 – 66", "Day 70"),
-    drawings: KITCHEN_DRAWINGS,
-    gallery: ["grid-pooja", "grid-kitchen", "grid-bedroom", "grid-cove-ceiling"],
+    drawings: PROJECT_DRAWINGS,
+    gallery: ["grid-pooja", "grid-fluted-tv", "grid-bedroom", "grid-cove-ceiling"],
     before: null,
     after: "grid-pooja",
     quote: {
@@ -833,11 +687,7 @@ export const FEATURED_PROJECT: Project = PROJECTS[0] as Project;
 export const GRID_PROJECTS: Project[] = PROJECTS.filter((p) => !p.featured);
 
 /** The three cards on the home page "Recent homes" rail. */
-export const HOME_PROJECT_SLUGS = [
-  "teal-copper-kitchen",
-  "master-bedroom-suite",
-  "office-timber-slats",
-];
+export const HOME_PROJECT_SLUGS = ["fluted-tv-wall", "master-bedroom-suite", "office-timber-slats"];
 
 /** Copy for the Projects page. */
 export const PROJECTS_PAGE = {

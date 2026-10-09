@@ -1,0 +1,67 @@
+// Removed from the site on 9 Oct 2026. Original source: see backup/kitchen/README.md
+
+  {
+    slug: "ivory-acrylic-kitchen",
+    title: "Ivory Acrylic Kitchen",
+    place: "Jaipur",
+    category: "Kitchens",
+    kind: "Kitchen",
+    grade: "Luxury",
+    year: "2024",
+    area: "132 sq.ft",
+    image: "grid-ivory-kitchen",
+    hero: "grid-ivory-kitchen",
+    summary:
+      "A handle-less ivory acrylic kitchen with a quartz counter, tall units and profile-lit shelves.",
+    story: {
+      title: "Bright, seamless and built for a serious cook.",
+      paragraphs: [
+        "A Jaipur family who cook for large gatherings wanted a bright kitchen with no handles to catch on, plenty of tall storage and a counter that could take heat and turmeric.",
+        "We built a parallel layout in ivory high-gloss acrylic on HDHMR, with Blum tandem drawers, a quartz counter and profile lights under every wall unit.",
+      ],
+    },
+    asked: [
+      "A bright, handle-less kitchen",
+      "Tall units for bulk storage",
+      "A stain-resistant counter",
+      "Heavy-duty drawers",
+      "Under-cabinet lighting",
+      "A built-in oven and microwave tower",
+    ],
+    facts: {
+      space: "Modular kitchen",
+      area: "132 sq.ft",
+      grade: "Luxury",
+      timeline: "6 weeks",
+      completed: "2024",
+    },
+    materials: [
+      {
+        name: "Ivory acrylic shutters",
+        note: "High-gloss, easy to wipe.",
+        image: "grid-ivory-kitchen",
+      },
+      { name: "HDHMR board", note: "Dense, screw-holding core.", image: "board-hdhmr" },
+      { name: "Quartz counter", note: "Stain and heat resistant.", image: "mat-marble" },
+      { name: "Blum tandem drawers", note: "10-year warranty.", image: "mat-hinge" },
+      { name: "Profile lights", note: "Neutral 4000K.", image: "journal-cove" },
+    ],
+    timeline: shortTimeline("Day 6 – 28", "Day 29 – 40", "Day 42"),
+    drawings: KITCHEN_DRAWINGS,
+    gallery: ["grid-ivory-kitchen", "kitchen-gallery-4", "kitchen-gallery-5", "cabinet-inside"],
+    before: null,
+    after: "grid-ivory-kitchen",
+    quote: {
+      text: "Everything closes softly, nothing catches on your clothes, and the counter still looks new after a year of cooking.",
+      name: "Neha Agarwal",
+      town: "Jaipur, Rajasthan",
+      image: "grid-ivory-kitchen",
+    },
+    budget: {
+      label: "This kitchen:",
+      range: "₹3.0 – 3.4 lakh",
+      note: "Luxury, 132 sq.ft",
+      cta: "Estimate your kitchen",
+    },
+    next: "kids-room-study",
+  },

@@ -3,22 +3,15 @@ export type ImageKey =
   | "hero-living"
   | "pill-wood"
   | "pill-handle"
-  | "blueprint-kitchen"
-  | "kitchen-island-finished"
   | "testimonial-room"
   | "featured-living"
-  | "grid-kitchen"
   | "grid-bedroom"
   | "grid-office"
   | "grid-cove-ceiling"
   | "grid-fluted-tv"
-  | "grid-ivory-kitchen"
   | "grid-kids-room"
   | "grid-boutique"
   | "grid-pooja"
-  | "kitchen-teal-hero"
-  | "kitchen-before"
-  | "kitchen-after"
   | "floor-plan"
   | "render-3d"
   | "elevation"
@@ -27,14 +20,10 @@ export type ImageKey =
   | "mat-copper-handle"
   | "mat-marble"
   | "mat-hinge"
-  | "gallery-kitchen-wide"
-  | "gallery-kitchen-a"
-  | "gallery-kitchen-b"
   | "gallery-handle-detail"
   | "next-bedroom"
   | "iso-home"
   | "svc-complete-home"
-  | "svc-kitchen"
   | "svc-wardrobes"
   | "svc-ceiling"
   | "svc-panelling"
@@ -43,14 +32,8 @@ export type ImageKey =
   | "grade-premium"
   | "grade-luxury"
   | "cabinet-inside"
-  | "plan-l-shaped"
   | "layout-photo"
   | "finish-preview"
-  | "kitchen-gallery-1"
-  | "kitchen-gallery-2"
-  | "kitchen-gallery-3"
-  | "kitchen-gallery-4"
-  | "kitchen-gallery-5"
   | "wardrobe-elevation"
   | "process-measure"
   | "board-mr"
@@ -81,7 +64,6 @@ export type ImageKey =
   | "bedroom-modern"
   | "sketch-plant-left"
   | "sketch-arch-right"
-  | "journal-kitchen-featured"
   | "journal-plywood"
   | "journal-ceiling"
   | "journal-wardrobe-finish"
@@ -93,9 +75,6 @@ export type ImageKey =
   | "sketch-plant-404"
   | "sketch-ladder-404"
   | "sketch-room-404"
-  | "cat-base-unit"
-  | "cat-wall-unit"
-  | "cat-tall-unit"
   | "cat-laminate-sheets"
   | "cat-acrylic"
   | "cat-membrane"
@@ -116,7 +95,6 @@ export type ImageKey =
   | "cat-profile-light"
   | "cat-quartz"
   | "orig-hero-living"
-  | "orig-work-kitchen"
   | "orig-work-bedroom"
   | "orig-work-office"
   | "orig-craft"
@@ -127,22 +105,15 @@ export const IMAGE_KEYS: ImageKey[] = [
   "hero-living",
   "pill-wood",
   "pill-handle",
-  "blueprint-kitchen",
-  "kitchen-island-finished",
   "testimonial-room",
   "featured-living",
-  "grid-kitchen",
   "grid-bedroom",
   "grid-office",
   "grid-cove-ceiling",
   "grid-fluted-tv",
-  "grid-ivory-kitchen",
   "grid-kids-room",
   "grid-boutique",
   "grid-pooja",
-  "kitchen-teal-hero",
-  "kitchen-before",
-  "kitchen-after",
   "floor-plan",
   "render-3d",
   "elevation",
@@ -151,14 +122,10 @@ export const IMAGE_KEYS: ImageKey[] = [
   "mat-copper-handle",
   "mat-marble",
   "mat-hinge",
-  "gallery-kitchen-wide",
-  "gallery-kitchen-a",
-  "gallery-kitchen-b",
   "gallery-handle-detail",
   "next-bedroom",
   "iso-home",
   "svc-complete-home",
-  "svc-kitchen",
   "svc-wardrobes",
   "svc-ceiling",
   "svc-panelling",
@@ -167,14 +134,8 @@ export const IMAGE_KEYS: ImageKey[] = [
   "grade-premium",
   "grade-luxury",
   "cabinet-inside",
-  "plan-l-shaped",
   "layout-photo",
   "finish-preview",
-  "kitchen-gallery-1",
-  "kitchen-gallery-2",
-  "kitchen-gallery-3",
-  "kitchen-gallery-4",
-  "kitchen-gallery-5",
   "wardrobe-elevation",
   "process-measure",
   "board-mr",
@@ -205,7 +166,6 @@ export const IMAGE_KEYS: ImageKey[] = [
   "bedroom-modern",
   "sketch-plant-left",
   "sketch-arch-right",
-  "journal-kitchen-featured",
   "journal-plywood",
   "journal-ceiling",
   "journal-wardrobe-finish",
@@ -217,9 +177,6 @@ export const IMAGE_KEYS: ImageKey[] = [
   "sketch-plant-404",
   "sketch-ladder-404",
   "sketch-room-404",
-  "cat-base-unit",
-  "cat-wall-unit",
-  "cat-tall-unit",
   "cat-laminate-sheets",
   "cat-acrylic",
   "cat-membrane",
@@ -240,7 +197,6 @@ export const IMAGE_KEYS: ImageKey[] = [
   "cat-profile-light",
   "cat-quartz",
   "orig-hero-living",
-  "orig-work-kitchen",
   "orig-work-bedroom",
   "orig-work-office",
   "orig-craft",

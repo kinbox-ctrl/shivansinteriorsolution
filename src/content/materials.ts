@@ -31,7 +31,7 @@ export const MATERIAL_TABS: MaterialTab[] = [
       {
         id: "bwp-plywood",
         name: "BWP Marine Plywood",
-        bestFor: "Best for kitchens and moisture-prone areas.",
+        bestFor: "Best for bathrooms and moisture-prone areas.",
         water: 4,
         image: "board-bwp",
         recommended: true,
@@ -76,7 +76,7 @@ export const MATERIAL_TABS: MaterialTab[] = [
         name: "PU Paint",
         bestFor: "Seamless matte or gloss colour with no edges.",
         water: 3,
-        image: "grid-ivory-kitchen",
+        image: "cat-pu",
       },
       {
         id: "veneer",
@@ -167,7 +167,6 @@ export type Grade = {
   image: ImageKey;
   /** Image used on the estimator grade cards. */
   estimatorImage: ImageKey;
-  kitchenFrom: string;
   wardrobeFrom: string;
   ceilingFrom: string;
   warranty: string;
@@ -182,7 +181,6 @@ export const GRADES: Grade[] = [
     bullets: ["MR plywood", "Matte laminates", "Classic fittings", "Good value"],
     image: "grade-standard",
     estimatorImage: "est-standard",
-    kitchenFrom: "₹1,350/sq.ft",
     wardrobeFrom: "₹1,550/sq.ft",
     ceilingFrom: "₹105/sq.ft",
     warranty: "1 year",
@@ -200,7 +198,6 @@ export const GRADES: Grade[] = [
     ],
     image: "grade-premium",
     estimatorImage: "est-premium",
-    kitchenFrom: "₹2,000/sq.ft",
     wardrobeFrom: "₹2,200/sq.ft",
     ceilingFrom: "₹180/sq.ft",
     warranty: "5 years",
@@ -218,7 +215,6 @@ export const GRADES: Grade[] = [
     ],
     image: "grade-luxury",
     estimatorImage: "est-luxury",
-    kitchenFrom: "₹2,590/sq.ft",
     wardrobeFrom: "₹3,140/sq.ft",
     ceilingFrom: "₹295/sq.ft",
     warranty: "10 years",
@@ -260,10 +256,10 @@ export const GRADE_TABLE_ROWS: GradeTableRow[] = [
   },
   { label: "Hardware warranty", standard: "2 years", premium: "5 years", luxury: "10 years" },
   {
-    label: "Kitchen price from",
-    standard: "₹1,350/sq.ft",
-    premium: "₹2,000/sq.ft",
-    luxury: "₹2,590/sq.ft",
+    label: "Wardrobe price from",
+    standard: "₹1,550/sq.ft",
+    premium: "₹2,200/sq.ft",
+    luxury: "₹3,140/sq.ft",
   },
 ];
 

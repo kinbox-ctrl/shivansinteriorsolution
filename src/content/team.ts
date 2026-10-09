@@ -33,7 +33,7 @@ export type Milestone = { year: string; title: string; image: ImageKey };
 export const MILESTONES: Milestone[] = [
   { year: "2014", title: "Workshop opens in Sambhar", image: "tl-2014" },
   { year: "2017", title: "First complete turnkey home", image: "tl-2017" },
-  { year: "2020", title: "In-house modular kitchen and wardrobe production", image: "tl-2020" },
+  { year: "2020", title: "In-house wardrobe and furniture production", image: "tl-2020" },
   { year: "2023", title: "300th space delivered", image: "tl-2023" },
   { year: "Today", title: "350+ spaces across Sambhar, Nawa and Jaipur", image: "tl-today" },
 ];

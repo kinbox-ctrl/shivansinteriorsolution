@@ -4,7 +4,7 @@ import { quickEstimateWaLink } from "@/content/pricing";
 import type { Service } from "@/content/services";
 import { WHATSAPP_FLOOR_PLAN, WHATSAPP_PHOTO, waLink } from "@/content/site";
 
-/** Where a content label like "Get my kitchen estimate" / "Book a free site visit" should go. */
+/** Where a content label like "Get my wardrobe estimate" / "Book a free site visit" should go. */
 export function ctaTarget(label: string): string {
   const l = label.toLowerCase();
   if (l.includes("estimat") || l.includes("adjust") || l.includes("plan my")) return "/estimator";
@@ -28,7 +28,7 @@ export function stickyPrimary(service: Service): { href: string } | { to: string
 }
 
 /**
- * Split a content href such as "/projects?category=kitchens" into TanStack `to` + `search`
+ * Split a content href such as "/projects?category=bedrooms-wardrobes" into TanStack `to` + `search`
  * props. Content links are plain strings, so the typed `to` is widened like the shared Button.
  */
 export function linkParts(href: string): { to: string; search?: Record<string, string> } {

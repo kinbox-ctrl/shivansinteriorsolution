@@ -24,17 +24,17 @@ export function HomeBlueprint() {
             <BeforeAfterSlider
               before={{
                 src: img(BLUEPRINT_SECTION.before.image),
-                alt: "Copper line drawing of the kitchen on a pale-teal blueprint grid with dimensions",
+                alt: "Copper line drawing of the slat wall elevation on a pale-teal blueprint grid with dimensions",
                 label: BLUEPRINT_SECTION.before.label,
               }}
               after={{
                 src: img(BLUEPRINT_SECTION.after.image),
-                alt: "The finished teal kitchen with its island, delivered as drawn",
+                alt: "The finished fluted TV wall, delivered as drawn",
                 label: BLUEPRINT_SECTION.after.label,
               }}
               aspect="12/5"
               radius="xl"
-              ariaLabel="Compare the design drawing with the delivered kitchen"
+              ariaLabel="Compare the design drawing with the delivered wall"
             />
           </Reveal>
         </div>

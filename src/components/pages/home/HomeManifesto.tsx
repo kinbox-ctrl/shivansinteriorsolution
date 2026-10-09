@@ -32,8 +32,8 @@ export function HomeManifesto() {
   return (
     <Section tone="cloud" className="overflow-x-clip py-14 lg:py-20">
       <Sketch
-        kind="kitchen"
-        className="absolute -bottom-2 -left-8 hidden w-[360px] lg:block"
+        kind="jali"
+        className="absolute -bottom-2 -left-8 hidden w-[220px] lg:block"
         opacity={0.13}
       />
       <Sketch

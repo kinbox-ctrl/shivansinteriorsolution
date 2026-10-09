@@ -4,11 +4,11 @@ import { PROJECT_CATEGORY_IDS } from "@/content/projects";
 
 const TITLE = "Projects — Shivansh Interior Solutions";
 const DESCRIPTION =
-  "Recent homes, kitchens, bedrooms and workspaces built by Shivansh Interior Solutions across Sambhar, Nawa and Jaipur.";
+  "Recent homes, bedrooms, living rooms and workspaces built by Shivansh Interior Solutions across Sambhar, Nawa and Jaipur.";
 
 const CATEGORY_IDS = Object.values(PROJECT_CATEGORY_IDS) as [string, ...string[]];
 
-/** `?view=map` opens the map view; `?category=kitchens` pre-selects a category chip. */
+/** `?view=map` opens the map view; `?category=bedrooms-wardrobes` pre-selects a category chip. */
 const projectsSearchSchema = z.object({
   view: z.enum(["grid", "map"]).optional().catch(undefined),
   category: z.enum(CATEGORY_IDS).optional().catch(undefined),

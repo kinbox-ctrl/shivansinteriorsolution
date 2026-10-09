@@ -1,7 +1,6 @@
 import { getRouteApi } from "@tanstack/react-router";
 import {
   Calculator,
-  CookingPot,
   DoorClosed,
   ExternalLink,
   FileDown,
@@ -47,7 +46,6 @@ import { ProductCard } from "./ProductCard";
 const route = getRouteApi("/catalogue");
 
 const ICONS: Record<string, LucideIcon> = {
-  CookingPot,
   DoorClosed,
   Layers,
   Palette,
@@ -396,8 +394,8 @@ export function CataloguePage() {
                 {copy.pricesTitle}
               </Heading>
               <p className="mt-3 text-[14px] text-ink-soft">
-                Kitchen from {formatINR(1350)}/sq.ft · Wardrobes from {formatINR(1550)}/sq.ft ·
-                Ceilings from {formatINR(85)}/sq.ft
+                Wardrobes from {formatINR(1550)}/sq.ft · Ceilings from {formatINR(85)}/sq.ft ·
+                Panelling from {formatINR(220)}/sq.ft
               </p>
             </div>
             <ol className="m-0 grid list-none gap-4 p-0 sm:grid-cols-2 lg:col-span-8">

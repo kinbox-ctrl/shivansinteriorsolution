@@ -85,7 +85,6 @@ export const FOOTER_EXPLORE: NavItem[] = [
 
 export const FOOTER_SERVICES: NavItem[] = [
   { label: "Complete Home Interiors", to: "/services/complete-home-interiors" },
-  { label: "Modular Kitchens", to: "/services/modular-kitchens" },
   { label: "Wardrobes & Storage", to: "/services/wardrobes-storage" },
   { label: "False Ceilings", to: "/services/false-ceiling-lighting" },
   { label: "Wall Panelling", to: "/services/wall-panelling-flooring" },
@@ -107,7 +106,6 @@ export const SOCIAL: {
 
 export const SERVICE_SLUGS = [
   "complete-home-interiors",
-  "modular-kitchens",
   "wardrobes-storage",
   "false-ceiling-lighting",
   "wall-panelling-flooring",
