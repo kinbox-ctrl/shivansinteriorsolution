@@ -306,28 +306,30 @@ export function CataloguePage() {
         className="scroll-mt-24 border-t border-line/70 py-12 lg:py-16"
       >
         <Container>
-          <Reveal className="grid gap-8 lg:grid-cols-12 lg:items-start">
-            <div className="lg:col-span-4">
+          <Reveal className="grid gap-6 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-7">
               <Eyebrow className="mb-4">{copy.brochures.eyebrow}</Eyebrow>
               <Heading as="h2" size="md" className="lg:text-[34px] lg:leading-[1.08]">
                 {copy.brochures.title}
               </Heading>
-              <p className="mt-3 max-w-[340px] text-[15px] leading-relaxed text-ink-soft">
-                {copy.brochures.text}
-              </p>
             </div>
-            <ul className="m-0 grid list-none gap-5 p-0 sm:grid-cols-2 lg:col-span-8">
-              {BROCHURES.map((b) => {
-                const cat = getCategory(b.category);
-                return (
-                  <li
-                    key={b.id}
-                    className="flex gap-4 rounded-3xl border border-line bg-white p-4 shadow-soft transition-[transform,box-shadow] duration-500 ease-soft hover:-translate-y-0.5 hover:shadow-lift"
+            <p className="max-w-[460px] text-[15px] leading-relaxed text-ink-soft lg:col-span-5 lg:justify-self-end">
+              {copy.brochures.text}
+            </p>
+          </Reveal>
+          <ul className="m-0 mt-8 grid list-none gap-5 p-0 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {BROCHURES.map((b, i) => {
+              const cat = getCategory(b.category);
+              return (
+                <li key={b.id}>
+                  <Reveal
+                    delay={(i % 4) * 60}
+                    className="flex h-full flex-col rounded-3xl border border-line bg-white p-3 shadow-soft transition-[transform,box-shadow] duration-500 ease-soft hover:-translate-y-0.5 hover:shadow-lift"
                   >
                     <a
                       href={b.file}
                       download={b.download}
-                      className="block w-[112px] shrink-0 self-start overflow-hidden rounded-2xl border border-line bg-linen sm:w-[132px]"
+                      className="block overflow-hidden rounded-2xl border border-line bg-linen"
                       aria-label={`${copy.brochures.download}: ${b.title}`}
                     >
                       <img
@@ -337,16 +339,16 @@ export function CataloguePage() {
                         decoding="async"
                         width={900}
                         height={900}
-                        className="aspect-square h-auto w-full object-cover"
+                        className="aspect-square h-auto w-full object-cover transition-transform duration-700 ease-soft hover:scale-[1.03]"
                       />
                     </a>
-                    <div className="flex min-w-0 flex-1 flex-col">
+                    <div className="flex flex-1 flex-col px-1.5 pt-4 pb-1.5">
                       {cat && (
                         <span className="font-mono text-[10px] tracking-[0.14em] text-ink-soft uppercase">
                           {cat.label}
                         </span>
                       )}
-                      <h3 className="mt-1 font-display text-[20px] leading-tight font-medium text-teal">
+                      <h3 className="mt-1 font-display text-[19px] leading-tight font-medium text-teal">
                         {b.title}
                       </h3>
                       <p className="mt-1.5 text-[13px] leading-relaxed text-ink-soft">{b.text}</p>
@@ -354,7 +356,7 @@ export function CataloguePage() {
                       <p className="mt-0.5 font-mono text-[10.5px] tracking-[0.12em] text-ink-soft uppercase">
                         PDF · {b.pages} pages · {b.size}
                       </p>
-                      <div className="mt-auto flex flex-wrap gap-2 pt-3">
+                      <div className="mt-auto flex flex-wrap gap-2 pt-4">
                         <Button
                           href={b.file}
                           download={b.download}
@@ -376,11 +378,11 @@ export function CataloguePage() {
                         </Button>
                       </div>
                     </div>
-                  </li>
-                );
-              })}
-            </ul>
-          </Reveal>
+                  </Reveal>
+                </li>
+              );
+            })}
+          </ul>
         </Container>
       </Section>
 
