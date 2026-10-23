@@ -1,0 +1,2948 @@
+diff --git a/src/assets/ref/blueprint-kitchen.jpg b/src/assets/ref/blueprint-kitchen.jpg
+deleted file mode 100644
+index 935fb32..0000000
+Binary files a/src/assets/ref/blueprint-kitchen.jpg and /dev/null differ
+diff --git a/src/assets/ref/blueprint-kitchen.svg b/src/assets/ref/blueprint-kitchen.svg
+deleted file mode 100644
+index ace1c99..0000000
+--- a/src/assets/ref/blueprint-kitchen.svg
++++ /dev/null
+@@ -1,73 +0,0 @@
+-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice">
+-  <defs>
+-    <pattern id="g" width="25" height="25" patternUnits="userSpaceOnUse">
+-      <path d="M25 0H0V25" fill="none" stroke="#9EC3C1" stroke-width="0.6" opacity="0.55"/>
+-    </pattern>
+-    <pattern id="G" width="125" height="125" patternUnits="userSpaceOnUse">
+-      <rect width="125" height="125" fill="url(#g)"/>
+-      <path d="M125 0H0V125" fill="none" stroke="#9EC3C1" stroke-width="1"/>
+-    </pattern>
+-    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+-      <path d="M0 1L10 5L0 9Z" fill="#B85F2C"/>
+-    </marker>
+-  </defs>
+-  <rect width="1200" height="500" fill="#F6FAF9"/>
+-  <rect width="1200" height="500" fill="url(#G)"/>
+-
+-  <g fill="none" stroke="#1E5660" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+-    <!-- floor and ceiling lines -->
+-    <path d="M150 420H1080" stroke-width="2.4"/>
+-    <path d="M150 95H1080" opacity="0.5"/>
+-    <!-- wall units -->
+-    <rect x="230" y="110" width="560" height="120" rx="2"/>
+-    <path d="M370 110V230M510 110V230M650 110V230"/>
+-    <path d="M355 150V190M385 150V190M495 150V190M525 150V190M635 150V190M665 150V190M775 150V190" stroke-width="3"/>
+-    <path d="M230 230H790" stroke="#C66935" stroke-width="1.4" stroke-dasharray="3 5"/>
+-    <!-- chimney hood -->
+-    <path d="M430 230L400 262H540L510 230" />
+-    <!-- backsplash and counter -->
+-    <path d="M230 300H840" stroke-width="3"/>
+-    <path d="M225 300H845V312H225Z"/>
+-    <!-- base units -->
+-    <rect x="230" y="312" width="610" height="100" rx="2"/>
+-    <path d="M380 312V412M530 312V412M690 312V412"/>
+-    <path d="M230 345H380M230 378H380" />
+-    <path d="M285 328H325M285 361H325M285 394H325M435 328H475M585 328H625M745 328H785" stroke-width="3"/>
+-    <!-- hob and sink on the counter -->
+-    <path d="M425 292H515M435 286H465M475 286H505"/>
+-    <path d="M610 300C610 285 650 285 650 300M640 300V270Q640 258 628 258H620"/>
+-    <!-- plinth -->
+-    <path d="M236 412H834V420H236Z" opacity="0.6"/>
+-    <!-- tall unit -->
+-    <rect x="870" y="110" width="170" height="302" rx="2"/>
+-    <path d="M955 110V412M870 250H1040"/>
+-    <path d="M940 160V210M970 160V210M940 300V360M970 300V360" stroke-width="3"/>
+-    <!-- oven in tall unit -->
+-    <rect x="880" y="262" width="65" height="52" rx="2"/>
+-    <!-- shelves line work -->
+-    <path d="M250 130H350M390 130H490" opacity="0.35"/>
+-  </g>
+-
+-  <!-- plant and pendant accents -->
+-  <g fill="none" stroke="#1E5660" stroke-width="1.6" opacity="0.8">
+-    <path d="M760 300V282H790V300"/>
+-    <path d="M775 282C765 262 752 256 748 244M775 282C782 262 796 252 804 246M775 282C774 262 774 250 772 238"/>
+-    <path d="M600 40V85M583 85H617L608 100H592Z"/>
+-  </g>
+-
+-  <!-- dimensions -->
+-  <g stroke="#B85F2C" stroke-width="1.6" fill="none">
+-    <path d="M230 62H840" marker-start="url(#a)" marker-end="url(#a)"/>
+-    <path d="M230 52V102M840 52V102" opacity="0.7"/>
+-    <path d="M180 300V420" marker-start="url(#a)" marker-end="url(#a)"/>
+-    <path d="M170 300H222M170 420H222" opacity="0.7"/>
+-    <path d="M1080 110V412" marker-start="url(#a)" marker-end="url(#a)"/>
+-    <path d="M1048 110H1090M1048 412H1090" opacity="0.7"/>
+-  </g>
+-  <g font-family="'DM Mono', ui-monospace, monospace" font-size="20" fill="#B85F2C" text-anchor="middle">
+-    <rect x="480" y="50" width="110" height="24" fill="#F6FAF9"/>
+-    <text x="535" y="69">2440 mm</text>
+-    <text x="180" y="366" transform="rotate(-90 180 360)" style="paint-order:stroke" stroke="#F6FAF9" stroke-width="10">900 mm</text>
+-    <text x="1080" y="266" transform="rotate(-90 1080 260)" style="paint-order:stroke" stroke="#F6FAF9" stroke-width="10">2100 mm</text>
+-  </g>
+-</svg>
+diff --git a/src/assets/ref/cat-base-unit.jpg b/src/assets/ref/cat-base-unit.jpg
+deleted file mode 100644
+index f958568..0000000
+Binary files a/src/assets/ref/cat-base-unit.jpg and /dev/null differ
+diff --git a/src/assets/ref/cat-tall-unit.jpg b/src/assets/ref/cat-tall-unit.jpg
+deleted file mode 100644
+index c781b3b..0000000
+Binary files a/src/assets/ref/cat-tall-unit.jpg and /dev/null differ
+diff --git a/src/assets/ref/cat-wall-unit.jpg b/src/assets/ref/cat-wall-unit.jpg
+deleted file mode 100644
+index 713dd62..0000000
+Binary files a/src/assets/ref/cat-wall-unit.jpg and /dev/null differ
+diff --git a/src/assets/ref/gallery-kitchen-a.jpg b/src/assets/ref/gallery-kitchen-a.jpg
+deleted file mode 100644
+index 82bd2cd..0000000
+Binary files a/src/assets/ref/gallery-kitchen-a.jpg and /dev/null differ
+diff --git a/src/assets/ref/gallery-kitchen-b.jpg b/src/assets/ref/gallery-kitchen-b.jpg
+deleted file mode 100644
+index c7bb445..0000000
+Binary files a/src/assets/ref/gallery-kitchen-b.jpg and /dev/null differ
+diff --git a/src/assets/ref/gallery-kitchen-wide.jpg b/src/assets/ref/gallery-kitchen-wide.jpg
+deleted file mode 100644
+index aba70a2..0000000
+Binary files a/src/assets/ref/gallery-kitchen-wide.jpg and /dev/null differ
+diff --git a/src/assets/ref/grid-ivory-kitchen.jpg b/src/assets/ref/grid-ivory-kitchen.jpg
+deleted file mode 100644
+index 5e6a9f3..0000000
+Binary files a/src/assets/ref/grid-ivory-kitchen.jpg and /dev/null differ
+diff --git a/src/assets/ref/grid-kitchen.jpg b/src/assets/ref/grid-kitchen.jpg
+deleted file mode 100644
+index aba70a2..0000000
+Binary files a/src/assets/ref/grid-kitchen.jpg and /dev/null differ
+diff --git a/src/assets/ref/journal-kitchen-featured.jpg b/src/assets/ref/journal-kitchen-featured.jpg
+deleted file mode 100644
+index aba70a2..0000000
+Binary files a/src/assets/ref/journal-kitchen-featured.jpg and /dev/null differ
+diff --git a/src/assets/ref/kitchen-after.jpg b/src/assets/ref/kitchen-after.jpg
+deleted file mode 100644
+index aba70a2..0000000
+Binary files a/src/assets/ref/kitchen-after.jpg and /dev/null differ
+diff --git a/src/assets/ref/kitchen-before.jpg b/src/assets/ref/kitchen-before.jpg
+deleted file mode 100644
+index ba7b2f0..0000000
+Binary files a/src/assets/ref/kitchen-before.jpg and /dev/null differ
+diff --git a/src/assets/ref/kitchen-gallery-1.jpg b/src/assets/ref/kitchen-gallery-1.jpg
+deleted file mode 100644
+index aba70a2..0000000
+Binary files a/src/assets/ref/kitchen-gallery-1.jpg and /dev/null differ
+diff --git a/src/assets/ref/kitchen-gallery-2.jpg b/src/assets/ref/kitchen-gallery-2.jpg
+deleted file mode 100644
+index 1763888..0000000
+Binary files a/src/assets/ref/kitchen-gallery-2.jpg and /dev/null differ
+diff --git a/src/assets/ref/kitchen-gallery-3.jpg b/src/assets/ref/kitchen-gallery-3.jpg
+deleted file mode 100644
+index af26d96..0000000
+Binary files a/src/assets/ref/kitchen-gallery-3.jpg and /dev/null differ
+diff --git a/src/assets/ref/kitchen-gallery-4.jpg b/src/assets/ref/kitchen-gallery-4.jpg
+deleted file mode 100644
+index 1ec21b7..0000000
+Binary files a/src/assets/ref/kitchen-gallery-4.jpg and /dev/null differ
+diff --git a/src/assets/ref/kitchen-gallery-5.jpg b/src/assets/ref/kitchen-gallery-5.jpg
+deleted file mode 100644
+index aba70a2..0000000
+Binary files a/src/assets/ref/kitchen-gallery-5.jpg and /dev/null differ
+diff --git a/src/assets/ref/kitchen-island-finished.jpg b/src/assets/ref/kitchen-island-finished.jpg
+deleted file mode 100644
+index aba70a2..0000000
+Binary files a/src/assets/ref/kitchen-island-finished.jpg and /dev/null differ
+diff --git a/src/assets/ref/kitchen-teal-hero.jpg b/src/assets/ref/kitchen-teal-hero.jpg
+deleted file mode 100644
+index aba70a2..0000000
+Binary files a/src/assets/ref/kitchen-teal-hero.jpg and /dev/null differ
+diff --git a/src/assets/ref/plan-l-shaped.jpg b/src/assets/ref/plan-l-shaped.jpg
+deleted file mode 100644
+index 286c58d..0000000
+Binary files a/src/assets/ref/plan-l-shaped.jpg and /dev/null differ
+diff --git a/src/assets/ref/plan-l-shaped.svg b/src/assets/ref/plan-l-shaped.svg
+deleted file mode 100644
+index 85ffbce..0000000
+--- a/src/assets/ref/plan-l-shaped.svg
++++ /dev/null
+@@ -1,8 +0,0 @@
+-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 600" preserveAspectRatio="xMidYMid slice">
+-<defs>
+-<pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#9EC3C1" stroke-width="0.6" opacity="0.55"/></pattern>
+-<pattern id="G" width="100" height="100" patternUnits="userSpaceOnUse"><rect width="100" height="100" fill="url(#g)"/><path d="M100 0H0V100" fill="none" stroke="#9EC3C1" stroke-width="1"/></pattern>
+-<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 1L10 5L0 9Z" fill="#B85F2C"/></marker>
+-</defs>
+-<rect width="940" height="600" fill="#F6FAF9"/><rect width="940" height="600" fill="url(#G)"/>
+-<g fill="none" stroke="#1E5660" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M180 150H790V175H205V520H180Z" stroke-width="3" fill="#E4EEEC"/><rect x="205" y="175" width="117" height="95"/><rect x="322" y="175" width="117" height="95"/><rect x="439" y="175" width="117" height="95"/><rect x="556" y="175" width="117" height="95"/><rect x="673" y="175" width="117" height="95"/><rect x="205" y="270" width="95" height="83"/><rect x="205" y="353" width="95" height="83"/><rect x="205" y="436" width="95" height="83"/><circle cx="320" cy="222" r="26"/><circle cx="320" cy="222" r="10"/><rect x="520" y="192" width="80" height="60" rx="6"/><circle cx="545" cy="212" r="9"/><circle cx="575" cy="212" r="9"/><circle cx="545" cy="235" r="9"/><circle cx="575" cy="235" r="9"/><rect x="660" y="190" width="70" height="66" rx="4"/><path d="M670 204H720"/><path d="M252 330A40 40 0 0 1 252 410" stroke-dasharray="4 5"/><path d="M790 175V300M755 300H825" opacity="0.7"/></g><g stroke="#B85F2C" stroke-width="1.6" fill="none"><path d="M180 105H790" marker-start="url(#a)" marker-end="url(#a)"/><path d="M180 95V140M790 95V140" opacity="0.7"/><path d="M130 150V520" marker-start="url(#a)" marker-end="url(#a)"/><path d="M120 150H170M120 520H170" opacity="0.7"/></g><g font-family="'DM Mono', ui-monospace, monospace" font-size="26" fill="#B85F2C" text-anchor="middle" style="paint-order:stroke" stroke="#F6FAF9" stroke-width="8"><text x="485" y="114">3040 mm</text><text x="130" y="345" transform="rotate(-90 130 336)">2440 mm</text></g></svg>
+\ No newline at end of file
+diff --git a/src/assets/ref/svc-kitchen.jpg b/src/assets/ref/svc-kitchen.jpg
+deleted file mode 100644
+index aba70a2..0000000
+Binary files a/src/assets/ref/svc-kitchen.jpg and /dev/null differ
+diff --git a/src/assets/work-kitchen.jpg b/src/assets/work-kitchen.jpg
+deleted file mode 100644
+index 512e4a9..0000000
+Binary files a/src/assets/work-kitchen.jpg and /dev/null differ
+diff --git a/src/components/pages/article/ArticleAside.tsx b/src/components/pages/article/ArticleAside.tsx
+index 65cfc7f..da001bc 100644
+--- a/src/components/pages/article/ArticleAside.tsx
++++ b/src/components/pages/article/ArticleAside.tsx
+@@ -58,12 +58,12 @@ function isGrade(value: string): value is GradeId {
+   return (GRADE_IDS as string[]).includes(value);
+ }
+ 
+-/** "Estimate your kitchen": area + grade selects, live quickEstimate range, link to /estimator. */
++/** "Estimate your wardrobe": area + grade selects, live quickEstimate range, link to /estimator. */
+ export function EstimateCard() {
+   const id = useId();
+-  const [area, setArea] = useState<number>(120);
++  const [area, setArea] = useState<number>(80);
+   const [grade, setGrade] = useState<GradeId>("premium");
+-  const { low, high } = quickEstimate("kitchen", area, grade);
++  const { low, high } = quickEstimate("wardrobe", area, grade);
+   const copy = ARTICLE_PAGE.estimateCard;
+ 
+   return (
+diff --git a/src/components/pages/catalogue/CataloguePage.tsx b/src/components/pages/catalogue/CataloguePage.tsx
+index b3aaf4d..d31cd8f 100644
+--- a/src/components/pages/catalogue/CataloguePage.tsx
++++ b/src/components/pages/catalogue/CataloguePage.tsx
+@@ -1,7 +1,6 @@
+ import { getRouteApi } from "@tanstack/react-router";
+ import {
+   Calculator,
+-  CookingPot,
+   DoorClosed,
+   ExternalLink,
+   FileDown,
+@@ -47,7 +46,6 @@ import { ProductCard } from "./ProductCard";
+ const route = getRouteApi("/catalogue");
+ 
+ const ICONS: Record<string, LucideIcon> = {
+-  CookingPot,
+   DoorClosed,
+   Layers,
+   Palette,
+@@ -396,8 +394,8 @@ export function CataloguePage() {
+                 {copy.pricesTitle}
+               </Heading>
+               <p className="mt-3 text-[14px] text-ink-soft">
+-                Kitchen from {formatINR(1350)}/sq.ft · Wardrobes from {formatINR(1550)}/sq.ft ·
+-                Ceilings from {formatINR(85)}/sq.ft
++                Wardrobes from {formatINR(1550)}/sq.ft · Ceilings from {formatINR(85)}/sq.ft ·
++                Panelling from {formatINR(220)}/sq.ft
+               </p>
+             </div>
+             <ol className="m-0 grid list-none gap-4 p-0 sm:grid-cols-2 lg:col-span-8">
+diff --git a/src/components/pages/contact/ContactPage.tsx b/src/components/pages/contact/ContactPage.tsx
+index f8aa475..4891b27 100644
+--- a/src/components/pages/contact/ContactPage.tsx
++++ b/src/components/pages/contact/ContactPage.tsx
+@@ -20,11 +20,6 @@ function QuickAnswers() {
+         opacity={0.28}
+         className="absolute -bottom-10 -left-8 hidden w-[200px] lg:block"
+       />
+-      <Sketch
+-        kind="kitchen"
+-        opacity={0.4}
+-        className="absolute -right-8 bottom-4 hidden w-[300px] lg:block"
+-      />
+       <Container className="relative">
+         <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,2.3fr)] lg:gap-12 lg:pl-16">
+           <Reveal>
+diff --git a/src/components/pages/estimator/EstimatorPage.tsx b/src/components/pages/estimator/EstimatorPage.tsx
+index d04989b..69ed780 100644
+--- a/src/components/pages/estimator/EstimatorPage.tsx
++++ b/src/components/pages/estimator/EstimatorPage.tsx
+@@ -83,9 +83,9 @@ export function EstimatorPage() {
+       <Section wash className="overflow-hidden pt-10 pb-16 lg:pt-14 lg:pb-24">
+         <VerticalRuler />
+         <Sketch
+-          kind="kitchen"
++          kind="jali"
+           opacity={0.26}
+-          className="absolute -top-8 right-[-120px] hidden w-[640px] xl:block"
++          className="absolute -top-8 right-[-60px] hidden w-[360px] xl:block"
+         />
+         <Sketch
+           kind="plant-large"
+diff --git a/src/components/pages/home/HomeBlueprint.tsx b/src/components/pages/home/HomeBlueprint.tsx
+index 83108d4..cc2e5e3 100644
+--- a/src/components/pages/home/HomeBlueprint.tsx
++++ b/src/components/pages/home/HomeBlueprint.tsx
+@@ -24,17 +24,17 @@ export function HomeBlueprint() {
+             <BeforeAfterSlider
+               before={{
+                 src: img(BLUEPRINT_SECTION.before.image),
+-                alt: "Copper line drawing of the kitchen on a pale-teal blueprint grid with dimensions",
++                alt: "Copper line drawing of the slat wall elevation on a pale-teal blueprint grid with dimensions",
+                 label: BLUEPRINT_SECTION.before.label,
+               }}
+               after={{
+                 src: img(BLUEPRINT_SECTION.after.image),
+-                alt: "The finished teal kitchen with its island, delivered as drawn",
++                alt: "The finished fluted TV wall, delivered as drawn",
+                 label: BLUEPRINT_SECTION.after.label,
+               }}
+               aspect="12/5"
+               radius="xl"
+-              ariaLabel="Compare the design drawing with the delivered kitchen"
++              ariaLabel="Compare the design drawing with the delivered wall"
+             />
+           </Reveal>
+         </div>
+diff --git a/src/components/pages/home/HomeEstimate.tsx b/src/components/pages/home/HomeEstimate.tsx
+index 4dcab79..103fb93 100644
+--- a/src/components/pages/home/HomeEstimate.tsx
++++ b/src/components/pages/home/HomeEstimate.tsx
+@@ -76,8 +76,8 @@ function rovingKeyDown<T>(
+ 
+ /** "Quick estimate" teaser card: space, area and grade in, an indicative range out. */
+ export function HomeEstimate() {
+-  const [choice, setChoice] = useState<Choice>("kitchen");
+-  const [area, setArea] = useState<number>(SPACE_BY_ID.kitchen.defaultArea);
++  const [choice, setChoice] = useState<Choice>("wardrobe");
++  const [area, setArea] = useState<number>(SPACE_BY_ID.wardrobe.defaultArea);
+   const [grade, setGrade] = useState<GradeId>(DEFAULT_GRADE);
+   const areaId = useId();
+ 
+diff --git a/src/components/pages/home/HomeHero.tsx b/src/components/pages/home/HomeHero.tsx
+index c59bf77..40cc257 100644
+--- a/src/components/pages/home/HomeHero.tsx
++++ b/src/components/pages/home/HomeHero.tsx
+@@ -56,8 +56,8 @@ export function HomeHero() {
+     <section className="wash relative overflow-x-clip bg-cloud">
+       <VerticalRuler />
+       <Sketch
+-        kind="kitchen"
+-        className="absolute bottom-2 left-[3%] hidden w-[400px] lg:block"
++        kind="jali"
++        className="absolute bottom-2 left-[3%] hidden w-[220px] lg:block"
+         opacity={0.14}
+       />
+       <Sketch
+diff --git a/src/components/pages/home/HomeManifesto.tsx b/src/components/pages/home/HomeManifesto.tsx
+index b3458f9..da7b62b 100644
+--- a/src/components/pages/home/HomeManifesto.tsx
++++ b/src/components/pages/home/HomeManifesto.tsx
+@@ -32,8 +32,8 @@ export function HomeManifesto() {
+   return (
+     <Section tone="cloud" className="overflow-x-clip py-14 lg:py-20">
+       <Sketch
+-        kind="kitchen"
+-        className="absolute -bottom-2 -left-8 hidden w-[360px] lg:block"
++        kind="jali"
++        className="absolute -bottom-2 -left-8 hidden w-[220px] lg:block"
+         opacity={0.13}
+       />
+       <Sketch
+diff --git a/src/components/pages/project/assets/kitchen-teal-hero-clean.jpg b/src/components/pages/project/assets/kitchen-teal-hero-clean.jpg
+deleted file mode 100644
+index d97317f..0000000
+Binary files a/src/components/pages/project/assets/kitchen-teal-hero-clean.jpg and /dev/null differ
+diff --git a/src/components/pages/project/images.ts b/src/components/pages/project/images.ts
+index 35f5bfc..e58609f 100644
+--- a/src/components/pages/project/images.ts
++++ b/src/components/pages/project/images.ts
+@@ -7,19 +7,16 @@
+ import type { ImageKey } from "@/content/image-keys";
+ import { img } from "@/content/images";
+ import type { Project } from "@/content/projects";
+-import kitchenTealHeroClean from "./assets/kitchen-teal-hero-clean.jpg";
+ 
+ /** Keys whose harvested crop carries UI baked in, mapped to a clean alternative. */
+ const CLEAN_KEY: Partial<Record<ImageKey, ImageKey>> = {
+   "hero-living": "orig-hero-living", // "Lights ON" toggle → the original photo
+   "grid-bedroom": "orig-work-bedroom", // heart + "JAIPUR" pin → the original photo
+   "grid-cove-ceiling": "journal-cove", // heart + "JAIPUR" pin → clean cove crop
+-  "cabinet-inside": "kitchen-gallery-2", // copper "3 / 4 / 3" badges → clean shelf crop
+ };
+ 
+-/** Hero photos per project: the kitchen hero is a clean re-crop of reference 4 (2×). */
++/** Hero photos per project that use the original, uncropped photo. */
+ const HERO_SRC: Record<string, string> = {
+-  "teal-copper-kitchen": kitchenTealHeroClean,
+   "master-bedroom-suite": img("orig-work-bedroom"),
+   "walnut-teal-living-room": img("orig-hero-living"),
+ };
+diff --git a/src/components/pages/projects/ProjectGrid.tsx b/src/components/pages/projects/ProjectGrid.tsx
+index c6335d7..1e40e3a 100644
+--- a/src/components/pages/projects/ProjectGrid.tsx
++++ b/src/components/pages/projects/ProjectGrid.tsx
+@@ -19,7 +19,7 @@ function toCardData(p: Project) {
+     slug: p.slug,
+     title: p.title,
+     place: p.place,
+-    // The shared card joins category and area with "  ·  "; we want "KITCHEN · PREMIUM · 2024".
++    // The shared card joins category and area with "  ·  "; we want "BEDROOM · PREMIUM · 2024".
+     category: `${p.kind}  ·  ${p.grade}`,
+     year: p.year,
+     image: img(p.image),
+diff --git a/src/components/pages/projects/filters.ts b/src/components/pages/projects/filters.ts
+index 251cdd1..db42ca1 100644
+--- a/src/components/pages/projects/filters.ts
++++ b/src/components/pages/projects/filters.ts
+@@ -19,7 +19,7 @@ export const EMPTY_FILTERS: Filters = { category: null, location: "all", grade:
+ 
+ export const SOFT_EASE = [0.22, 1, 0.36, 1] as const;
+ 
+-/** Reverse lookup of `PROJECT_CATEGORY_IDS` (`kitchens` → "Kitchens"). */
++/** Reverse lookup of `PROJECT_CATEGORY_IDS` (`bedrooms-wardrobes` → "Bedrooms & Wardrobes"). */
+ export function categoryFromId(id: string | undefined): ProjectCategory | null {
+   if (!id) return null;
+   const hit = (Object.entries(PROJECT_CATEGORY_IDS) as [ProjectCategory, string][]).find(
+@@ -37,7 +37,7 @@ export function applyFilters(projects: readonly Project[], filters: Filters): Pr
+   );
+ }
+ 
+-/** "KITCHEN · PREMIUM · 2024" style meta used across the page. */
++/** "BEDROOM · PREMIUM · 2024" style meta used across the page. */
+ export function projectMeta(p: Project): string {
+   return `${p.kind} · ${p.grade} · ${p.year}`;
+ }
+diff --git a/src/components/pages/service/ServiceGallery.tsx b/src/components/pages/service/ServiceGallery.tsx
+index 2acc2c1..d83aed7 100644
+--- a/src/components/pages/service/ServiceGallery.tsx
++++ b/src/components/pages/service/ServiceGallery.tsx
+@@ -76,7 +76,7 @@ export function ServiceGallery({ gallery, label, link, title }: Props) {
+         onOpenChange={(o) => {
+           if (!o) setOpen(null);
+         }}
+-        src={img(current ?? tiles[0] ?? gallery[0] ?? "kitchen-teal-hero")}
++        src={img(current ?? tiles[0] ?? gallery[0] ?? "hero-living")}
+         alt={`${title} photo ${(open ?? 0) + 1}`}
+         caption={`${label} · ${String((open ?? 0) + 1).padStart(2, "0")} / ${String(tiles.length).padStart(2, "0")}`}
+       />
+diff --git a/src/components/pages/service/links.tsx b/src/components/pages/service/links.tsx
+index 1992b30..f2a8780 100644
+--- a/src/components/pages/service/links.tsx
++++ b/src/components/pages/service/links.tsx
+@@ -4,7 +4,7 @@ import { quickEstimateWaLink } from "@/content/pricing";
+ import type { Service } from "@/content/services";
+ import { WHATSAPP_FLOOR_PLAN, WHATSAPP_PHOTO, waLink } from "@/content/site";
+ 
+-/** Where a content label like "Get my kitchen estimate" / "Book a free site visit" should go. */
++/** Where a content label like "Get my wardrobe estimate" / "Book a free site visit" should go. */
+ export function ctaTarget(label: string): string {
+   const l = label.toLowerCase();
+   if (l.includes("estimat") || l.includes("adjust") || l.includes("plan my")) return "/estimator";
+@@ -28,7 +28,7 @@ export function stickyPrimary(service: Service): { href: string } | { to: string
+ }
+ 
+ /**
+- * Split a content href such as "/projects?category=kitchens" into TanStack `to` + `search`
++ * Split a content href such as "/projects?category=bedrooms-wardrobes" into TanStack `to` + `search`
+  * props. Content links are plain strings, so the typed `to` is widened like the shared Button.
+  */
+ export function linkParts(href: string): { to: string; search?: Record<string, string> } {
+diff --git a/src/components/pages/services/ServicesHero.tsx b/src/components/pages/services/ServicesHero.tsx
+index fa743a5..cdd3a64 100644
+--- a/src/components/pages/services/ServicesHero.tsx
++++ b/src/components/pages/services/ServicesHero.tsx
+@@ -34,7 +34,6 @@ const PLACEMENT: Record<string, Placement> = {
+   "Ceiling & Lights": { dot: { x: 50.1, y: 15.1 }, chip: { left: 54.7, top: 6.6, w: 19.2 } },
+   Wardrobes: { dot: { x: 28.5, y: 29.2 }, chip: { left: 11, top: 25.9, w: 13.6 } },
+   "Wall Panels": { dot: { x: 87.8, y: 52.2 }, chip: { left: 90.4, top: 49.1, w: 15.5 } },
+-  Kitchen: { dot: { x: 31.2, y: 57.9 }, chip: { left: 31.4, top: 62.1, w: 11.4 } },
+   "Living Room": { dot: { x: 67.5, y: 74.5 }, chip: { left: 70.4, top: 71.1, w: 16.6 } },
+   Flooring: { dot: { x: 46.9, y: 87.8 }, chip: { left: 49.3, top: 84.6, w: 13.1 } },
+ };
+@@ -138,7 +137,7 @@ export function ServicesHero() {
+             <div className="relative mr-7 aspect-[3/2] @container sm:mr-0">
+               <img
+                 src={img("iso-home")}
+-                alt="Isometric cut-away of a 3BHK home showing the kitchen, wardrobes, ceiling lights, wall panels, living room and flooring"
++                alt="Isometric cut-away of a 3BHK home showing the wardrobes, ceiling lights, wall panels, living room and flooring"
+                 width={954}
+                 height={636}
+                 loading="eager"
+diff --git a/src/components/pages/thank-you/booking.ts b/src/components/pages/thank-you/booking.ts
+index ef84a0a..29cc3ed 100644
+--- a/src/components/pages/thank-you/booking.ts
++++ b/src/components/pages/thank-you/booking.ts
+@@ -82,7 +82,7 @@ function slotLabel(value: string | undefined): string | undefined {
+   return slot ? `${slot.label} (${slot.time})` : v;
+ }
+ 
+-/** "kitchen,wardrobes" → "Kitchen, Wardrobes" (known options keep their canonical casing). */
++/** "ceiling,wardrobes" → "Ceiling, Wardrobes" (known options keep their canonical casing). */
+ function planningLabel(value: string | undefined): string | undefined {
+   const v = clean(value);
+   if (!v) return undefined;
+diff --git a/src/components/site/Sketch.tsx b/src/components/site/Sketch.tsx
+index 8ab3ea7..3988895 100644
+--- a/src/components/site/Sketch.tsx
++++ b/src/components/site/Sketch.tsx
+@@ -1,7 +1,7 @@
+ import type { CSSProperties, ReactElement } from "react";
+ import { cn } from "@/lib/utils";
+ 
+-export type SketchKind = "plant" | "plant-large" | "arch" | "jali" | "kitchen" | "ladder";
++export type SketchKind = "plant" | "plant-large" | "arch" | "jali" | "ladder";
+ 
+ export type SketchProps = {
+   kind: SketchKind;
+@@ -89,39 +89,6 @@ function Jali() {
+   );
+ }
+ 
+-function Kitchen() {
+-  return (
+-    <svg viewBox="0 0 320 200" {...COMMON}>
+-      {/* worktop and base cabinets */}
+-      <path d="M20 110h280" />
+-      <path d="M24 114v60h272v-60" />
+-      <path d="M24 174h272" />
+-      <path d="M92 114v60M160 114v60M228 114v60" />
+-      <path d="M52 144h12M120 144h12M188 144h12M256 144h12" />
+-      {/* wall units */}
+-      <path d="M40 30h240v50H40z" />
+-      <path d="M100 30v50M160 30v50M220 30v50" />
+-      <path d="M68 62v6M130 62v6M190 62v6M250 62v6" />
+-      {/* chimney + hob */}
+-      <path d="M136 80v10h48V80" />
+-      <path d="M130 90h60" />
+-      <circle cx="148" cy="104" r="4" />
+-      <circle cx="172" cy="104" r="4" />
+-      {/* sink */}
+-      <path d="M236 100h44v8h-44z" />
+-      <path d="M258 100v-12c0-4 4-6 8-4" />
+-      {/* dimension line top */}
+-      <path d="M40 14h240M40 10v8M280 10v8" />
+-      <path d="M156 8h8" strokeOpacity="0.6" />
+-      {/* dimension line left */}
+-      <path d="M8 30v144M4 30h8M4 174h8" />
+-      <path d="M6 100h4" strokeOpacity="0.6" />
+-      {/* tick marks along the worktop */}
+-      <path d="M60 110v-4M100 110v-4M140 110v-4M180 110v-4M220 110v-4M260 110v-4" />
+-    </svg>
+-  );
+-}
+-
+ function Ladder() {
+   return (
+     <svg viewBox="0 0 120 260" {...COMMON}>
+@@ -137,7 +104,6 @@ const KIND: Record<SketchKind, () => ReactElement> = {
+   "plant-large": PlantLarge,
+   arch: Arch,
+   jali: Jali,
+-  kitchen: Kitchen,
+   ladder: Ladder,
+ };
+ 
+diff --git a/src/content/catalogue.ts b/src/content/catalogue.ts
+index e746f9e..7b0a6bf 100644
+--- a/src/content/catalogue.ts
++++ b/src/content/catalogue.ts
+@@ -6,7 +6,6 @@ import type { ImageKey } from "./image-keys";
+ import type { SpaceId } from "./pricing";
+ 
+ export type CatalogueCategoryId =
+-  | "kitchens"
+   | "wardrobes"
+   | "boards"
+   | "finishes"
+@@ -24,12 +23,6 @@ export type CatalogueCategory = {
+ };
+ 
+ export const CATALOGUE_CATEGORIES: CatalogueCategory[] = [
+-  {
+-    id: "kitchens",
+-    label: "Kitchen modules",
+-    icon: "CookingPot",
+-    blurb: "Base, wall and tall units, islands and the accessories that go inside them.",
+-  },
+   {
+     id: "wardrobes",
+     label: "Wardrobes",
+@@ -70,7 +63,8 @@ export const CATALOGUE_CATEGORIES: CatalogueCategory[] = [
+     id: "countertops",
+     label: "Countertops",
+     icon: "Square",
+-    blurb: "Granite, marble and quartz counters, cut and polished on site.",
++    blurb:
++      "Granite, marble and quartz for vanities, pooja bases and utility counters, cut and polished on site.",
+   },
+ ];
+ 
+@@ -108,121 +102,6 @@ export type Product = {
+ };
+ 
+ export const PRODUCTS: Product[] = [
+-  /* ---------------------------------------------------------------- kitchens */
+-  {
+-    id: "base-unit",
+-    category: "kitchens",
+-    name: "Base units",
+-    tagline: "Drawers, shutters and sink units below the counter.",
+-    specs: [
+-      "600 mm deep, 850 mm high",
+-      "18 mm carcass, 2 mm PVC edge",
+-      "Soft-close drawers optional",
+-    ],
+-    priceFrom: 4200,
+-    priceTo: 6500,
+-    unit: "per rft",
+-    priceNote: "installed, Standard to Premium",
+-    leadTime: "3–4 weeks",
+-    warranty: "5 years on hardware",
+-    image: "cat-base-unit",
+-    tags: ["Popular"],
+-    estimatorSpace: "kitchen",
+-  },
+-  {
+-    id: "wall-unit",
+-    category: "kitchens",
+-    name: "Wall units",
+-    tagline: "Overhead storage with lift-up or hinged shutters.",
+-    specs: [
+-      "350 mm deep, 600–720 mm high",
+-      "Profile light under the unit",
+-      "Glass or solid shutters",
+-    ],
+-    priceFrom: 3200,
+-    priceTo: 4800,
+-    unit: "per rft",
+-    priceNote: "installed",
+-    leadTime: "3–4 weeks",
+-    image: "cat-wall-unit",
+-    tags: [],
+-    estimatorSpace: "kitchen",
+-  },
+-  {
+-    id: "tall-unit",
+-    category: "kitchens",
+-    name: "Tall & pantry units",
+-    tagline: "Floor-to-ceiling storage for groceries, oven and fridge housing.",
+-    specs: ["2,100–2,400 mm high", "Pull-out pantry baskets", "Built-in oven or microwave niche"],
+-    priceFrom: 7500,
+-    priceTo: 11000,
+-    unit: "per rft",
+-    priceNote: "installed",
+-    leadTime: "3–4 weeks",
+-    image: "cat-tall-unit",
+-    tags: ["Premium"],
+-    estimatorSpace: "kitchen",
+-  },
+-  {
+-    id: "island",
+-    category: "kitchens",
+-    name: "Island unit",
+-    tagline: "A 6 ft island with counter, drawers and a breakfast ledge.",
+-    specs: [
+-      "1,800 × 900 mm",
+-      "Counter and shutters matched to the kitchen",
+-      "Optional hob or sink",
+-    ],
+-    priceFrom: 48000,
+-    unit: "per set",
+-    priceNote: "installed, excluding counter stone upgrade",
+-    leadTime: "4 weeks",
+-    image: "render-3d",
+-    tags: ["Premium"],
+-    estimatorSpace: "kitchen",
+-  },
+-  {
+-    id: "accessories-basic",
+-    category: "kitchens",
+-    name: "Accessory set · Basic",
+-    tagline: "Cutlery tray and a bottle pull-out.",
+-    specs: ["SS cutlery tray", "Bottle pull-out, 150 mm", "Fits any base unit"],
+-    priceFrom: 9000,
+-    unit: "per set",
+-    leadTime: "In stock",
+-    brands: "Ebco, Ozone",
+-    image: "cat-tandem-drawer",
+-    tags: ["Budget"],
+-    estimatorSpace: "kitchen",
+-  },
+-  {
+-    id: "accessories-standard",
+-    category: "kitchens",
+-    name: "Accessory set · Standard",
+-    tagline: "Basic set plus a corner carousel and tall pantry baskets.",
+-    specs: ["Corner carousel or D-tray", "Pantry pull-out, 4 baskets", "Plate and thali racks"],
+-    priceFrom: 32000,
+-    unit: "per set",
+-    leadTime: "1–2 weeks",
+-    brands: "Hettich, Hafele",
+-    image: "cabinet-inside",
+-    tags: ["Recommended", "Popular"],
+-    estimatorSpace: "kitchen",
+-  },
+-  {
+-    id: "accessories-full",
+-    category: "kitchens",
+-    name: "Accessory set · Full",
+-    tagline: "Magic corner, tandem baskets and wicker units.",
+-    specs: ["Magic corner unit", "Tandem baskets on every drawer", "Wicker and oil pull-outs"],
+-    priceFrom: 68000,
+-    unit: "per set",
+-    leadTime: "2–3 weeks",
+-    brands: "Blum, Hettich",
+-    image: "cabinet-inside",
+-    tags: ["Premium"],
+-    estimatorSpace: "kitchen",
+-  },
+   /* --------------------------------------------------------------- wardrobes */
+   {
+     id: "hinged-wardrobe",
+@@ -312,11 +191,11 @@ export const PRODUCTS: Product[] = [
+     id: "bwp-plywood",
+     category: "boards",
+     name: "BWP marine plywood",
+-    tagline: "Boiling-water-proof plywood for kitchens and wet areas.",
++    tagline: "Boiling-water-proof plywood for bathrooms and wet areas.",
+     specs: [
+       "18 mm, 8 × 4 ft, IS 710",
+       "Phenolic resin, borer-proof",
+-      "Kitchens, bathrooms, utility",
++      "Bathrooms, utility, balconies",
+     ],
+     priceFrom: 3800,
+     priceTo: 5600,
+@@ -350,7 +229,7 @@ export const PRODUCTS: Product[] = [
+     category: "boards",
+     name: "Boilo board",
+     tagline: "Waterproof engineered board for refined shutters.",
+-    specs: ["18 mm, 8 × 4 ft", "Boiling-water-resistant", "Kitchen shutters, bathroom vanities"],
++    specs: ["18 mm, 8 × 4 ft", "Boiling-water-resistant", "Wardrobe shutters, bathroom vanities"],
+     priceFrom: 3400,
+     priceTo: 4200,
+     unit: "per sheet",
+@@ -750,9 +629,8 @@ export const PRODUCTS: Product[] = [
+     unit: "per sq.ft",
+     priceNote: "installed",
+     leadTime: "1 week",
+-    image: "gallery-kitchen-a",
++    image: "mat-copper-handle",
+     tags: ["Budget", "Popular"],
+-    estimatorSpace: "kitchen",
+   },
+   {
+     id: "marble",
+@@ -766,7 +644,6 @@ export const PRODUCTS: Product[] = [
+     leadTime: "2 weeks",
+     image: "mat-marble",
+     tags: ["Premium"],
+-    estimatorSpace: "kitchen",
+   },
+   {
+     id: "quartz",
+@@ -781,7 +658,6 @@ export const PRODUCTS: Product[] = [
+     brands: "Kalinga, Caesarstone",
+     image: "cat-quartz",
+     tags: ["Recommended"],
+-    estimatorSpace: "kitchen",
+   },
+ ];
+ 
+diff --git a/src/content/contact.ts b/src/content/contact.ts
+index 17a2ffc..a755c98 100644
+--- a/src/content/contact.ts
++++ b/src/content/contact.ts
+@@ -48,7 +48,6 @@ export const TOWN_OPTIONS = ["Sambhar", "Nawa", "Jaipur", "Other"] as const;
+ export type TownOption = (typeof TOWN_OPTIONS)[number];
+ 
+ export const PLANNING_OPTIONS = [
+-  "Kitchen",
+   "Wardrobes",
+   "Ceiling",
+   "Full home",
+@@ -125,7 +124,7 @@ export const THANK_YOU_SAMPLE = {
+   date: "Sat, 3 Oct 2026",
+   slot: "Morning (10 AM – 12 PM)",
+   town: "Jaipur",
+-  planning: "Kitchen, Wardrobes",
++  planning: "Wardrobes, Ceiling",
+   reference: "SIS-2410",
+ } as const;
+ 
+@@ -200,7 +199,7 @@ export const THANK_YOU = {
+     eyebrow: "Explore while you wait",
+     title: "Find ideas for your home.",
+     text: "Take a look at some of our recent projects to get inspired.",
+-    slugs: ["teal-copper-kitchen", "master-bedroom-suite", "walnut-teal-living-room"],
++    slugs: ["fluted-tv-wall", "master-bedroom-suite", "walnut-teal-living-room"],
+     viewAll: "View all projects",
+   },
+ } as const;
+diff --git a/src/content/faqs.ts b/src/content/faqs.ts
+index d24f760..c1ee9c1 100644
+--- a/src/content/faqs.ts
++++ b/src/content/faqs.ts
+@@ -8,8 +8,8 @@ export const SERVICES_FAQ: Faq[] = [
+     a: "Yes, the site visit is completely free. We measure the space, understand your requirements and share a rough estimate along with design suggestions.",
+   },
+   {
+-    q: "How long does a modular kitchen take?",
+-    a: "A typical 100–150 sq.ft kitchen takes 4–6 weeks from design sign-off: about three weeks of manufacturing in our workshop and one to two weeks of installation on site. Complete homes take 8–12 weeks depending on size.",
++    q: "How long does a wardrobe or a full home take?",
++    a: "A wardrobe, TV unit or ceiling takes 3–4 weeks from design sign-off: about two weeks of manufacturing in our workshop and one week of installation on site. Complete homes take 8–12 weeks depending on size.",
+   },
+   {
+     q: "Do you give a written warranty?",
+@@ -32,7 +32,7 @@ export const ESTIMATOR_FAQ: Faq[] = [
+   },
+   {
+     q: "Why is Premium recommended?",
+-    a: "Premium uses BWP waterproof plywood, soft-close branded hardware and acrylic or high-gloss finishes, which is the combination most of our clients choose. It costs more than Standard but lasts much longer in kitchens and other wet areas, and comes with a 5-year hardware warranty.",
++    a: "Premium uses BWP waterproof plywood, soft-close branded hardware and acrylic or high-gloss finishes, which is the combination most of our clients choose. It costs more than Standard but lasts much longer in bathrooms and other wet areas, and comes with a 5-year hardware warranty.",
+   },
+   {
+     q: "Can I pay in stages?",
+@@ -51,7 +51,7 @@ export const CONTACT_FAQ: Faq[] = [
+   },
+   {
+     q: "How soon can you start?",
+-    a: "We can usually visit within 2–3 days of your booking. Manufacturing starts once the design and quotation are signed off, and most kitchens are installed within 4–6 weeks of that.",
++    a: "We can usually visit within 2–3 days of your booking. Manufacturing starts once the design and quotation are signed off, and most wardrobes and ceilings are installed within 3–5 weeks of that.",
+   },
+ ];
+ 
+diff --git a/src/content/home.ts b/src/content/home.ts
+index a80230b..cc905a8 100644
+--- a/src/content/home.ts
++++ b/src/content/home.ts
+@@ -14,7 +14,6 @@ export const HOME_HERO = {
+ } as const;
+ 
+ export const MARQUEE_ITEMS: string[] = [
+-  "Modular Kitchens",
+   "Wardrobes",
+   "False Ceilings",
+   "Wall Panelling",
+@@ -49,9 +48,9 @@ export const BLUEPRINT_SECTION = {
+   eyebrow: "Our process",
+   titleLines: ["Blueprint", "to Reality"],
+   text: "From measured drawing to finished installation.",
+-  before: { image: "blueprint-kitchen" as ImageKey, label: "Our design" },
+-  after: { image: "kitchen-island-finished" as ImageKey, label: "Delivered" },
+-  dimensions: ["2440 mm", "900 mm"],
++  before: { image: "elevation" as ImageKey, label: "Our design" },
++  after: { image: "grid-fluted-tv" as ImageKey, label: "Delivered" },
++  dimensions: ["3000 mm", "2400 mm"],
+ } as const;
+ 
+ export const HOME_CTA = {
+@@ -65,7 +64,7 @@ export const HOME_CTA = {
+ export const NOT_FOUND = {
+   dimension: "404 mm",
+   title: "This room isn't built yet.",
+-  text: "The page you're looking for doesn't exist, but your dream kitchen could.",
++  text: "The page you're looking for doesn't exist, but your dream home could.",
+   primary: "Back to home",
+   secondary: "See our projects",
+   link: "or chat with us on WhatsApp",
+diff --git a/src/content/image-keys.ts b/src/content/image-keys.ts
+index 89a3070..5c65001 100644
+--- a/src/content/image-keys.ts
++++ b/src/content/image-keys.ts
+@@ -3,22 +3,15 @@ export type ImageKey =
+   | "hero-living"
+   | "pill-wood"
+   | "pill-handle"
+-  | "blueprint-kitchen"
+-  | "kitchen-island-finished"
+   | "testimonial-room"
+   | "featured-living"
+-  | "grid-kitchen"
+   | "grid-bedroom"
+   | "grid-office"
+   | "grid-cove-ceiling"
+   | "grid-fluted-tv"
+-  | "grid-ivory-kitchen"
+   | "grid-kids-room"
+   | "grid-boutique"
+   | "grid-pooja"
+-  | "kitchen-teal-hero"
+-  | "kitchen-before"
+-  | "kitchen-after"
+   | "floor-plan"
+   | "render-3d"
+   | "elevation"
+@@ -27,14 +20,10 @@ export type ImageKey =
+   | "mat-copper-handle"
+   | "mat-marble"
+   | "mat-hinge"
+-  | "gallery-kitchen-wide"
+-  | "gallery-kitchen-a"
+-  | "gallery-kitchen-b"
+   | "gallery-handle-detail"
+   | "next-bedroom"
+   | "iso-home"
+   | "svc-complete-home"
+-  | "svc-kitchen"
+   | "svc-wardrobes"
+   | "svc-ceiling"
+   | "svc-panelling"
+@@ -43,14 +32,8 @@ export type ImageKey =
+   | "grade-premium"
+   | "grade-luxury"
+   | "cabinet-inside"
+-  | "plan-l-shaped"
+   | "layout-photo"
+   | "finish-preview"
+-  | "kitchen-gallery-1"
+-  | "kitchen-gallery-2"
+-  | "kitchen-gallery-3"
+-  | "kitchen-gallery-4"
+-  | "kitchen-gallery-5"
+   | "wardrobe-elevation"
+   | "process-measure"
+   | "board-mr"
+@@ -81,7 +64,6 @@ export type ImageKey =
+   | "bedroom-modern"
+   | "sketch-plant-left"
+   | "sketch-arch-right"
+-  | "journal-kitchen-featured"
+   | "journal-plywood"
+   | "journal-ceiling"
+   | "journal-wardrobe-finish"
+@@ -93,9 +75,6 @@ export type ImageKey =
+   | "sketch-plant-404"
+   | "sketch-ladder-404"
+   | "sketch-room-404"
+-  | "cat-base-unit"
+-  | "cat-wall-unit"
+-  | "cat-tall-unit"
+   | "cat-laminate-sheets"
+   | "cat-acrylic"
+   | "cat-membrane"
+@@ -116,7 +95,6 @@ export type ImageKey =
+   | "cat-profile-light"
+   | "cat-quartz"
+   | "orig-hero-living"
+-  | "orig-work-kitchen"
+   | "orig-work-bedroom"
+   | "orig-work-office"
+   | "orig-craft"
+@@ -127,22 +105,15 @@ export const IMAGE_KEYS: ImageKey[] = [
+   "hero-living",
+   "pill-wood",
+   "pill-handle",
+-  "blueprint-kitchen",
+-  "kitchen-island-finished",
+   "testimonial-room",
+   "featured-living",
+-  "grid-kitchen",
+   "grid-bedroom",
+   "grid-office",
+   "grid-cove-ceiling",
+   "grid-fluted-tv",
+-  "grid-ivory-kitchen",
+   "grid-kids-room",
+   "grid-boutique",
+   "grid-pooja",
+-  "kitchen-teal-hero",
+-  "kitchen-before",
+-  "kitchen-after",
+   "floor-plan",
+   "render-3d",
+   "elevation",
+@@ -151,14 +122,10 @@ export const IMAGE_KEYS: ImageKey[] = [
+   "mat-copper-handle",
+   "mat-marble",
+   "mat-hinge",
+-  "gallery-kitchen-wide",
+-  "gallery-kitchen-a",
+-  "gallery-kitchen-b",
+   "gallery-handle-detail",
+   "next-bedroom",
+   "iso-home",
+   "svc-complete-home",
+-  "svc-kitchen",
+   "svc-wardrobes",
+   "svc-ceiling",
+   "svc-panelling",
+@@ -167,14 +134,8 @@ export const IMAGE_KEYS: ImageKey[] = [
+   "grade-premium",
+   "grade-luxury",
+   "cabinet-inside",
+-  "plan-l-shaped",
+   "layout-photo",
+   "finish-preview",
+-  "kitchen-gallery-1",
+-  "kitchen-gallery-2",
+-  "kitchen-gallery-3",
+-  "kitchen-gallery-4",
+-  "kitchen-gallery-5",
+   "wardrobe-elevation",
+   "process-measure",
+   "board-mr",
+@@ -205,7 +166,6 @@ export const IMAGE_KEYS: ImageKey[] = [
+   "bedroom-modern",
+   "sketch-plant-left",
+   "sketch-arch-right",
+-  "journal-kitchen-featured",
+   "journal-plywood",
+   "journal-ceiling",
+   "journal-wardrobe-finish",
+@@ -217,9 +177,6 @@ export const IMAGE_KEYS: ImageKey[] = [
+   "sketch-plant-404",
+   "sketch-ladder-404",
+   "sketch-room-404",
+-  "cat-base-unit",
+-  "cat-wall-unit",
+-  "cat-tall-unit",
+   "cat-laminate-sheets",
+   "cat-acrylic",
+   "cat-membrane",
+@@ -240,7 +197,6 @@ export const IMAGE_KEYS: ImageKey[] = [
+   "cat-profile-light",
+   "cat-quartz",
+   "orig-hero-living",
+-  "orig-work-kitchen",
+   "orig-work-bedroom",
+   "orig-work-office",
+   "orig-craft",
+diff --git a/src/content/images.ts b/src/content/images.ts
+index f7f847b..84d5eb2 100644
+--- a/src/content/images.ts
++++ b/src/content/images.ts
+@@ -5,22 +5,15 @@ import type { ImageKey } from "./image-keys";
+ import i_heroLiving from "@/assets/ref/hero-living.jpg";
+ import i_pillWood from "@/assets/ref/pill-wood.jpg";
+ import i_pillHandle from "@/assets/ref/pill-handle.jpg";
+-import i_blueprintKitchen from "@/assets/ref/blueprint-kitchen.svg";
+-import i_kitchenIslandFinished from "@/assets/ref/kitchen-island-finished.jpg";
+ import i_testimonialRoom from "@/assets/ref/testimonial-room.jpg";
+ import i_featuredLiving from "@/assets/ref/featured-living.jpg";
+-import i_gridKitchen from "@/assets/ref/grid-kitchen.jpg";
+ import i_gridBedroom from "@/assets/ref/grid-bedroom.jpg";
+ import i_gridOffice from "@/assets/ref/grid-office.jpg";
+ import i_gridCoveCeiling from "@/assets/ref/grid-cove-ceiling.jpg";
+ import i_gridFlutedTv from "@/assets/ref/grid-fluted-tv.jpg";
+-import i_gridIvoryKitchen from "@/assets/ref/grid-ivory-kitchen.jpg";
+ import i_gridKidsRoom from "@/assets/ref/grid-kids-room.jpg";
+ import i_gridBoutique from "@/assets/ref/grid-boutique.jpg";
+ import i_gridPooja from "@/assets/ref/grid-pooja.jpg";
+-import i_kitchenTealHero from "@/assets/ref/kitchen-teal-hero.jpg";
+-import i_kitchenBefore from "@/assets/ref/kitchen-before.jpg";
+-import i_kitchenAfter from "@/assets/ref/kitchen-after.jpg";
+ import i_floorPlan from "@/assets/ref/floor-plan.svg";
+ import i_render3d from "@/assets/ref/render-3d.jpg";
+ import i_elevation from "@/assets/ref/elevation.svg";
+@@ -29,14 +22,10 @@ import i_matBwpPlywood from "@/assets/ref/mat-bwp-plywood.jpg";
+ import i_matCopperHandle from "@/assets/ref/mat-copper-handle.jpg";
+ import i_matMarble from "@/assets/ref/mat-marble.jpg";
+ import i_matHinge from "@/assets/ref/mat-hinge.jpg";
+-import i_galleryKitchenWide from "@/assets/ref/gallery-kitchen-wide.jpg";
+-import i_galleryKitchenA from "@/assets/ref/gallery-kitchen-a.jpg";
+-import i_galleryKitchenB from "@/assets/ref/gallery-kitchen-b.jpg";
+ import i_galleryHandleDetail from "@/assets/ref/gallery-handle-detail.jpg";
+ import i_nextBedroom from "@/assets/ref/next-bedroom.jpg";
+ import i_isoHome from "@/assets/ref/iso-home.jpg";
+ import i_svcCompleteHome from "@/assets/ref/svc-complete-home.jpg";
+-import i_svcKitchen from "@/assets/ref/svc-kitchen.jpg";
+ import i_svcWardrobes from "@/assets/ref/svc-wardrobes.jpg";
+ import i_svcCeiling from "@/assets/ref/svc-ceiling.jpg";
+ import i_svcPanelling from "@/assets/ref/svc-panelling.jpg";
+@@ -45,14 +34,8 @@ import i_gradeStandard from "@/assets/ref/grade-standard.jpg";
+ import i_gradePremium from "@/assets/ref/grade-premium.jpg";
+ import i_gradeLuxury from "@/assets/ref/grade-luxury.jpg";
+ import i_cabinetInside from "@/assets/ref/cabinet-inside.jpg";
+-import i_planLShaped from "@/assets/ref/plan-l-shaped.svg";
+ import i_layoutPhoto from "@/assets/ref/layout-photo.jpg";
+ import i_finishPreview from "@/assets/ref/finish-preview.jpg";
+-import i_kitchenGallery1 from "@/assets/ref/kitchen-gallery-1.jpg";
+-import i_kitchenGallery2 from "@/assets/ref/kitchen-gallery-2.jpg";
+-import i_kitchenGallery3 from "@/assets/ref/kitchen-gallery-3.jpg";
+-import i_kitchenGallery4 from "@/assets/ref/kitchen-gallery-4.jpg";
+-import i_kitchenGallery5 from "@/assets/ref/kitchen-gallery-5.jpg";
+ import i_wardrobeElevation from "@/assets/ref/wardrobe-elevation.png";
+ import i_processMeasure from "@/assets/ref/process-measure.jpg";
+ import i_boardMr from "@/assets/ref/board-mr.jpg";
+@@ -83,7 +66,6 @@ import i_livingSlatPanel from "@/assets/ref/living-slat-panel.jpg";
+ import i_bedroomModern from "@/assets/ref/bedroom-modern.jpg";
+ import i_sketchPlantLeft from "@/assets/ref/sketch-plant-left.png";
+ import i_sketchArchRight from "@/assets/ref/sketch-arch-right.png";
+-import i_journalKitchenFeatured from "@/assets/ref/journal-kitchen-featured.jpg";
+ import i_journalPlywood from "@/assets/ref/journal-plywood.jpg";
+ import i_journalCeiling from "@/assets/ref/journal-ceiling.jpg";
+ import i_journalWardrobeFinish from "@/assets/ref/journal-wardrobe-finish.jpg";
+@@ -95,9 +77,6 @@ import i_plywoodHero from "@/assets/ref/plywood-hero.jpg";
+ import i_sketchPlant404 from "@/assets/ref/sketch-plant-404.png";
+ import i_sketchLadder404 from "@/assets/ref/sketch-ladder-404.png";
+ import i_sketchRoom404 from "@/assets/ref/sketch-room-404.png";
+-import i_catBaseUnit from "@/assets/ref/cat-base-unit.jpg";
+-import i_catWallUnit from "@/assets/ref/cat-wall-unit.jpg";
+-import i_catTallUnit from "@/assets/ref/cat-tall-unit.jpg";
+ import i_catLaminateSheets from "@/assets/ref/cat-laminate-sheets.jpg";
+ import i_catAcrylic from "@/assets/ref/cat-acrylic.jpg";
+ import i_catMembrane from "@/assets/ref/cat-membrane.jpg";
+@@ -118,7 +97,6 @@ import i_catDesignerCeiling from "@/assets/ref/cat-designer-ceiling.jpg";
+ import i_catProfileLight from "@/assets/ref/cat-profile-light.jpg";
+ import i_catQuartz from "@/assets/ref/cat-quartz.jpg";
+ import i_origHeroLiving from "@/assets/hero-living.jpg";
+-import i_origWorkKitchen from "@/assets/work-kitchen.jpg";
+ import i_origWorkBedroom from "@/assets/work-bedroom.jpg";
+ import i_origWorkOffice from "@/assets/work-office.jpg";
+ import i_origCraft from "@/assets/craft.jpg";
+@@ -129,22 +107,15 @@ export const IMAGES: Record<ImageKey, string> = {
+   "hero-living": i_heroLiving,
+   "pill-wood": i_pillWood,
+   "pill-handle": i_pillHandle,
+-  "blueprint-kitchen": i_blueprintKitchen,
+-  "kitchen-island-finished": i_kitchenIslandFinished,
+   "testimonial-room": i_testimonialRoom,
+   "featured-living": i_featuredLiving,
+-  "grid-kitchen": i_gridKitchen,
+   "grid-bedroom": i_gridBedroom,
+   "grid-office": i_gridOffice,
+   "grid-cove-ceiling": i_gridCoveCeiling,
+   "grid-fluted-tv": i_gridFlutedTv,
+-  "grid-ivory-kitchen": i_gridIvoryKitchen,
+   "grid-kids-room": i_gridKidsRoom,
+   "grid-boutique": i_gridBoutique,
+   "grid-pooja": i_gridPooja,
+-  "kitchen-teal-hero": i_kitchenTealHero,
+-  "kitchen-before": i_kitchenBefore,
+-  "kitchen-after": i_kitchenAfter,
+   "floor-plan": i_floorPlan,
+   "render-3d": i_render3d,
+   elevation: i_elevation,
+@@ -153,14 +124,10 @@ export const IMAGES: Record<ImageKey, string> = {
+   "mat-copper-handle": i_matCopperHandle,
+   "mat-marble": i_matMarble,
+   "mat-hinge": i_matHinge,
+-  "gallery-kitchen-wide": i_galleryKitchenWide,
+-  "gallery-kitchen-a": i_galleryKitchenA,
+-  "gallery-kitchen-b": i_galleryKitchenB,
+   "gallery-handle-detail": i_galleryHandleDetail,
+   "next-bedroom": i_nextBedroom,
+   "iso-home": i_isoHome,
+   "svc-complete-home": i_svcCompleteHome,
+-  "svc-kitchen": i_svcKitchen,
+   "svc-wardrobes": i_svcWardrobes,
+   "svc-ceiling": i_svcCeiling,
+   "svc-panelling": i_svcPanelling,
+@@ -169,14 +136,8 @@ export const IMAGES: Record<ImageKey, string> = {
+   "grade-premium": i_gradePremium,
+   "grade-luxury": i_gradeLuxury,
+   "cabinet-inside": i_cabinetInside,
+-  "plan-l-shaped": i_planLShaped,
+   "layout-photo": i_layoutPhoto,
+   "finish-preview": i_finishPreview,
+-  "kitchen-gallery-1": i_kitchenGallery1,
+-  "kitchen-gallery-2": i_kitchenGallery2,
+-  "kitchen-gallery-3": i_kitchenGallery3,
+-  "kitchen-gallery-4": i_kitchenGallery4,
+-  "kitchen-gallery-5": i_kitchenGallery5,
+   "wardrobe-elevation": i_wardrobeElevation,
+   "process-measure": i_processMeasure,
+   "board-mr": i_boardMr,
+@@ -207,7 +168,6 @@ export const IMAGES: Record<ImageKey, string> = {
+   "bedroom-modern": i_bedroomModern,
+   "sketch-plant-left": i_sketchPlantLeft,
+   "sketch-arch-right": i_sketchArchRight,
+-  "journal-kitchen-featured": i_journalKitchenFeatured,
+   "journal-plywood": i_journalPlywood,
+   "journal-ceiling": i_journalCeiling,
+   "journal-wardrobe-finish": i_journalWardrobeFinish,
+@@ -219,9 +179,6 @@ export const IMAGES: Record<ImageKey, string> = {
+   "sketch-plant-404": i_sketchPlant404,
+   "sketch-ladder-404": i_sketchLadder404,
+   "sketch-room-404": i_sketchRoom404,
+-  "cat-base-unit": i_catBaseUnit,
+-  "cat-wall-unit": i_catWallUnit,
+-  "cat-tall-unit": i_catTallUnit,
+   "cat-laminate-sheets": i_catLaminateSheets,
+   "cat-acrylic": i_catAcrylic,
+   "cat-membrane": i_catMembrane,
+@@ -242,7 +199,6 @@ export const IMAGES: Record<ImageKey, string> = {
+   "cat-profile-light": i_catProfileLight,
+   "cat-quartz": i_catQuartz,
+   "orig-hero-living": i_origHeroLiving,
+-  "orig-work-kitchen": i_origWorkKitchen,
+   "orig-work-bedroom": i_origWorkBedroom,
+   "orig-work-office": i_origWorkOffice,
+   "orig-craft": i_origCraft,
+diff --git a/src/content/journal.ts b/src/content/journal.ts
+index 8948f56..d553c99 100644
+--- a/src/content/journal.ts
++++ b/src/content/journal.ts
+@@ -53,120 +53,9 @@ const AUTHOR_BIO =
+   "With over 10 years in interior manufacturing, Dinesh personally oversees material selection and quality at our workshop in Sambhar. He believes in honest material lists and long-lasting workmanship.";
+ 
+ export const ARTICLES: Article[] = [
+-  {
+-    slug: "modular-kitchen-cost-jaipur-2026",
+-    title: "Modular kitchen cost in Jaipur (2026): a complete breakdown",
+-    dek: "Everything you need to know about modular kitchen pricing in Jaipur, including material options, hardware brands, area-wise estimates and tips to get the best value for your budget.",
+-    category: "Cost guide",
+-    readTime: "8 min read",
+-    date: "20 Sep 2026",
+-    image: "journal-kitchen-featured",
+-    hero: "journal-kitchen-featured",
+-    author: AUTHOR,
+-    featured: true,
+-    sections: [
+-      {
+-        id: "how-priced",
+-        heading: "How a modular kitchen is priced",
+-        blocks: [
+-          {
+-            type: "p",
+-            text: "Most studios in Jaipur, including ours, quote a modular kitchen per square foot of cabinet face area: the front surface of all base units, wall units and tall units added together. A typical L-shaped kitchen in a 2BHK or 3BHK apartment works out to 100–150 sq.ft. The rate you are quoted depends on three things: the board inside the cabinets, the finish on the shutters and the hardware that makes drawers and doors move.",
+-          },
+-          {
+-            type: "p",
+-            text: "At Shivansh our 2026 rates start at ₹1,350 per sq.ft for Standard, ₹1,820 for Premium and ₹2,360 for Luxury. The counter, chimney, hob and sink are quoted separately, because brands and sizes vary so much from family to family.",
+-          },
+-        ],
+-      },
+-      {
+-        id: "by-grade",
+-        heading: "What each grade includes",
+-        blocks: [
+-          {
+-            type: "table",
+-            head: ["", "Standard", "Premium", "Luxury"],
+-            rows: [
+-              ["Carcass", "MR plywood", "BWP marine plywood", "HDHMR / Boilo"],
+-              [
+-                "Shutter finish",
+-                "Matte laminate",
+-                "Acrylic / high-gloss / PU",
+-                "PU paint / veneer",
+-              ],
+-              [
+-                "Hardware",
+-                "Standard fittings",
+-                "Soft-close (Hettich / Hafele)",
+-                "Blum / Hettich premium",
+-              ],
+-              ["Hardware warranty", "1 year", "5 years", "10 years"],
+-              ["Price from", "₹1,350/sq.ft", "₹2,000/sq.ft", "₹2,590/sq.ft"],
+-            ],
+-          },
+-          {
+-            type: "p",
+-            text: "Standard is a sound kitchen for dry areas and tight budgets. Premium is what most of our clients in Sambhar and Jaipur choose, because BWP plywood and soft-close hardware are the two things you will notice every day for the next fifteen years. Luxury adds handle-less profiles, PU paint and top-end drawer systems.",
+-          },
+-        ],
+-      },
+-      {
+-        id: "area-estimates",
+-        heading: "Area-wise estimates",
+-        blocks: [
+-          {
+-            type: "p",
+-            text: "A small straight kitchen of 80 sq.ft at Standard grade starts around ₹1.1 lakh. A 120 sq.ft L-shaped kitchen at Premium, the most common brief we get, lands between ₹2.08 and ₹2.36 lakh. A 150 sq.ft U-shaped kitchen at Luxury crosses ₹3.5 lakh before the counter and appliances. Our estimator on this site uses the same rates, so you can try your own numbers in a minute.",
+-          },
+-          {
+-            type: "callout",
+-            text: "Rule of thumb for Jaipur in 2026: budget ₹1.8–2.4 lakh for a Premium kitchen in a 2–3 BHK apartment, plus ₹40,000–80,000 for the counter, sink and chimney.",
+-          },
+-        ],
+-      },
+-      {
+-        id: "hidden-costs",
+-        heading: "Costs people forget",
+-        blocks: [
+-          {
+-            type: "list",
+-            items: [
+-              "Countertop: granite from about ₹180 per sq.ft, quartz from ₹350, both fitted.",
+-              "Electrical points for the chimney, hob, microwave and under-cabinet lights.",
+-              "Plumbing shifts if the sink moves from where the builder placed it.",
+-              "Tall units and corner pull-outs, which cost more per sq.ft than plain base units.",
+-              "Dismantling and disposing of an old kitchen during a renovation.",
+-            ],
+-          },
+-        ],
+-      },
+-      {
+-        id: "best-value",
+-        heading: "How to get the best value",
+-        blocks: [
+-          {
+-            type: "p",
+-            text: "Spend on the parts that touch water and move every day: BWP plywood for the carcass and branded soft-close hinges and channels. Save on the parts that do not: a plain laminate on the inside of shutters, standard shelves in tall units and a simple loft instead of glass-fronted wall units. Ask for an itemised quotation so you can see exactly where each rupee goes, and compare quotes on the same grade, not just the total.",
+-          },
+-        ],
+-      },
+-    ],
+-    quickTips: [
+-      "Ask for the rate per sq.ft and the total face area, not just a lump sum.",
+-      "Insist on BWP plywood for base units under the sink.",
+-      "Check that hinge and channel brands are written in the quotation.",
+-      "Keep 15–20% of the budget for the counter, sink and chimney.",
+-    ],
+-    authorBio: AUTHOR_BIO,
+-    related: [
+-      "bwp-vs-mr-plywood",
+-      "laminate-acrylic-pu-wardrobe-finishes",
+-      "inside-our-workshop-how-a-kitchen-gets-built",
+-    ],
+-  },
+   {
+     slug: "bwp-vs-mr-plywood",
+-    title: "BWP vs MR plywood: which one for your kitchen?",
++    title: "BWP vs MR plywood: which one for your home?",
+     dek: "Why the board inside your cabinets matters more than the finish outside.",
+     category: "Materials",
+     readTime: "6 min read",
+@@ -175,6 +64,7 @@ export const ARTICLES: Article[] = [
+     hero: "plywood-hero",
+     heroNotes: ["BWP plywood (Marine grade) for wet areas", "MR plywood for dry areas"],
+     author: AUTHOR,
++    featured: true,
+     sections: [
+       {
+         id: "what-are-mr-and-bwp",
+@@ -182,7 +72,7 @@ export const ARTICLES: Article[] = [
+         blocks: [
+           {
+             type: "p",
+-            text: "Plywood is the structural base inside your modular kitchen cabinets. While the outside finish (laminate, acrylic, PU) gives the look, it is the plywood that gives strength, stability and long life. Every shutter, shelf and drawer box in a kitchen is cut from a board, and the board decides whether the cabinet is still square and dry after ten monsoons.",
++            text: "Plywood is the structural base inside every wardrobe, TV unit and cabinet we build. While the outside finish (laminate, acrylic, PU) gives the look, it is the plywood that gives strength, stability and long life. Every shutter, shelf and drawer box is cut from a board, and the board decides whether the cabinet is still square and dry after ten monsoons.",
+           },
+           {
+             type: "p",
+@@ -190,11 +80,11 @@ export const ARTICLES: Article[] = [
+           },
+           {
+             type: "p",
+-            text: "The two boards can look almost identical on the shelf. The difference is in the glue between the layers and in how the veneers are treated. Under a hot, humid kitchen sink that difference is everything: MR glue softens and the layers slowly separate, while BWP glue stays bonded even after hours in boiling water, which is exactly the test the standard requires.",
++            text: "The two boards can look almost identical on the shelf. The difference is in the glue between the layers and in how the veneers are treated. Under a bathroom vanity or on a damp utility wall that difference is everything: MR glue softens and the layers slowly separate, while BWP glue stays bonded even after hours in boiling water, which is exactly the test the standard requires.",
+           },
+           {
+             type: "quote",
+-            text: "The finish is what you see, but the plywood is what keeps your kitchen strong for years.",
++            text: "The finish is what you see, but the plywood is what keeps your cabinets strong for years.",
+           },
+         ],
+       },
+@@ -208,7 +98,7 @@ export const ARTICLES: Article[] = [
+             rows: [
+               ["Water resistance", "Resistant to moisture", "Waterproof (boiling water proof)"],
+               ["Strength", "Good for dry areas", "Higher strength and durability"],
+-              ["Best for", "Wardrobes, TV units, dry rooms", "Kitchens, bathrooms, utility areas"],
++              ["Best for", "Wardrobes, TV units, dry rooms", "Bathrooms, utility areas, balconies"],
+               ["Typical price (18 mm)", "₹50 – 70 per sq.ft", "₹90 – 130 per sq.ft"],
+               ["Lifespan", "8–10 years (indoor, dry use)", "15+ years (even in wet conditions)"],
+             ],
+@@ -225,13 +115,13 @@ export const ARTICLES: Article[] = [
+         blocks: [
+           {
+             type: "p",
+-            text: "Use BWP plywood for kitchen base and wall cabinets, especially near the sink, dishwasher or any water source. MR plywood is a good choice for wardrobes, TV units and other dry areas like bedrooms and living rooms. In a bathroom vanity or a utility area with a washing machine, BWP is not optional.",
++            text: "Use BWP plywood for any cabinet near a water source: bathroom vanities, utility units and wardrobes on damp walls. MR plywood is a good choice for wardrobes, TV units and other dry areas like bedrooms and living rooms. In a bathroom vanity or a utility area with a washing machine, BWP is not optional.",
+           },
+           {
+             type: "list",
+             items: [
+-              "Kitchen base units and the sink unit: BWP, always.",
+-              "Kitchen wall units: BWP, because steam from the hob rises straight into them.",
++              "Bathroom vanities and utility units: BWP, always.",
++              "Wardrobes on external or bathroom walls: BWP, because damp travels through the plaster.",
+               "Bedroom wardrobes and lofts: MR is fine in a dry room; BWP if the wall has ever shown damp.",
+               "TV units, study tables, bookshelves: MR.",
+               "Bathroom vanities, utility and balcony storage: BWP.",
+@@ -239,7 +129,7 @@ export const ARTICLES: Article[] = [
+           },
+           {
+             type: "callout",
+-            text: "Our rule of thumb: BWP for kitchens and other wet areas; MR is fine for wardrobes in dry bedrooms.",
++            text: "Our rule of thumb: BWP for wet areas; MR is fine for wardrobes in dry bedrooms.",
+           },
+         ],
+       },
+@@ -249,11 +139,11 @@ export const ARTICLES: Article[] = [
+         blocks: [
+           {
+             type: "p",
+-            text: "On paper BWP costs almost double per board. In a real kitchen the gap is much smaller than it looks. A 120 sq.ft L-shaped kitchen uses roughly 12–14 sheets of 18 mm plywood for the carcasses. At Jaipur 2026 prices that is about ₹22,000 in MR or ₹38,000 in BWP: a difference of around ₹15,000–18,000 on a kitchen that costs ₹2 lakh or more with finishes and hardware.",
++            text: "On paper BWP costs almost double per board. In a real project the gap is much smaller than it looks. A 7 × 8 ft wardrobe with a loft uses roughly 5–6 sheets of 18 mm plywood for the carcass. At Jaipur 2026 prices that is about ₹9,000 in MR or ₹16,000 in BWP: a difference of around ₹6,000–7,000 on a wardrobe that costs ₹1.2 lakh or more with finishes and hardware.",
+           },
+           {
+             type: "p",
+-            text: "Compare that with the cost of replacing a swollen sink unit after five years, which means new boards, new laminate, new hinges and two days of a carpenter on site. The premium for BWP pays for itself the first time a pipe joint weeps or a monsoon leaves the wall damp. This is why BWP is standard in our Premium and Luxury grades and why we recommend it even for Standard kitchens.",
++            text: "Compare that with the cost of replacing a swollen vanity or wardrobe base after five years, which means new boards, new laminate, new hinges and two days of a carpenter on site. The premium for BWP pays for itself the first time a pipe joint weeps or a monsoon leaves the wall damp. This is why BWP is standard in our Premium and Luxury grades and why we recommend it even for Standard wet-area units.",
+           },
+           {
+             type: "p",
+@@ -267,7 +157,7 @@ export const ARTICLES: Article[] = [
+         blocks: [
+           {
+             type: "p",
+-            text: "For every kitchen we build in Sambhar, Nawa and Jaipur we use 18 mm BWP marine plywood for the carcasses and drawer boxes, with all cut edges sealed with PVC edge-banding so water cannot enter through the end grain. For wardrobes in dry bedrooms we are happy to use MR plywood to keep the budget in check, and we say so in the quotation.",
++            text: "For every wet-area unit we build in Sambhar, Nawa and Jaipur we use 18 mm BWP marine plywood for the carcasses and drawer boxes, with all cut edges sealed with PVC edge-banding so water cannot enter through the end grain. For wardrobes in dry bedrooms we are happy to use MR plywood to keep the budget in check, and we say so in the quotation.",
+           },
+           {
+             type: "p",
+@@ -293,14 +183,14 @@ export const ARTICLES: Article[] = [
+       },
+     ],
+     quickTips: [
+-      "Use BWP plywood for all kitchen cabinets, especially below the sink.",
++      "Use BWP plywood for every cabinet near water, especially bathroom vanities.",
+       "Check for ISI mark and brand (eg. Century, Greenply, Anchor).",
+       "Make sure edges are properly sealed with PVC edge-banding.",
+       "Use good quality hardware for longer life.",
+     ],
+     authorBio: AUTHOR_BIO,
+     related: [
+-      "modular-kitchen-cost-jaipur-2026",
++      "wpc-wall-panels-pros-cons-costs",
+       "false-ceiling-designs-small-rooms",
+       "laminate-acrylic-pu-wardrobe-finishes",
+     ],
+@@ -367,7 +257,7 @@ export const ARTICLES: Article[] = [
+     related: [
+       "cove-lighting-101-warm-or-neutral-white",
+       "wpc-wall-panels-pros-cons-costs",
+-      "modular-kitchen-cost-jaipur-2026",
++      "laminate-acrylic-pu-wardrobe-finishes",
+     ],
+   },
+   {
+@@ -452,85 +342,8 @@ export const ARTICLES: Article[] = [
+     authorBio: AUTHOR_BIO,
+     related: [
+       "bwp-vs-mr-plywood",
+-      "modular-kitchen-cost-jaipur-2026",
+-      "inside-our-workshop-how-a-kitchen-gets-built",
+-    ],
+-  },
+-  {
+-    slug: "inside-our-workshop-how-a-kitchen-gets-built",
+-    title: "Inside our workshop: how a kitchen gets built",
+-    dek: "From a measured drawing to a finished carcass, step by step in our Sambhar workshop.",
+-    category: "Behind the build",
+-    readTime: "6 min read",
+-    date: "15 Aug 2026",
+-    image: "journal-workshop",
+-    hero: "journal-workshop",
+-    author: AUTHOR,
+-    sections: [
+-      {
+-        id: "drawing",
+-        heading: "It starts with a drawing, not a saw",
+-        blocks: [
+-          {
+-            type: "p",
+-            text: "Every kitchen we build begins as a set of measured drawings: a plan, elevations of each wall and a cutting list that names every panel with its size, board grade and finish. The site measurements are taken twice, once at the first visit and again after the counter is fixed, because a platform that is 12 mm out of level changes every base unit. Nothing is cut until the client has signed the 3D view and the itemised quotation.",
+-          },
+-        ],
+-      },
+-      {
+-        id: "cutting",
+-        heading: "Cutting and edge-banding",
+-        blocks: [
+-          {
+-            type: "p",
+-            text: "Boards are sized on an industrial panel saw that cuts to the millimetre and keeps every edge square, which is what makes cabinets close without gaps. Each panel then goes through the edge-bander, where a PVC strip is glued to every exposed edge and trimmed flush. This is the step most site carpenters skip, and it is the step that stops moisture getting into the plywood.",
+-          },
+-          {
+-            type: "list",
+-            items: [
+-              "Panel saw: 18 mm BWP plywood cut from the cutting list, labelled by unit.",
+-              "Edge-bander: 2 mm PVC on shutter edges, 0.8 mm on internal panels.",
+-              "Drilling: hinge cups and shelf pins drilled on a jig so every door lines up.",
+-            ],
+-          },
+-        ],
+-      },
+-      {
+-        id: "assembly",
+-        heading: "Assembly and hardware",
+-        blocks: [
+-          {
+-            type: "p",
+-            text: "Carcasses are assembled with minifix fittings and dowels, checked for square with a diagonal measure and fitted with hinges, tandem drawer channels and pull-outs in the workshop. Every drawer is opened and closed before it leaves. Shutters are laminated on a hydraulic press so the finish sits flat with no bubbles, then hung on the carcass and adjusted.",
+-          },
+-        ],
+-      },
+-      {
+-        id: "site",
+-        heading: "On site",
+-        blocks: [
+-          {
+-            type: "p",
+-            text: "Units arrive wrapped and numbered. Our own installation team levels the base units, fixes the wall units to the brickwork with anchor bolts, fits the counter and connects the chimney and lights. Because everything was assembled in the workshop, the site work for a 120 sq.ft kitchen takes about a week, and the family gets photo updates on WhatsApp each evening.",
+-          },
+-          {
+-            type: "callout",
+-            text: "You are welcome to visit the workshop in Sambhar while your kitchen is being built. Message us on WhatsApp and we will fix a time.",
+-          },
+-        ],
+-      },
+-    ],
+-    quickTips: [
+-      "Ask where your cabinets will be built: workshop or on site.",
+-      "Edge-banding on every edge is a sign of a proper workshop.",
+-      "Drawers should be tested before delivery, not after.",
+-      "Numbered units mean a faster, cleaner installation.",
+-    ],
+-    authorBio: AUTHOR_BIO,
+-    related: [
+-      "bwp-vs-mr-plywood",
+-      "modular-kitchen-cost-jaipur-2026",
+-      "laminate-acrylic-pu-wardrobe-finishes",
++      "false-ceiling-designs-small-rooms",
++      "wpc-wall-panels-pros-cons-costs",
+     ],
+   },
+   {
+@@ -561,7 +374,7 @@ export const ARTICLES: Article[] = [
+           {
+             type: "list",
+             items: [
+-              "Fully waterproof and termite-proof, so it works in bathrooms, balconies and kitchens.",
++              "Fully waterproof and termite-proof, so it works in bathrooms, balconies and utility areas.",
+               "Light and quick to fit: a 96 sq.ft TV wall takes a day or two.",
+               "No painting or polishing; wipe clean with a damp cloth.",
+               "Hides uneven plaster and cable runs behind the panel.",
+@@ -640,7 +453,7 @@ export const ARTICLES: Article[] = [
+             type: "list",
+             items: [
+               "Bedrooms and living rooms: warm 2700K in the cove, warm spots to match.",
+-              "Kitchens: neutral 4000K under the wall units so vegetables and spices look right, warm in the cove above.",
++              "Study corners: neutral 4000K over the desk so reading is comfortable, warm in the cove above.",
+               "Study and work corners: neutral 4000K, dimmable if possible.",
+               "Pooja units: warm 2700K, low output, so the niche glows rather than glares.",
+             ],
+@@ -677,7 +490,7 @@ export const ARTICLES: Article[] = [
+       },
+     ],
+     quickTips: [
+-      "2700K for bedrooms and living rooms, 4000K for kitchens and studies.",
++      "2700K for bedrooms and living rooms, 4000K for studies and dressing areas.",
+       "Always use an aluminium profile with a diffuser.",
+       "Separate switches for cove, spots and fan.",
+       "Size the driver with 20% spare capacity.",
+@@ -686,7 +499,7 @@ export const ARTICLES: Article[] = [
+     related: [
+       "false-ceiling-designs-small-rooms",
+       "wpc-wall-panels-pros-cons-costs",
+-      "modular-kitchen-cost-jaipur-2026",
++      "laminate-acrylic-pu-wardrobe-finishes",
+     ],
+   },
+ ];
+@@ -745,8 +558,8 @@ export const ARTICLE_PAGE = {
+   tocTitle: "In this article",
+   share: { whatsapp: "Share on WhatsApp", copy: "Copy link" },
+   estimateCard: {
+-    title: "Estimate your kitchen",
+-    text: "Get an approximate cost for your modular kitchen in 60 seconds.",
++    title: "Estimate your wardrobe",
++    text: "Get an approximate cost for your wardrobes in 60 seconds.",
+     areaLabel: "Area (sq.ft)",
+     gradeLabel: "Material grade",
+     button: "Get my estimate",
+diff --git a/src/content/materials.ts b/src/content/materials.ts
+index dda0856..19cd5d3 100644
+--- a/src/content/materials.ts
++++ b/src/content/materials.ts
+@@ -31,7 +31,7 @@ export const MATERIAL_TABS: MaterialTab[] = [
+       {
+         id: "bwp-plywood",
+         name: "BWP Marine Plywood",
+-        bestFor: "Best for kitchens and moisture-prone areas.",
++        bestFor: "Best for bathrooms and moisture-prone areas.",
+         water: 4,
+         image: "board-bwp",
+         recommended: true,
+@@ -76,7 +76,7 @@ export const MATERIAL_TABS: MaterialTab[] = [
+         name: "PU Paint",
+         bestFor: "Seamless matte or gloss colour with no edges.",
+         water: 3,
+-        image: "grid-ivory-kitchen",
++        image: "cat-pu",
+       },
+       {
+         id: "veneer",
+@@ -167,7 +167,6 @@ export type Grade = {
+   image: ImageKey;
+   /** Image used on the estimator grade cards. */
+   estimatorImage: ImageKey;
+-  kitchenFrom: string;
+   wardrobeFrom: string;
+   ceilingFrom: string;
+   warranty: string;
+@@ -182,7 +181,6 @@ export const GRADES: Grade[] = [
+     bullets: ["MR plywood", "Matte laminates", "Classic fittings", "Good value"],
+     image: "grade-standard",
+     estimatorImage: "est-standard",
+-    kitchenFrom: "₹1,350/sq.ft",
+     wardrobeFrom: "₹1,550/sq.ft",
+     ceilingFrom: "₹105/sq.ft",
+     warranty: "1 year",
+@@ -200,7 +198,6 @@ export const GRADES: Grade[] = [
+     ],
+     image: "grade-premium",
+     estimatorImage: "est-premium",
+-    kitchenFrom: "₹2,000/sq.ft",
+     wardrobeFrom: "₹2,200/sq.ft",
+     ceilingFrom: "₹180/sq.ft",
+     warranty: "5 years",
+@@ -218,7 +215,6 @@ export const GRADES: Grade[] = [
+     ],
+     image: "grade-luxury",
+     estimatorImage: "est-luxury",
+-    kitchenFrom: "₹2,590/sq.ft",
+     wardrobeFrom: "₹3,140/sq.ft",
+     ceilingFrom: "₹295/sq.ft",
+     warranty: "10 years",
+@@ -260,10 +256,10 @@ export const GRADE_TABLE_ROWS: GradeTableRow[] = [
+   },
+   { label: "Hardware warranty", standard: "2 years", premium: "5 years", luxury: "10 years" },
+   {
+-    label: "Kitchen price from",
+-    standard: "₹1,350/sq.ft",
+-    premium: "₹2,000/sq.ft",
+-    luxury: "₹2,590/sq.ft",
++    label: "Wardrobe price from",
++    standard: "₹1,550/sq.ft",
++    premium: "₹2,200/sq.ft",
++    luxury: "₹3,140/sq.ft",
+   },
+ ];
+ 
+diff --git a/src/content/pricing.ts b/src/content/pricing.ts
+index fb22c5d..2669a04 100644
+--- a/src/content/pricing.ts
++++ b/src/content/pricing.ts
+@@ -1,14 +1,14 @@
+ // Estimator: rate card, options, presets and the quantity-based calculation.
+ //
+ // Every space is priced from its parts (board, shutter finish, hardware, labour, counters,
+-// lighting …) at indicative 2026 rates for the Jaipur region. Cabinet work (kitchens, wardrobes,
++// lighting …) at indicative 2026 rates for the Jaipur region. Cabinet work (wardrobes,
+ // TV units) is priced per sq.ft of cabinet (shutter) area, the industry basis; ceilings and
+ // panelling per sq.ft of surface. GST at 18% is added on top, as on a real quotation.
+ // The client should confirm the RATE_CARD figures before launch (see PLACEHOLDERS.md).
+ 
+ import { waLink } from "./site";
+ 
+-export type SpaceId = "kitchen" | "wardrobe" | "ceiling" | "tvUnit" | "panelling";
++export type SpaceId = "wardrobe" | "ceiling" | "tvUnit" | "panelling";
+ export type GradeId = "standard" | "premium" | "luxury";
+ export type HomeTypeId = "1bhk" | "2bhk" | "3bhk" | "4bhk" | "shop";
+ 
+@@ -40,21 +40,13 @@ export const RATE_CARD = {
+   /** Sliding track, rollers and dampers, added per sq.ft for sliding wardrobes. */
+   slidingExtra: 350,
+   /** Cutting, assembly, transport and installation per sq.ft of cabinet area. */
+-  labour: { kitchen: 220, wardrobe: 220, tvUnit: 200 },
++  labour: { wardrobe: 220, tvUnit: 200 },
+   /** Extra shelving allowance inside wardrobes and TV units. */
+   shelving: { wardrobe: 120, tvUnit: 40 },
+-  /** Wardrobe carcass is taller and carries more shelving than a kitchen box. */
++  /** Wardrobe carcass is taller and carries more shelving than a TV unit box. */
+   wardrobeCarcassExtra: 80,
+   /** Loft above a wardrobe: share of the wardrobe area, priced at laminate. */
+   loftShare: 0.22,
+-  /** Kitchen layout factors (corner units and returns cost more). */
+-  layout: { straight: 0.95, l: 1, parallel: 1.02, u: 1.06, island: 1 },
+-  /** Island unit: 6 rft of base cabinets plus counter, priced flat. */
+-  islandFlat: 48000,
+-  /** Countertop per sq.ft of counter (600 mm deep). */
+-  counter: { none: 0, granite: 350, marble: 750, quartz: 900 },
+-  /** Kitchen accessory sets, flat. */
+-  accessories: { none: 0, basic: 9000, standard: 32000, full: 68000 },
+   /** Wardrobe interior upgrades per sq.ft. */
+   interior: { basic: 0, organised: 180, premium: 380 },
+   /** False ceiling per sq.ft of ceiling, painted, including framing. */
+@@ -146,54 +138,6 @@ const HARDWARE: OptionGroup = {
+ };
+ 
+ export const SPACES: Space[] = [
+-  {
+-    id: "kitchen",
+-    label: "Modular kitchen",
+-    short: "Kitchen",
+-    icon: "CookingPot",
+-    areaHint: "Cabinet area (base + wall units). An 8 × 10 ft kitchen is about 120 sq.ft.",
+-    defaultArea: 120,
+-    min: 50,
+-    max: 500,
+-    step: 10,
+-    options: [
+-      {
+-        id: "layout",
+-        label: "Layout",
+-        choices: [
+-          { id: "straight", label: "Straight" },
+-          { id: "l", label: "L-shaped" },
+-          { id: "parallel", label: "Parallel" },
+-          { id: "u", label: "U-shaped" },
+-          { id: "island", label: "Island", note: "L + island unit" },
+-        ],
+-      },
+-      CARCASS,
+-      FINISH,
+-      HARDWARE,
+-      {
+-        id: "counter",
+-        label: "Countertop",
+-        hint: "600 mm deep, priced per sq.ft of counter.",
+-        choices: [
+-          { id: "none", label: "Keep existing" },
+-          { id: "granite", label: "Granite" },
+-          { id: "marble", label: "Marble" },
+-          { id: "quartz", label: "Quartz" },
+-        ],
+-      },
+-      {
+-        id: "accessories",
+-        label: "Accessories",
+-        choices: [
+-          { id: "none", label: "None" },
+-          { id: "basic", label: "Basic", note: "Cutlery tray, bottle pull-out" },
+-          { id: "standard", label: "Standard", note: "+ corner carousel, tall pantry" },
+-          { id: "full", label: "Full", note: "+ magic corner, tandem baskets" },
+-        ],
+-      },
+-    ],
+-  },
+   {
+     id: "wardrobe",
+     label: "Wardrobes & storage",
+@@ -322,11 +266,10 @@ export const SPACES: Space[] = [
+ ];
+ 
+ export const SPACE_BY_ID: Record<SpaceId, Space> = {
+-  kitchen: SPACES[0] as Space,
+-  wardrobe: SPACES[1] as Space,
+-  ceiling: SPACES[2] as Space,
+-  tvUnit: SPACES[3] as Space,
+-  panelling: SPACES[4] as Space,
++  wardrobe: SPACES[0] as Space,
++  ceiling: SPACES[1] as Space,
++  tvUnit: SPACES[2] as Space,
++  panelling: SPACES[3] as Space,
+ };
+ 
+ /** Chosen option id per option group. */
+@@ -338,14 +281,6 @@ export type SpaceConfig = SpacePreset & { options: SpaceOptions };
+ /** What each grade means, space by space. Changing the grade resets to these. */
+ export const GRADE_DEFAULTS: Record<GradeId, Record<SpaceId, SpaceOptions>> = {
+   standard: {
+-    kitchen: {
+-      layout: "l",
+-      carcass: "mr",
+-      finish: "laminate",
+-      hardware: "standard",
+-      counter: "granite",
+-      accessories: "basic",
+-    },
+     wardrobe: {
+       type: "hinged",
+       carcass: "mr",
+@@ -359,14 +294,6 @@ export const GRADE_DEFAULTS: Record<GradeId, Record<SpaceId, SpaceOptions>> = {
+     panelling: { material: "laminate" },
+   },
+   premium: {
+-    kitchen: {
+-      layout: "l",
+-      carcass: "bwp",
+-      finish: "acrylic",
+-      hardware: "hettich",
+-      counter: "quartz",
+-      accessories: "standard",
+-    },
+     wardrobe: {
+       type: "hinged",
+       carcass: "bwp",
+@@ -380,14 +307,6 @@ export const GRADE_DEFAULTS: Record<GradeId, Record<SpaceId, SpaceOptions>> = {
+     panelling: { material: "wpc" },
+   },
+   luxury: {
+-    kitchen: {
+-      layout: "l",
+-      carcass: "hdhmr",
+-      finish: "pu",
+-      hardware: "blum",
+-      counter: "quartz",
+-      accessories: "full",
+-    },
+     wardrobe: {
+       type: "sliding",
+       carcass: "hdhmr",
+@@ -438,7 +357,6 @@ export const HOME_TYPES: HomeType[] = [
+     range: "Up to 600 sq.ft",
+     icon: "Home",
+     spaces: {
+-      kitchen: { on: true, area: 80 },
+       wardrobe: { on: true, area: 40 },
+       ceiling: { on: true, area: 150 },
+       tvUnit: { on: false, area: 30 },
+@@ -451,7 +369,6 @@ export const HOME_TYPES: HomeType[] = [
+     range: "600 – 1,000 sq.ft",
+     icon: "Home",
+     spaces: {
+-      kitchen: { on: true, area: 100 },
+       wardrobe: { on: true, area: 60 },
+       ceiling: { on: true, area: 220 },
+       tvUnit: { on: false, area: 40 },
+@@ -464,7 +381,6 @@ export const HOME_TYPES: HomeType[] = [
+     range: "1,000 – 1,500 sq.ft",
+     icon: "Building2",
+     spaces: {
+-      kitchen: { on: true, area: 120 },
+       wardrobe: { on: true, area: 80 },
+       ceiling: { on: true, area: 300 },
+       tvUnit: { on: false, area: 40 },
+@@ -477,7 +393,6 @@ export const HOME_TYPES: HomeType[] = [
+     range: "1,500+ sq.ft",
+     icon: "Warehouse",
+     spaces: {
+-      kitchen: { on: true, area: 150 },
+       wardrobe: { on: true, area: 120 },
+       ceiling: { on: true, area: 500 },
+       tvUnit: { on: true, area: 50 },
+@@ -490,7 +405,6 @@ export const HOME_TYPES: HomeType[] = [
+     range: "Commercial space",
+     icon: "Store",
+     spaces: {
+-      kitchen: { on: false, area: 60 },
+       wardrobe: { on: true, area: 60 },
+       ceiling: { on: true, area: 400 },
+       tvUnit: { on: false, area: 40 },
+@@ -520,7 +434,6 @@ function withOptions(preset: SpacePreset, space: SpaceId, grade: GradeId): Space
+ export function spacesForHome(homeType: HomeTypeId, grade: GradeId): Record<SpaceId, SpaceConfig> {
+   const p = getHomeType(homeType).spaces;
+   return {
+-    kitchen: withOptions(p.kitchen, "kitchen", grade),
+     wardrobe: withOptions(p.wardrobe, "wardrobe", grade),
+     ceiling: withOptions(p.ceiling, "ceiling", grade),
+     tvUnit: withOptions(p.tvUnit, "tvUnit", grade),
+@@ -602,39 +515,6 @@ function part(
+   return { id, label, qty, unit, rate, amount: Math.round(amount) };
+ }
+ 
+-function kitchenParts(area: number, o: SpaceOptions): EstimatePart[] {
+-  const R = RATE_CARD;
+-  const layout = pick(R.layout, o["layout"] ?? "l", "l");
+-  const cabinetRate = Math.round(
+-    (pick(R.carcass, o["carcass"] ?? "mr", "mr") +
+-      pick(R.finish, o["finish"] ?? "laminate", "laminate")) *
+-      layout,
+-  );
+-  const parts = [
+-    part("cabinets", "Base, wall & tall units (carcass + shutters)", area, "sq.ft", cabinetRate),
+-    part(
+-      "hardware",
+-      "Hinges, channels & fittings",
+-      area,
+-      "sq.ft",
+-      pick(R.hardware, o["hardware"] ?? "standard", "standard"),
+-    ),
+-  ];
+-  if (o["layout"] === "island")
+-    parts.push(part("island", "Island unit with counter", 1, "set", R.islandFlat));
+-  const counterRate = pick(R.counter, o["counter"] ?? "none", "none");
+-  if (counterRate > 0) {
+-    const rft = Math.max(6, Math.round(area / 6.5));
+-    parts.push(part("counter", `Countertop, ${rft} rft × 2 ft`, rft * 2, "sq.ft", counterRate));
+-  }
+-  const acc = pick(R.accessories, o["accessories"] ?? "none", "none");
+-  if (acc > 0) parts.push(part("accessories", "Accessory set", 1, "set", acc));
+-  parts.push(
+-    part("labour", "Manufacturing, transport & installation", area, "sq.ft", R.labour.kitchen),
+-  );
+-  return parts;
+-}
+-
+ function wardrobeParts(area: number, o: SpaceOptions): EstimatePart[] {
+   const R = RATE_CARD;
+   const carcass = pick(R.carcass, o["carcass"] ?? "mr", "mr") + R.wardrobeCarcassExtra;
+@@ -753,8 +633,6 @@ function panellingParts(area: number, o: SpaceOptions): EstimatePart[] {
+ 
+ function partsFor(space: SpaceId, area: number, o: SpaceOptions): EstimatePart[] {
+   switch (space) {
+-    case "kitchen":
+-      return kitchenParts(area, o);
+     case "wardrobe":
+       return wardrobeParts(area, o);
+     case "ceiling":
+@@ -772,8 +650,7 @@ function summaryFor(space: SpaceId, o: SpaceOptions): string {
+       const id = o[g.id];
+       if (!id) return null;
+       if (g.id === "loft" && id === "no") return null;
+-      if ((g.id === "counter" || g.id === "accessories" || g.id === "panel") && id === "none")
+-        return null;
++      if (g.id === "panel" && id === "none") return null;
+       return optionLabel(space, g.id, id);
+     })
+     .filter((s): s is string => Boolean(s))
+@@ -807,7 +684,7 @@ export function lineAmount(space: SpaceId, area: number, grade: GradeId): number
+ 
+ /**
+  * Itemised estimate: every switched-on space priced from its parts, then logistics, 18% GST and
+- * the indicative range. With the 3BHK preset at Premium the grand total lands near ₹6 lakh.
++ * the indicative range. With the 3BHK preset at Premium the grand total lands in the low lakhs.
+  */
+ export function estimate(config: EstimateConfig): EstimateResult {
+   const lines: EstimateLine[] = [];
+@@ -859,15 +736,11 @@ export function quickEstimate(
+ }
+ 
+ /**
+- * Effective "from" rate per sq.ft at a grade, excluding GST and one-off items such as counters,
+- * accessories or the island: cabinet work at 100 sq.ft. Rounded to ₹10 above ₹1,000.
++ * Effective "from" rate per sq.ft at a grade, excluding GST and one-off items such as lofts,
++ * interiors or back panels: cabinet work at 100 sq.ft. Rounded to ₹10 above ₹1,000.
+  */
+ export function gradeRate(space: SpaceId, grade: GradeId): number {
+   const options = optionsForGrade(space, grade);
+-  if (space === "kitchen") {
+-    options["counter"] = "none";
+-    options["accessories"] = "none";
+-  }
+   if (space === "wardrobe") {
+     options["loft"] = "no";
+     options["interior"] = "basic";
+@@ -880,7 +753,6 @@ export function gradeRate(space: SpaceId, grade: GradeId): number {
+ 
+ /** Standard-grade "from" rates per sq.ft, kept for the home teaser and service chips. */
+ export const RATES: Record<SpaceId, number> = {
+-  kitchen: gradeRate("kitchen", "standard"),
+   wardrobe: gradeRate("wardrobe", "standard"),
+   ceiling: gradeRate("ceiling", "standard"),
+   tvUnit: gradeRate("tvUnit", "standard"),
+@@ -892,8 +764,7 @@ export const RATES: Record<SpaceId, number> = {
+  * grade, including logistics and GST.
+  */
+ export const FULL_HOME_FROM = roundTo100(
+-  (lineAmount("kitchen", 100, "standard") +
+-    lineAmount("wardrobe", 60, "standard") +
++  (lineAmount("wardrobe", 60, "standard") +
+     lineAmount("ceiling", 220, "standard") +
+     lineAmount("tvUnit", 40, "standard") +
+     RATE_CARD.logistics) *
+@@ -1074,11 +945,11 @@ export const ESTIMATOR_COPY = {
+   },
+   teaser: {
+     eyebrow: "Quick estimate",
+-    title: "What will my kitchen cost?",
++    title: "What will my wardrobes cost?",
+     rangeLabel: "Indicative range (incl. GST)",
+     primary: "Send this estimate on WhatsApp",
+     link: "Open full estimator",
+-    spaces: ["kitchen", "wardrobe", "ceiling"] as SpaceId[],
++    spaces: ["wardrobe", "ceiling", "panelling"] as SpaceId[],
+     fullHomeLabel: "Full home",
+   },
+ } as const;
+diff --git a/src/content/process.ts b/src/content/process.ts
+index 336650c..e1df04c 100644
+--- a/src/content/process.ts
++++ b/src/content/process.ts
+@@ -88,7 +88,7 @@ export const BUILD_STEPS: BuildStep[] = [
+     ],
+     image: "render-3d",
+     ctaLabel: "See a sample design",
+-    ctaTo: "/projects/teal-copper-kitchen",
++    ctaTo: "/projects/fluted-tv-wall",
+     photoNote: "3D view approved before manufacturing",
+   },
+   {
+@@ -102,7 +102,7 @@ export const BUILD_STEPS: BuildStep[] = [
+       "Payment stages written down",
+       "Timeline with a handover date",
+     ],
+-    image: "blueprint-kitchen",
++    image: "elevation",
+     ctaLabel: "Try the estimator",
+     ctaTo: "/estimator",
+     photoNote: "Itemised, no hidden costs",
+@@ -150,7 +150,7 @@ export const BUILD_STEPS: BuildStep[] = [
+       "Care guide and warranty cards",
+       "After-service on a call or WhatsApp",
+     ],
+-    image: "kitchen-island-finished",
++    image: "hero-living",
+     ctaLabel: "Read our promise",
+     ctaTo: "/about",
+     photoNote: "Ready to live in",
+diff --git a/src/content/projects.ts b/src/content/projects.ts
+index c3f7908..25bc025 100644
+--- a/src/content/projects.ts
++++ b/src/content/projects.ts
+@@ -1,11 +1,10 @@
+ // Portfolio: the grid, the map pins and the case-study data for every project.
+-// Only Teal & Copper Kitchen is fully specified by the references; the rest carry shorter
++// The modular-kitchen case studies were removed (see backup/kitchen); the projects carry shorter
+ // placeholder stories (see PLACEHOLDERS.md).
+ 
+ import type { ImageKey } from "./image-keys";
+ 
+ export type ProjectCategory =
+-  | "Kitchens"
+   | "Bedrooms & Wardrobes"
+   | "Living Rooms"
+   | "Ceilings & Lighting"
+@@ -25,7 +24,7 @@ export type Project = {
+   place: ProjectLocation;
+   /** Filter category. */
+   category: ProjectCategory;
+-  /** Short DM Mono meta label on cards, e.g. "Kitchen", "Wall panelling". */
++  /** Short DM Mono meta label on cards, e.g. "Bedroom", "Wall panelling". */
+   kind: string;
+   grade: ProjectGrade;
+   year: string;
+@@ -58,7 +57,6 @@ export type Project = {
+ };
+ 
+ export const PROJECT_CATEGORIES: ProjectCategory[] = [
+-  "Kitchens",
+   "Bedrooms & Wardrobes",
+   "Living Rooms",
+   "Ceilings & Lighting",
+@@ -68,7 +66,6 @@ export const PROJECT_CATEGORIES: ProjectCategory[] = [
+ 
+ /** URL-friendly ids for the category chips (?category=). */
+ export const PROJECT_CATEGORY_IDS: Record<ProjectCategory, string> = {
+-  Kitchens: "kitchens",
+   "Bedrooms & Wardrobes": "bedrooms-wardrobes",
+   "Living Rooms": "living-rooms",
+   "Ceilings & Lighting": "ceilings-lighting",
+@@ -84,7 +81,7 @@ export const PROJECT_COUNT = 48;
+ export const PROJECT_COUNT_LABEL = "48 projects";
+ export const SPACES_COUNT_LABEL = "350+ spaces.";
+ 
+-const KITCHEN_TIMELINE: ProjectTimelineStep[] = [
++const PROJECT_TIMELINE: ProjectTimelineStep[] = [
+   {
+     day: "Day 1",
+     title: "Measure",
+@@ -152,7 +149,7 @@ function shortTimeline(build: string, install: string, handover: string): Projec
+   ];
+ }
+ 
+-const KITCHEN_DRAWINGS: ProjectDrawing[] = [
++const PROJECT_DRAWINGS: ProjectDrawing[] = [
+   { n: "01", label: "Floor plan", image: "floor-plan" },
+   { n: "02", label: "3D render", image: "render-3d" },
+   { n: "03", label: "Elevation", image: "elevation" },
+@@ -178,7 +175,7 @@ export const PROJECTS: Project[] = [
+       title: "One palette across every room.",
+       paragraphs: [
+         "A family moving into a new 3BHK in Jaipur wanted the whole apartment to feel like one considered home rather than a set of separate rooms. Walnut, petrol teal and warm white became the palette for every space.",
+-        "We planned the kitchen, three wardrobes, ceilings and the slat TV wall together, built everything in our Sambhar workshop and installed on one timeline with one point of contact.",
++        "We planned the three wardrobes, ceilings, flooring and the slat TV wall together, built everything in our Sambhar workshop and installed on one timeline with one point of contact.",
+       ],
+     },
+     asked: [
+@@ -186,7 +183,7 @@ export const PROJECTS: Project[] = [
+       "A slat TV wall as the living room focus",
+       "Cove lighting in every room",
+       "Wardrobes with lofts in all three bedrooms",
+-      "A calm, uncluttered kitchen",
++      "Calm, uncluttered storage everywhere",
+       "One timeline and one team",
+     ],
+     facts: {
+@@ -199,7 +196,7 @@ export const PROJECTS: Project[] = [
+     materials: [
+       { name: "Walnut veneer slats", note: "Warm, matched grain.", image: "living-slat-panel" },
+       { name: "BWP marine plywood", note: "For every carcass.", image: "mat-bwp-plywood" },
+-      { name: "Teal matte laminate", note: "Kitchen and TV unit.", image: "mat-teal-laminate" },
++      { name: "Teal matte laminate", note: "TV unit and console.", image: "mat-teal-laminate" },
+       {
+         name: "Gypsum cove ceiling",
+         note: "Warm 2700K profile light.",
+@@ -208,7 +205,7 @@ export const PROJECTS: Project[] = [
+       { name: "Soft-close hardware", note: "Every hinge and drawer.", image: "mat-hinge" },
+     ],
+     timeline: shortTimeline("Day 6 – 40", "Day 41 – 60", "Day 63"),
+-    drawings: KITCHEN_DRAWINGS,
++    drawings: PROJECT_DRAWINGS,
+     gallery: ["hero-living", "featured-living", "living-slat-panel", "grid-cove-ceiling"],
+     before: null,
+     after: "hero-living",
+@@ -224,84 +221,6 @@ export const PROJECTS: Project[] = [
+       note: "Premium, 3BHK",
+       cta: "Estimate your home",
+     },
+-    next: "teal-copper-kitchen",
+-  },
+-  {
+-    slug: "teal-copper-kitchen",
+-    title: "Teal & Copper Kitchen",
+-    place: "Sambhar",
+-    category: "Kitchens",
+-    kind: "Kitchen",
+-    grade: "Premium",
+-    year: "2024",
+-    area: "148 sq.ft",
+-    image: "grid-kitchen",
+-    hero: "kitchen-teal-hero",
+-    summary:
+-      "A modern, functional kitchen designed for a family of five. Warm, durable materials with a timeless colour palette that feels like home.",
+-    story: {
+-      title: "A kitchen that works as beautifully as it looks.",
+-      paragraphs: [
+-        "A family of five in Sambhar wanted a kitchen with more storage, easy cleaning and a colour that felt like them: modern, warm and timeless. They loved the idea of a bold yet calm space, with premium fittings that would last for years.",
+-        "We kept the existing platform, planned an L-shaped layout with a small island and built every unit in petrol teal matte laminate on BWP marine plywood, finished with copper bar handles and a marble-look counter.",
+-      ],
+-    },
+-    asked: [
+-      "More storage for a family of five",
+-      "Easy to clean and maintain",
+-      "A modern colour palette with character",
+-      "Premium yet durable materials",
+-      "A functional layout for everyday cooking",
+-      "Soft-close drawers and shutters",
+-    ],
+-    facts: {
+-      space: "Modular kitchen",
+-      area: "120 sq.ft",
+-      grade: "Premium",
+-      timeline: "5 weeks",
+-      completed: "2025",
+-    },
+-    materials: [
+-      {
+-        name: "Teal matte laminate",
+-        note: "Durable, elegant and easy to clean.",
+-        image: "mat-teal-laminate",
+-      },
+-      {
+-        name: "BWP marine plywood",
+-        note: "Moisture resistant and long lasting.",
+-        image: "mat-bwp-plywood",
+-      },
+-      { name: "Copper bar handles", note: "A warm, premium detail.", image: "mat-copper-handle" },
+-      {
+-        name: "Marble-look countertop",
+-        note: "Elegant, durable and practical.",
+-        image: "mat-marble",
+-      },
+-      { name: "Soft-close hinges", note: "Smooth, quiet and built to last.", image: "mat-hinge" },
+-    ],
+-    timeline: KITCHEN_TIMELINE,
+-    drawings: KITCHEN_DRAWINGS,
+-    gallery: [
+-      "gallery-kitchen-wide",
+-      "gallery-kitchen-a",
+-      "gallery-kitchen-b",
+-      "gallery-handle-detail",
+-    ],
+-    before: "kitchen-before",
+-    after: "kitchen-after",
+-    quote: {
+-      text: "They understood our needs so well and gave us a kitchen that is beautiful, functional and easy to maintain. We couldn't be happier with the result.",
+-      name: "Rohit Sharma",
+-      town: "Sambhar, Rajasthan",
+-      image: "testimonial-room",
+-    },
+-    budget: {
+-      label: "This kitchen:",
+-      range: "₹2.1 – 2.4 lakh",
+-      note: "Premium, 120 sq.ft",
+-      cta: "Estimate your kitchen",
+-    },
+     next: "master-bedroom-suite",
+   },
+   {
+@@ -562,71 +481,6 @@ export const PROJECTS: Project[] = [
+       note: "Premium, 96 sq.ft",
+       cta: "Get a quote for your wall",
+     },
+-    next: "ivory-acrylic-kitchen",
+-  },
+-  {
+-    slug: "ivory-acrylic-kitchen",
+-    title: "Ivory Acrylic Kitchen",
+-    place: "Jaipur",
+-    category: "Kitchens",
+-    kind: "Kitchen",
+-    grade: "Luxury",
+-    year: "2024",
+-    area: "132 sq.ft",
+-    image: "grid-ivory-kitchen",
+-    hero: "grid-ivory-kitchen",
+-    summary:
+-      "A handle-less ivory acrylic kitchen with a quartz counter, tall units and profile-lit shelves.",
+-    story: {
+-      title: "Bright, seamless and built for a serious cook.",
+-      paragraphs: [
+-        "A Jaipur family who cook for large gatherings wanted a bright kitchen with no handles to catch on, plenty of tall storage and a counter that could take heat and turmeric.",
+-        "We built a parallel layout in ivory high-gloss acrylic on HDHMR, with Blum tandem drawers, a quartz counter and profile lights under every wall unit.",
+-      ],
+-    },
+-    asked: [
+-      "A bright, handle-less kitchen",
+-      "Tall units for bulk storage",
+-      "A stain-resistant counter",
+-      "Heavy-duty drawers",
+-      "Under-cabinet lighting",
+-      "A built-in oven and microwave tower",
+-    ],
+-    facts: {
+-      space: "Modular kitchen",
+-      area: "132 sq.ft",
+-      grade: "Luxury",
+-      timeline: "6 weeks",
+-      completed: "2024",
+-    },
+-    materials: [
+-      {
+-        name: "Ivory acrylic shutters",
+-        note: "High-gloss, easy to wipe.",
+-        image: "grid-ivory-kitchen",
+-      },
+-      { name: "HDHMR board", note: "Dense, screw-holding core.", image: "board-hdhmr" },
+-      { name: "Quartz counter", note: "Stain and heat resistant.", image: "mat-marble" },
+-      { name: "Blum tandem drawers", note: "10-year warranty.", image: "mat-hinge" },
+-      { name: "Profile lights", note: "Neutral 4000K.", image: "journal-cove" },
+-    ],
+-    timeline: shortTimeline("Day 6 – 28", "Day 29 – 40", "Day 42"),
+-    drawings: KITCHEN_DRAWINGS,
+-    gallery: ["grid-ivory-kitchen", "kitchen-gallery-4", "kitchen-gallery-5", "cabinet-inside"],
+-    before: null,
+-    after: "grid-ivory-kitchen",
+-    quote: {
+-      text: "Everything closes softly, nothing catches on your clothes, and the counter still looks new after a year of cooking.",
+-      name: "Neha Agarwal",
+-      town: "Jaipur, Rajasthan",
+-      image: "grid-ivory-kitchen",
+-    },
+-    budget: {
+-      label: "This kitchen:",
+-      range: "₹3.0 – 3.4 lakh",
+-      note: "Luxury, 132 sq.ft",
+-      cta: "Estimate your kitchen",
+-    },
+     next: "kids-room-study",
+   },
+   {
+@@ -785,7 +639,7 @@ export const PROJECTS: Project[] = [
+       "Marble base for the idols",
+       "Warm, hidden lighting",
+       "Rajasthani motifs across the home",
+-      "Kitchen and wardrobes in the same palette",
++      "Wardrobes and ceilings in the same palette",
+       "Storage for pooja items below",
+     ],
+     facts: {
+@@ -803,8 +657,8 @@ export const PROJECTS: Project[] = [
+       { name: "Warm LED backlight", note: "2700K niche light.", image: "journal-cove" },
+     ],
+     timeline: shortTimeline("Day 6 – 45", "Day 46 – 66", "Day 70"),
+-    drawings: KITCHEN_DRAWINGS,
+-    gallery: ["grid-pooja", "grid-kitchen", "grid-bedroom", "grid-cove-ceiling"],
++    drawings: PROJECT_DRAWINGS,
++    gallery: ["grid-pooja", "grid-fluted-tv", "grid-bedroom", "grid-cove-ceiling"],
+     before: null,
+     after: "grid-pooja",
+     quote: {
+@@ -833,11 +687,7 @@ export const FEATURED_PROJECT: Project = PROJECTS[0] as Project;
+ export const GRID_PROJECTS: Project[] = PROJECTS.filter((p) => !p.featured);
+ 
+ /** The three cards on the home page "Recent homes" rail. */
+-export const HOME_PROJECT_SLUGS = [
+-  "teal-copper-kitchen",
+-  "master-bedroom-suite",
+-  "office-timber-slats",
+-];
++export const HOME_PROJECT_SLUGS = ["fluted-tv-wall", "master-bedroom-suite", "office-timber-slats"];
+ 
+ /** Copy for the Projects page. */
+ export const PROJECTS_PAGE = {
+diff --git a/src/content/services.ts b/src/content/services.ts
+index e2b827d..7eeb68f 100644
+--- a/src/content/services.ts
++++ b/src/content/services.ts
+@@ -122,287 +122,9 @@ const SHARED_FAQ_SITE_VISIT: ServiceFaq = {
+   a: "Yes, the site visit is completely free. We measure the space, understand your requirements and share a rough estimate along with design suggestions.",
+ };
+ 
+-const SERVICE_KITCHEN: Service = {
+-  slug: "modular-kitchens",
+-  n: "02",
+-  title: "Modular Kitchens",
+-  short: "Made-to-measure kitchens built around how you cook, store and live.",
+-  long: "Moisture-resistant kitchens built around how your family cooks, stores and lives. Every carcass is cut and edge-banded in our Sambhar workshop and fitted by our own team.",
+-  includes: [
+-    "Modular cabinets & drawers",
+-    "Premium shutters & finishes",
+-    "Chimney, hob & accessories",
+-    "Plumbing & electrical integration",
+-  ],
+-  priceChip: "From ₹1,350/sq.ft",
+-  gradePrices: { standard: "₹1,350/sq.ft", premium: "₹2,000/sq.ft", luxury: "₹2,590/sq.ft" },
+-  image: "svc-kitchen",
+-  heroImage: "kitchen-teal-hero",
+-  headlineLead: "Modular kitchens built around how",
+-  headlineEm: "your family cooks.",
+-  heroSub:
+-    "Moisture-resistant BWP plywood, premium hardware and in-house installation for kitchens that last.",
+-  heroPrimary: "Get my kitchen estimate",
+-  heroSecondary: "WhatsApp a photo of your kitchen",
+-  factChips: [
+-    { label: "From ₹1,350/sq.ft", sub: "Standard grade", icon: "IndianRupee" },
+-    { label: "Free site visit", sub: "in Sambhar, Nawa, Jaipur", icon: "MapPin" },
+-    { label: "Hardware warranty", sub: "Up to 10 years", icon: "ShieldCheck" },
+-  ],
+-  callouts: [
+-    { label: "BWP marine plywood carcass", x: 22, y: 34 },
+-    { label: "Soft-close hinges & tandem drawers", x: 74, y: 78 },
+-    { label: "Profile-lit wall units", x: 70, y: 22 },
+-  ],
+-  lightsToggle: false,
+-  options: {
+-    kind: "layout",
+-    label: "Choose your kitchen layout",
+-    moreLabel: "View more layouts",
+-    items: [
+-      {
+-        id: "l-shaped",
+-        label: "L-shaped",
+-        icon: "Columns2",
+-        drawing: "plan-l-shaped",
+-        dimensions: ["3040 mm", "2440 mm"],
+-        image: "layout-photo",
+-        bestFor: [
+-          "Most common and versatile",
+-          "Works well in Indian homes",
+-          "Good for small to medium spaces",
+-          "Keeps cooking, cleaning and storage close",
+-        ],
+-      },
+-      {
+-        id: "u-shaped",
+-        label: "U-shaped",
+-        icon: "Columns3",
+-        drawing: "plan-l-shaped",
+-        dimensions: ["3350 mm", "2740 mm"],
+-        image: "kitchen-gallery-2",
+-        bestFor: [
+-          "Maximum counter and storage space",
+-          "Ideal for large families who cook a lot",
+-          "Needs a room at least 2.4 m wide",
+-          "Separate zones for prep, cooking and washing",
+-        ],
+-      },
+-      {
+-        id: "parallel",
+-        label: "Parallel",
+-        icon: "Rows2",
+-        drawing: "plan-l-shaped",
+-        dimensions: ["3660 mm", "2130 mm"],
+-        image: "kitchen-gallery-3",
+-        bestFor: [
+-          "Narrow kitchens with doors at both ends",
+-          "Efficient two-wall work triangle",
+-          "Common in Jaipur apartments",
+-          "Easy to keep wet and dry sides apart",
+-        ],
+-      },
+-      {
+-        id: "straight",
+-        label: "Straight",
+-        icon: "Rows3",
+-        drawing: "plan-l-shaped",
+-        dimensions: ["3050 mm", "600 mm"],
+-        image: "kitchen-gallery-4",
+-        bestFor: [
+-          "Compact 1BHK and studio kitchens",
+-          "Open-plan living and dining areas",
+-          "Lowest cost per running foot",
+-          "Tall units add storage on one wall",
+-        ],
+-      },
+-      {
+-        id: "island",
+-        label: "Island",
+-        icon: "LayoutGrid",
+-        drawing: "plan-l-shaped",
+-        dimensions: ["4270 mm", "3660 mm"],
+-        image: "kitchen-gallery-1",
+-        bestFor: [
+-          "Large open kitchens and villas",
+-          "Extra prep space and breakfast seating",
+-          "A social kitchen for entertaining",
+-          "Needs about 1 m of walking space all round",
+-        ],
+-      },
+-    ],
+-  },
+-  finishes: {
+-    caption: "Tap a finish to preview it on the kitchen.",
+-    previewImage: "finish-preview",
+-    previewLabel: "Petrol Teal matte with copper handles",
+-    groups: [
+-      {
+-        id: "shutter",
+-        label: "Shutter Finish",
+-        swatches: [
+-          { id: "petrol-teal", label: "Petrol Teal", hex: "#1F5F63", sub: "Matte laminate" },
+-          { id: "sage", label: "Sage Green", hex: "#8FA694", sub: "Matte laminate" },
+-          { id: "walnut", label: "Walnut Veneer", hex: "#6B4428", sub: "Wood finish" },
+-          { id: "ivory", label: "Ivory Acrylic", hex: "#EFE9DC", sub: "High-gloss" },
+-          { id: "graphite", label: "Graphite", hex: "#3B3F41", sub: "PU finish" },
+-        ],
+-      },
+-      {
+-        id: "handle",
+-        label: "Handle Finish",
+-        swatches: [
+-          { id: "copper", label: "Copper", hex: "#B87333", sub: "Bar handle" },
+-          { id: "brass", label: "Brass", hex: "#C9A24B", sub: "Bar handle" },
+-          { id: "black", label: "Matte Black", hex: "#1E1E1E", sub: "Bar handle" },
+-          { id: "handleless", label: "Handle-less", hex: "#D9D4C8", sub: "Profile" },
+-        ],
+-      },
+-    ],
+-  },
+-  fixChips: null,
+-  inside: {
+-    eyebrow: "Inside every Shivansh kitchen",
+-    title: "Built to perform, inside and out.",
+-    text: "Quality materials, proper detailing and expert installation in every kitchen.",
+-    image: "cabinet-inside",
+-  },
+-  hotspots: [
+-    {
+-      n: 1,
+-      title: "18 mm BWP plywood carcass",
+-      text: "Moisture-resistant and durable.",
+-      x: 28,
+-      y: 14,
+-    },
+-    {
+-      n: 2,
+-      title: "Sealed edge-banding",
+-      text: "Protects from moisture and gives a clean finish.",
+-      x: 68,
+-      y: 48,
+-    },
+-    { n: 3, title: "Soft-close hinges", text: "Smooth, quiet and long-lasting.", x: 86, y: 66 },
+-    {
+-      n: 4,
+-      title: "Tandem drawer systems",
+-      text: "Easy access and high load-bearing.",
+-      x: 36,
+-      y: 70,
+-    },
+-    {
+-      n: 5,
+-      title: "Corner pull-outs",
+-      text: "Makes the most of every inch of space.",
+-      x: 14,
+-      y: 86,
+-    },
+-  ],
+-  materials: [
+-    {
+-      name: "BWP Marine Plywood",
+-      note: "Moisture-resistant and long lasting.",
+-      image: "board-bwp",
+-    },
+-    {
+-      name: "Matte / Acrylic Finish",
+-      note: "Wide range of colours and finishes.",
+-      image: "mat-teal-laminate",
+-    },
+-    {
+-      name: "Quartz / Marble-look",
+-      note: "Durable, easy to clean and elegant.",
+-      image: "mat-marble",
+-    },
+-    { name: "Soft-close Hardware", note: "Hinges and tandem drawers.", image: "mat-hinge" },
+-    {
+-      name: "Accessories",
+-      note: "Corner pull-outs, organizers and more.",
+-      image: "cabinet-inside",
+-    },
+-  ],
+-  gradeRows: [
+-    {
+-      grade: "standard",
+-      name: "Standard",
+-      from: "₹1,350/sq.ft",
+-      bullets: ["MR grade plywood", "Matte laminates", "Standard fittings", "1 year warranty"],
+-      recommended: false,
+-    },
+-    {
+-      grade: "premium",
+-      name: "Premium",
+-      from: "₹2,000/sq.ft",
+-      bullets: [
+-        "BWP waterproof plywood",
+-        "Acrylic / high-gloss finishes",
+-        "Soft-close hardware",
+-        "5 years warranty",
+-      ],
+-      recommended: true,
+-    },
+-    {
+-      grade: "luxury",
+-      name: "Luxury",
+-      from: "₹2,590/sq.ft",
+-      bullets: [
+-        "HDHMR / Boilo",
+-        "PU / veneer finish",
+-        "Blum / Hettich hardware",
+-        "10 years warranty",
+-      ],
+-      recommended: false,
+-    },
+-  ],
+-  gallery: [
+-    "kitchen-gallery-1",
+-    "kitchen-gallery-2",
+-    "kitchen-gallery-3",
+-    "kitchen-gallery-4",
+-    "kitchen-gallery-5",
+-    "gallery-handle-detail",
+-  ],
+-  galleryLabel: "Kitchen gallery",
+-  galleryLink: { label: "View all kitchens", to: "/projects?category=kitchens" },
+-  caseStudySlug: "teal-copper-kitchen",
+-  caseStudyQuote: {
+-    text: "Shivansh understood how we cook and designed a kitchen that is both beautiful and practical.",
+-    name: "Priya Sharma",
+-    town: "Sambhar, Rajasthan",
+-  },
+-  faqs: [
+-    SHARED_FAQ_SITE_VISIT,
+-    {
+-      q: "How long does a modular kitchen take?",
+-      a: "A typical 100–150 sq.ft kitchen takes 4–6 weeks from design sign-off: about three weeks of manufacturing in our workshop and one to two weeks of installation on site.",
+-    },
+-    {
+-      q: "Do you give a written warranty?",
+-      a: "Yes. Every quotation lists the warranty for each item: 1 year at Standard, 5 years at Premium and 10 years at Luxury on branded hardware, plus our own workmanship guarantee.",
+-    },
+-    {
+-      q: "Can you work with my existing platform?",
+-      a: "Yes. If your granite or marble platform is level and in good condition, we build the base units to fit it. If it needs replacing, we quote that separately so you can decide.",
+-    },
+-    {
+-      q: "Do you handle electrical and lighting too?",
+-      a: "Yes. Chimney, hob, socket points and under-cabinet profile lights are planned in the drawing and wired before the units go in, so nothing is cut or patched later.",
+-    },
+-  ],
+-  stickyBar: {
+-    label: "Kitchen · 120 sq.ft · Premium",
+-    note: "≈ ₹2.08 – 2.36 lakh",
+-    sub: "(indicative range)",
+-    primary: "Send on WhatsApp",
+-    secondary: "Adjust",
+-  },
+-  quickEstimate: { space: "kitchen", area: 120, grade: "premium" },
+-  related: ["wardrobes-storage", "false-ceiling-lighting", "wall-panelling-flooring"],
+-};
+-
+ const SERVICE_WARDROBES: Service = {
+   slug: "wardrobes-storage",
+-  n: "03",
++  n: "02",
+   title: "Wardrobes & Storage",
+   short: "Smart storage for calmer, clutter-free living.",
+   long: "Floor-to-ceiling wardrobes, lofts, TV units and smart storage for clutter-free living. Every unit is planned around what you own and built to use the full height of the wall.",
+@@ -634,12 +356,12 @@ const SERVICE_WARDROBES: Service = {
+     secondary: "Adjust",
+   },
+   quickEstimate: { space: "wardrobe", area: 80, grade: "premium" },
+-  related: ["modular-kitchens", "false-ceiling-lighting", "complete-home-interiors"],
++  related: ["false-ceiling-lighting", "wall-panelling-flooring", "complete-home-interiors"],
+ };
+ 
+ const SERVICE_CEILING: Service = {
+   slug: "false-ceiling-lighting",
+-  n: "04",
++  n: "03",
+   title: "False Ceiling & Lighting",
+   short: "Beautiful ceilings with the right light for every space.",
+   long: "POP and gypsum ceilings with layered profiles and lighting that sets the mood. We plan the wiring, cove and spotlights together so the room feels bigger and calmer.",
+@@ -904,12 +626,12 @@ const SERVICE_CEILING: Service = {
+     secondary: "Adjust",
+   },
+   quickEstimate: { space: "ceiling", area: 300, grade: "premium" },
+-  related: ["modular-kitchens", "wall-panelling-flooring", "complete-home-interiors"],
++  related: ["wardrobes-storage", "wall-panelling-flooring", "complete-home-interiors"],
+ };
+ 
+ const SERVICE_PANELLING: Service = {
+   slug: "wall-panelling-flooring",
+-  n: "05",
++  n: "04",
+   title: "Wall Panelling & Flooring",
+   short: "Feature walls and durable flooring that feel like home.",
+   long: "WPC and louvre panels, wallpaper, laminate, vinyl and wooden floors for warm, modern spaces. Concealed fixing, straight lines and finishes that stand up to Rajasthan heat.",
+@@ -1140,7 +862,7 @@ const SERVICE_PANELLING: Service = {
+     SHARED_FAQ_SITE_VISIT,
+     {
+       q: "Is WPC waterproof?",
+-      a: "Yes. WPC (wood-polymer composite) does not absorb water, swell or attract termites, which makes it suitable for bathrooms, balconies and kitchens as well as living rooms.",
++      a: "Yes. WPC (wood-polymer composite) does not absorb water, swell or attract termites, which makes it suitable for bathrooms, balconies and utility areas as well as living rooms.",
+     },
+     {
+       q: "Can panels go over existing walls?",
+@@ -1159,7 +881,7 @@ const SERVICE_PANELLING: Service = {
+     secondary: "Adjust",
+   },
+   quickEstimate: null,
+-  related: ["false-ceiling-lighting", "modular-kitchens", "renovation-repair"],
++  related: ["false-ceiling-lighting", "wardrobes-storage", "renovation-repair"],
+ };
+ 
+ const SERVICE_COMPLETE_HOME: Service = {
+@@ -1174,24 +896,24 @@ const SERVICE_COMPLETE_HOME: Service = {
+     "False ceiling & lighting",
+     "End-to-end execution",
+   ],
+-  priceChip: "From ₹3.9 lakh",
++  priceChip: "From ₹2.1 lakh",
+   gradePrices: { standard: null, premium: null, luxury: null },
+   image: "svc-complete-home",
+   heroImage: "hero-living",
+   headlineLead: "Your whole home, designed and delivered",
+   headlineEm: "by one team.",
+   heroSub:
+-    "Kitchen, wardrobes, ceilings and panelling planned together, built in our workshop and installed on one timeline.",
++    "Wardrobes, ceilings, panelling and flooring planned together, built in our workshop and installed on one timeline.",
+   heroPrimary: "Book a free site visit",
+   heroSecondary: "WhatsApp your floor plan",
+   factChips: [
+-    { label: "From ₹3.9 lakh", sub: "2–3 BHK", icon: "IndianRupee" },
++    { label: "From ₹2.1 lakh", sub: "2–3 BHK", icon: "IndianRupee" },
+     { label: "Free site visit", sub: "in Sambhar, Nawa, Jaipur", icon: "MapPin" },
+     { label: "One timeline", sub: "Design to handover", icon: "CalendarDays" },
+   ],
+   callouts: [
+     { label: "Space planning and 3D views", x: 24, y: 22 },
+-    { label: "Kitchen, wardrobes, ceilings, panelling", x: 66, y: 44 },
++    { label: "Wardrobes, ceilings, panelling, flooring", x: 66, y: 44 },
+     { label: "One timeline, one team", x: 40, y: 82 },
+   ],
+   lightsToggle: false,
+@@ -1206,8 +928,8 @@ const SERVICE_COMPLETE_HOME: Service = {
+         icon: "Home",
+         drawing: "floor-plan",
+         image: "bedroom-modern",
+-        note: "Kitchen, one wardrobe, living ceiling",
+-        checklist: ["Modular kitchen", "One bedroom wardrobe", "Living room ceiling", "TV unit"],
++        note: "One wardrobe, living ceiling, TV unit",
++        checklist: ["One bedroom wardrobe", "Living room ceiling", "TV unit", "Shoe rack"],
+         timeline: "5–6 weeks",
+         bestFor: ["Compact apartments", "First homes and rentals"],
+       },
+@@ -1217,10 +939,10 @@ const SERVICE_COMPLETE_HOME: Service = {
+         icon: "Home",
+         drawing: "floor-plan",
+         image: "grid-bedroom",
+-        note: "Kitchen, two wardrobes, ceilings",
++        note: "Two wardrobes, ceilings, TV unit",
+         checklist: [
+-          "Modular kitchen",
+           "Two bedroom wardrobes",
++          "Crockery and study units",
+           "Living and bedroom ceilings",
+           "TV unit and shoe rack",
+         ],
+@@ -1233,10 +955,10 @@ const SERVICE_COMPLETE_HOME: Service = {
+         icon: "Building2",
+         drawing: "floor-plan",
+         image: "featured-living",
+-        note: "Kitchen, three wardrobes, ceilings, panelling",
++        note: "Three wardrobes, ceilings, panelling",
+         checklist: [
+-          "Modular kitchen",
+           "Three bedroom wardrobes",
++          "Crockery, study and shoe units",
+           "Ceilings in all rooms",
+           "TV wall panelling and pooja unit",
+         ],
+@@ -1251,7 +973,7 @@ const SERVICE_COMPLETE_HOME: Service = {
+         image: "hero-living",
+         note: "Everything above, plus feature walls and lighting scenes",
+         checklist: [
+-          "Island or U-shaped kitchen",
++          "Bar and crockery units",
+           "Walk-in and hinged wardrobes",
+           "Layered ceilings and lighting",
+           "Panelling, flooring and pooja room",
+@@ -1289,7 +1011,7 @@ const SERVICE_COMPLETE_HOME: Service = {
+             label: "Minimal Light",
+             hex: "#EFE9DC",
+             sub: "Oak + ivory",
+-            image: "grid-ivory-kitchen",
++            image: "cat-laminate-floor",
+           },
+         ],
+       },
+@@ -1340,7 +1062,7 @@ const SERVICE_COMPLETE_HOME: Service = {
+     },
+   ],
+   materials: [
+-    { name: "BWP Marine Plywood", note: "Kitchens, wardrobes and wet areas.", image: "board-bwp" },
++    { name: "BWP Marine Plywood", note: "Wardrobes, vanities and wet areas.", image: "board-bwp" },
+     {
+       name: "Laminate / Acrylic / PU",
+       note: "One palette across every room.",
+@@ -1398,7 +1120,7 @@ const SERVICE_COMPLETE_HOME: Service = {
+   gallery: [
+     "featured-living",
+     "hero-living",
+-    "grid-kitchen",
++    "grid-fluted-tv",
+     "grid-bedroom",
+     "grid-pooja",
+     "grid-cove-ceiling",
+@@ -1415,7 +1137,7 @@ const SERVICE_COMPLETE_HOME: Service = {
+     SHARED_FAQ_SITE_VISIT,
+     {
+       q: "What's included in a complete home?",
+-      a: "Space planning and 3D views, the modular kitchen, wardrobes, TV and study units, false ceilings with lighting, wall panelling and a deep clean at handover. Civil work, painting and loose furniture are quoted separately if you need them.",
++      a: "Space planning and 3D views, wardrobes, TV and study units, false ceilings with lighting, wall panelling and a deep clean at handover. Civil work, painting and loose furniture are quoted separately if you need them.",
+     },
+     {
+       q: "How are payments staged?",
+@@ -1423,7 +1145,7 @@ const SERVICE_COMPLETE_HOME: Service = {
+     },
+     {
+       q: "Can we live in the house during the work?",
+-      a: "Yes, most families do. We work room by room, seal off the active area and clean up every evening. Kitchens are the only space that is out of use for a few days.",
++      a: "Yes, most families do. We work room by room, seal off the active area and clean up every evening. Each room is out of use for a few days at most.",
+     },
+   ],
+   stickyBar: {
+@@ -1434,12 +1156,12 @@ const SERVICE_COMPLETE_HOME: Service = {
+     secondary: "Try the estimator",
+   },
+   quickEstimate: null,
+-  related: ["modular-kitchens", "wardrobes-storage", "false-ceiling-lighting"],
++  related: ["wall-panelling-flooring", "wardrobes-storage", "false-ceiling-lighting"],
+ };
+ 
+ const SERVICE_RENOVATION: Service = {
+   slug: "renovation-repair",
+-  n: "06",
++  n: "05",
+   title: "Renovation & Repair",
+   short: "Updates and repairs handled by our own team.",
+   long: "Room-by-room renovation, painting and furniture repair, with minimal disruption. We fix what can be fixed and replace only what needs replacing.",
+@@ -1447,7 +1169,7 @@ const SERVICE_RENOVATION: Service = {
+     "Civil, electrical and plumbing",
+     "Painting & polishing",
+     "Furniture repair and upgrades",
+-    "Kitchen and wardrobe refitting",
++    "Wardrobe and TV unit refitting",
+   ],
+   priceChip: "Custom quote",
+   gradePrices: { standard: null, premium: null, luxury: null },
+@@ -1456,7 +1178,7 @@ const SERVICE_RENOVATION: Service = {
+   headlineLead: "Refresh one room or the whole house,",
+   headlineEm: "cleanly and on time.",
+   heroSub:
+-    "Painting, polishing, refitting and repairs by the same team that builds our kitchens, with a clear scope before we start.",
++    "Painting, polishing, refitting and repairs by the same team that builds our wardrobes and ceilings, with a clear scope before we start.",
+   heroPrimary: "Get a renovation quote",
+   heroSecondary: "WhatsApp photos of the room",
+   factChips: [
+@@ -1475,14 +1197,6 @@ const SERVICE_RENOVATION: Service = {
+     label: "Which room needs work?",
+     moreLabel: "Send us photos",
+     items: [
+-      {
+-        id: "kitchen",
+-        label: "Kitchen",
+-        icon: "CookingPot",
+-        image: "kitchen-before",
+-        note: "Refit shutters, replace hinges, new counter",
+-        bestFor: ["Peeling laminate", "Sagging shutters", "Old platform"],
+-      },
+       {
+         id: "bedroom",
+         label: "Bedroom",
+@@ -1627,18 +1341,18 @@ const SERVICE_RENOVATION: Service = {
+     },
+   ],
+   gallery: [
+-    "kitchen-before",
+-    "kitchen-after",
+     "svc-renovation",
+     "grid-bedroom",
+-    "orig-work-kitchen",
++    "ws-install",
+     "orig-craft",
++    "grid-cove-ceiling",
++    "hero-living",
+   ],
+   galleryLabel: "Renovation gallery",
+   galleryLink: { label: "View all projects", to: "/projects" },
+-  caseStudySlug: "teal-copper-kitchen",
++  caseStudySlug: "fluted-tv-wall",
+   caseStudyQuote: {
+-    text: "They kept the platform, replaced everything above it and we were cooking again in three weeks.",
++    text: "They kept the old wall, built the new slat panel over it and the living room was back in use in two weeks.",
+     name: "Rohit Sharma",
+     town: "Sambhar, Rajasthan",
+   },
+@@ -1665,13 +1379,12 @@ const SERVICE_RENOVATION: Service = {
+     secondary: "Book a visit",
+   },
+   quickEstimate: null,
+-  related: ["modular-kitchens", "wardrobes-storage", "wall-panelling-flooring"],
++  related: ["complete-home-interiors", "wardrobes-storage", "wall-panelling-flooring"],
+ };
+ 
+ /** In the order of SERVICE_SLUGS (site.ts) and of the numbered lists on Home and Services. */
+ export const SERVICES: Service[] = [
+   SERVICE_COMPLETE_HOME,
+-  SERVICE_KITCHEN,
+   SERVICE_WARDROBES,
+   SERVICE_CEILING,
+   SERVICE_PANELLING,
+@@ -1695,7 +1408,6 @@ export const SERVICES_PAGE = {
+     { label: "Ceiling & Lights", slug: "false-ceiling-lighting", x: 44, y: 8 },
+     { label: "Wardrobes", slug: "wardrobes-storage", x: 12, y: 30 },
+     { label: "Wall Panels", slug: "wall-panelling-flooring", x: 86, y: 52 },
+-    { label: "Kitchen", slug: "modular-kitchens", x: 34, y: 66 },
+     { label: "Living Room", slug: "complete-home-interiors", x: 66, y: 76 },
+     { label: "Flooring", slug: "wall-panelling-flooring", x: 46, y: 92 },
+   ] as { label: string; slug: ServiceSlug; x: number; y: number }[],
+diff --git a/src/content/site.ts b/src/content/site.ts
+index 79179a1..b407d42 100644
+--- a/src/content/site.ts
++++ b/src/content/site.ts
+@@ -85,7 +85,6 @@ export const FOOTER_EXPLORE: NavItem[] = [
+ 
+ export const FOOTER_SERVICES: NavItem[] = [
+   { label: "Complete Home Interiors", to: "/services/complete-home-interiors" },
+-  { label: "Modular Kitchens", to: "/services/modular-kitchens" },
+   { label: "Wardrobes & Storage", to: "/services/wardrobes-storage" },
+   { label: "False Ceilings", to: "/services/false-ceiling-lighting" },
+   { label: "Wall Panelling", to: "/services/wall-panelling-flooring" },
+@@ -107,7 +106,6 @@ export const SOCIAL: {
+ 
+ export const SERVICE_SLUGS = [
+   "complete-home-interiors",
+-  "modular-kitchens",
+   "wardrobes-storage",
+   "false-ceiling-lighting",
+   "wall-panelling-flooring",
+diff --git a/src/content/team.ts b/src/content/team.ts
+index 0929fb7..2d18c9b 100644
+--- a/src/content/team.ts
++++ b/src/content/team.ts
+@@ -33,7 +33,7 @@ export type Milestone = { year: string; title: string; image: ImageKey };
+ export const MILESTONES: Milestone[] = [
+   { year: "2014", title: "Workshop opens in Sambhar", image: "tl-2014" },
+   { year: "2017", title: "First complete turnkey home", image: "tl-2017" },
+-  { year: "2020", title: "In-house modular kitchen and wardrobe production", image: "tl-2020" },
++  { year: "2020", title: "In-house wardrobe and furniture production", image: "tl-2020" },
+   { year: "2023", title: "300th space delivered", image: "tl-2023" },
+   { year: "Today", title: "350+ spaces across Sambhar, Nawa and Jaipur", image: "tl-today" },
+ ];
+diff --git a/src/content/testimonials.ts b/src/content/testimonials.ts
+index a872dd4..ca5d086 100644
+--- a/src/content/testimonials.ts
++++ b/src/content/testimonials.ts
+@@ -14,20 +14,20 @@ export type Testimonial = {
+ export const TESTIMONIALS: Testimonial[] = [
+   {
+     quote:
+-      "They understood what we wanted before we knew how to explain it. The finished kitchen feels like it was always meant to be there.",
++      "They understood what we wanted before we knew how to explain it. The finished wardrobes feel like they were always meant to be there.",
+     name: "Priya Sharma",
+     town: "Sambhar",
+-    project: "Modular Kitchen",
++    project: "Wardrobes & TV unit",
+     image: "testimonial-room",
+     rating: 5,
+   },
+   {
+     quote:
+-      "They understood our needs so well and gave us a kitchen that is beautiful, functional and easy to maintain. We couldn't be happier with the result.",
++      "They understood our needs so well and gave us a living room wall that is beautiful, functional and easy to keep clean. We couldn't be happier with the result.",
+     name: "Rohit Sharma",
+     town: "Sambhar",
+-    project: "Teal & Copper Kitchen",
+-    image: "kitchen-after",
++    project: "Fluted TV Wall",
++    image: "grid-fluted-tv",
+     rating: 5,
+   },
+   {
+diff --git a/src/routes/__root.tsx b/src/routes/__root.tsx
+index 3b9189d..92a0b15 100644
+--- a/src/routes/__root.tsx
++++ b/src/routes/__root.tsx
+@@ -16,7 +16,7 @@ import { SITE_NAME, SITE_URL, TAGLINE } from "@/content/site";
+ 
+ const DEFAULT_TITLE = `${SITE_NAME} — ${TAGLINE}`;
+ const DEFAULT_DESCRIPTION =
+-  "Modular kitchens, wardrobes, false ceilings and complete home interiors designed, manufactured and installed by our own team across Sambhar, Nawa and Jaipur.";
++  "Wardrobes, false ceilings, wall panelling and complete home interiors designed, manufactured and installed by our own team across Sambhar, Nawa and Jaipur.";
+ 
+ const FONTS_HREF =
+   "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Manrope:wght@400..800&family=DM+Mono:wght@400;500&family=Caveat:wght@500;600&family=Tiro+Devanagari+Hindi&display=swap";
+diff --git a/src/routes/catalogue.tsx b/src/routes/catalogue.tsx
+index 666931e..ea4f9e9 100644
+--- a/src/routes/catalogue.tsx
++++ b/src/routes/catalogue.tsx
+@@ -3,7 +3,7 @@ import { z } from "zod";
+ 
+ const TITLE = "Product catalogue — Shivansh Interior Solutions";
+ const DESCRIPTION =
+-  "Boards, shutter finishes, hardware, kitchen modules, wardrobes, wall panels, ceilings and countertops with indicative 2026 prices for Sambhar, Nawa and Jaipur.";
++  "Boards, shutter finishes, hardware, wardrobes, wall panels, ceilings and countertops with indicative 2026 prices for Sambhar, Nawa and Jaipur.";
+ 
+ const searchSchema = z.object({
+   /** Category id, omitted for all products. */
+diff --git a/src/routes/estimator.tsx b/src/routes/estimator.tsx
+index 3650c98..26ecd6d 100644
+--- a/src/routes/estimator.tsx
++++ b/src/routes/estimator.tsx
+@@ -2,7 +2,7 @@ import { createFileRoute, lazyRouteComponent } from "@tanstack/react-router";
+ 
+ const TITLE = "Estimator — Shivansh Interior Solutions";
+ const DESCRIPTION =
+-  "Get an indicative price range for your kitchen, wardrobe, ceiling or full home in a minute.";
++  "Get an indicative price range for your wardrobes, ceiling, panelling or full home in a minute.";
+ 
+ export const Route = createFileRoute("/estimator")({
+   head: () => ({
+diff --git a/src/routes/index.tsx b/src/routes/index.tsx
+index fd1f161..1753208 100644
+--- a/src/routes/index.tsx
++++ b/src/routes/index.tsx
+@@ -2,7 +2,7 @@ import { createFileRoute, lazyRouteComponent } from "@tanstack/react-router";
+ 
+ const TITLE = "Shivansh Interior Solutions | Interiors in Sambhar, Jaipur";
+ const DESCRIPTION =
+-  "Modular kitchens, wardrobes, false ceilings and complete home interiors designed, manufactured and installed by our own team across Sambhar, Nawa and Jaipur. Interiors built with craft, not shortcuts.";
++  "Wardrobes, false ceilings, wall panelling and complete home interiors designed, manufactured and installed by our own team across Sambhar, Nawa and Jaipur. Interiors built with craft, not shortcuts.";
+ 
+ export const Route = createFileRoute("/")({
+   head: () => ({
+diff --git a/src/routes/projects/index.tsx b/src/routes/projects/index.tsx
+index ed2f611..12e76e6 100644
+--- a/src/routes/projects/index.tsx
++++ b/src/routes/projects/index.tsx
+@@ -4,11 +4,11 @@ import { PROJECT_CATEGORY_IDS } from "@/content/projects";
+ 
+ const TITLE = "Projects — Shivansh Interior Solutions";
+ const DESCRIPTION =
+-  "Recent homes, kitchens, bedrooms and workspaces built by Shivansh Interior Solutions across Sambhar, Nawa and Jaipur.";
++  "Recent homes, bedrooms, living rooms and workspaces built by Shivansh Interior Solutions across Sambhar, Nawa and Jaipur.";
+ 
+ const CATEGORY_IDS = Object.values(PROJECT_CATEGORY_IDS) as [string, ...string[]];
+ 
+-/** `?view=map` opens the map view; `?category=kitchens` pre-selects a category chip. */
++/** `?view=map` opens the map view; `?category=bedrooms-wardrobes` pre-selects a category chip. */
+ const projectsSearchSchema = z.object({
+   view: z.enum(["grid", "map"]).optional().catch(undefined),
+   category: z.enum(CATEGORY_IDS).optional().catch(undefined),
+diff --git a/src/routes/services/index.tsx b/src/routes/services/index.tsx
+index 14306aa..859cf69 100644
+--- a/src/routes/services/index.tsx
++++ b/src/routes/services/index.tsx
+@@ -2,7 +2,7 @@ import { createFileRoute, lazyRouteComponent } from "@tanstack/react-router";
+ 
+ const TITLE = "Services — Shivansh Interior Solutions";
+ const DESCRIPTION =
+-  "Complete home interiors, modular kitchens, wardrobes, false ceilings, wall panelling and renovation by one accountable team.";
++  "Complete home interiors, wardrobes, false ceilings, wall panelling and renovation by one accountable team.";
+ 
+ export const Route = createFileRoute("/services/")({
+   head: () => ({
